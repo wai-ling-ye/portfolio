@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:bold,italic|PT+Serif:bold|Song+Myung');
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 100%;
+}
+
+article{
+  padding: 32px 16px;
+}
+
+h1{ /**Full width headings**/
+  font-family: "Song Myung", Georgia, serif;
+  font-size: 100vw;
+  font-weight: bold;
+}
+h2{ /**subheading**/
+  font-family: "Song Myung", Georgia, serif;
+  font-size: 18vw;
+  font-weight: bold;
+}
+h3{ /**large headings**/
+  font-family: "Song Myung", Georgia, serif;
+  font-size: 6.25rem;
+  font-weight: bold;
+}
+h4{ /**small headings**/
+  font-family: "PT Serif", Times, serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+h5{ /**table headings**/
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1.2rem;
+}
+p{ /**body text**/
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.home_hero_mobile{
+  width: 100%;
+}
+
+.background_text{
+  font-family: "Song Myung", Georgia, serif;
+  font-weight: bold;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#thinker{
+  font-size: 3rem;
+}
+#creator{
+  font-size: 3rem;
+}
+#dreamer{
+  font-size: 3rem;
+}
+#designer{
+  font-size: 3rem;
+}
+
+
+
+}
