@@ -58,12 +58,18 @@ p{ /**body text**/
   line-height: 1.5rem;
 }
 
+img {
+  height: auto;
+  width: 100%;
+}
+
 .yellow_bg {
   background: var(--yellow-bg-color);
 }
 
 .blue_bg {
   background: var(--blue-bg-color);
+  color: #ffffff;
 }
 
 .button{
@@ -276,6 +282,12 @@ nav a:hover
   padding: 5rem 1rem;
 }
 
+.intro_container {
+  display: block;
+  margin: auto;
+  width: 21rem;
+}
+
 .landing_intro p{
   font-family: "PT Serif", Times, serif;
   font-size: 1.5rem;
@@ -283,7 +295,7 @@ nav a:hover
 }
 
 .landing_intro span{
-  font-size: 2.25rem;
+  font-size: 2.2rem;
 }
 
 .highlight_text{
@@ -295,8 +307,13 @@ nav a:hover
   margin: 0;
 }
 
+.remkeep_container {
+  margin: auto;
+  width: 22rem;
+}
+
 .remkeep_project img{
-  display: inline;
+  display: inline-block;
   height: auto;
   position: relative;
   left: 1rem;
@@ -313,7 +330,6 @@ nav a:hover
 }
 
 .remkeep_project_text {
-  color: #ffffff;
   display: block;
   line-height: 1.5rem;
   margin-bottom: 1rem;
@@ -332,27 +348,96 @@ nav a:hover
 }
 
 .landing_about {
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0 2rem 0;
 }
 
 .about_container {
-  padding: 1rem;
+  margin: auto;
+  width: 90%;
 }
 
 .about_container .Profile_round {
   display: block;
-  padding: 1rem;
+  padding: 2rem 1rem;
   margin: auto;
+  width: 12rem;
+}
+
+.about_container ul {
+  margin: 1rem 0;
 }
 
 .about_container .tools_list {
   display: inline-block;
   height: 2rem;
   padding: .5rem;
-  width: 2rem;
+  width: 3rem;
 }
 
 .about_container .tools_icon {
-  height: 3rem;
+  display: inline-block;
+  margin: 0 .5rem;
   width: 3rem;
+}
+
+.landing_process {
+  margin: 0;
+  padding: 0 0 2rem 0;
+}
+
+.landing_process img {
+  display: block;
+  margin: auto;
+  padding: 2rem 1rem 1rem 1rem;
+  width: 75%;
+}
+
+.landing_process p {
+  margin: auto;
+  padding: 1rem 0;
+  width: 90%;
+}
+
+.logo_bar {
+  background: var(--grey-bg-color);
+  height: 3rem;
+  margin: 4rem 0 2rem 0;
+  overflow: visible;
+}
+
+.logo_bar img {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: -2rem;
+  width: 6rem;
+}
+
+.logo_bar .logo {
+  background: #ffffff;
+  margin: auto;
+  width: 8rem;
+}
+
+.footer_bottom {
+  background: var(--grey-bg-color);
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.footer_bottom p {
+  color: var(--dark-blue);
+  font-family: "PT Serif", Times, serif;
+}
+
+.footer_bottom ul {
+  margin-top: 1rem;
+}
+
+.footer_bottom li {
+  color: var(--dark-blue);
+  display: inline;
+  font-size: 2rem;
+  padding: 1rem;
 }
