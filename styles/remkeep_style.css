@@ -3,7 +3,7 @@
 }
 
 .remkeep_header {
-  background-image: url("images/remkeep/Mobile_Preview.png");
+  background-image: url("../images/remkeep/Mobile_Preview.png");
   background-repeat: no-repeat;
   background-size: auto 90%;
   background-position: 57% 80%;
@@ -31,14 +31,14 @@
 }
 
 .process_aside {
-  background-image: url("images/remkeep/process_flow.png");
+  background-image: url("../images/remkeep/process_flow.png");
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 1.3
 }
 
 .survey_section{
-  background-image: url("images/remkeep/survey_mobile_bg.png");
+  background-image: url("../images/remkeep/survey_mobile_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 100rem rgba(254, 226, 191, .8);
@@ -93,6 +93,11 @@
   bottom: -.2rem;
 }
 
+.persona_name svg {
+  height: 1.6rem;
+  width: auto;
+}
+
 .persona_quote {
   background-color: var(--dark-blue);
   color: #ffffff;
@@ -123,7 +128,7 @@
 }
 
 .user_stories_flows {
-  background-image: url("images/remkeep/user_sf_img.png");
+  background-image: url("../images/remkeep/user_sf_img.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -137,26 +142,30 @@
 }
 
 .user_testing_heading {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 20rem;
-  overflow: hidden;
   padding: 0;
+  position: relative;
 }
 
-.user_testing_heading img{
-  height: 21rem;
-  left: -5rem;
-  position: relative;
-  width: auto;
+.user_testing_img1 {
+  background-image: url("../images/remkeep/user_testing_img1.jpg");
+}
+
+.user_testing_img2{
+  background-image: url("../images/remkeep/user_testing_img2.jpg");
 }
 
 .user_testing_heading h3 {
   color: var(--light-blue);
-  top: -9.3rem;
-  position: relative;
+  bottom: -3px;
+  position: absolute;
 }
 
 .brand_strategy_heading {
-  background-image: url("images/remkeep/brand_strategy_img_mobile.png");
+  background-image: url("../images/remkeep/brand_strategy_img_mobile.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -194,10 +203,6 @@
   font-size: 1.5rem;
 }
 
-.HF_prototypes h3 {
-  margin-bottom: 1rem;
-}
-
 .prototypes {
   background-color: var(--blue-bg-color);
   padding-bottom: 1rem;
@@ -214,7 +219,7 @@
 }
 
 .mobile_img img{
-  height: 360px;
+  height: 22.5rem;
   margin: auto;
   position: relative;
   left: 10px;
@@ -237,6 +242,7 @@
 
 .pt_mobile {
   background-color: var(--dark-blue);
+  margin-top: 1rem;
   padding: 1rem 0;
 }
 
@@ -256,9 +262,14 @@
 
 .conclusion svg {
   height: auto;
+  margin-bottom: 1rem;
   width: 100%;
 }
 
 .what_I_learned h3 {
   padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+
 }

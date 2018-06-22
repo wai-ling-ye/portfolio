@@ -1,0 +1,385 @@
+.home_hero_mobile{
+  background-image: url("../images/Profile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 100rem rgba(8, 137, 201, .4);
+  width: 100%;
+}
+
+.home_hero_mobile svg{
+  fill: rgba(173, 228, 255, .8);
+  fill: var(--light-blue);
+  height: auto;
+  padding: 1.5rem 0;
+  position: relative;
+  min-width: 100%;
+}
+
+#thinker svg{
+  top: 3rem;
+  margin-bottom: 3rem;
+  animation-name: fade-in;
+  animation-duration: 2s;
+}
+
+#creator {
+  animation-name: fade-in;
+  animation-delay: .5s;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+}
+
+#dreamer {
+  animation-name: fade-in;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+}
+
+#designer {
+  animation-name: fade-in;
+  animation-delay: 1.5s;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+}
+
+.landing_intro{
+  padding: 5rem 1rem;
+}
+
+.intro_container {
+  display: block;
+  margin: auto;
+  width: 21rem;
+}
+
+.intro_container p{
+  font-family: "PT Serif", Times, serif;
+  font-size: 1.5rem;
+  line-height: 4rem;
+}
+
+.intro_container span{
+  font-size: 2.2rem;
+}
+
+.highlight_text{
+  color: var(--highlight-color);
+}
+
+.remkeep_project{
+  padding: 0;
+  margin: 0;
+}
+
+.remkeep_container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+}
+
+.remkeep_project img{
+  display: block;
+  grid-column: 1;
+  grid-row: 1;
+  height: auto;
+  margin-left: 10%;
+  width: 43vw;
+}
+
+.remkeep_half_container{
+  display: block;
+  grid-column: 2;
+  grid-row: 1;
+  margin: auto;
+  z-index: 1;
+}
+
+.remkeep_project_text {
+  display: block;
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+.remkeep_project_text p{
+  font-family: "PT Serif", Times, serif;
+  font-size: 3.4vw;
+  line-height: 5.1vw;
+  padding-right: 1rem;
+}
+
+.remkeep_project .button{
+  margin: 0;
+}
+
+.remkeep_roles_subtitle{
+  display: block;
+  height: auto;
+  margin: auto;
+  padding-bottom: 1.5rem;
+  width: 90%;
+}
+
+.landing_about {
+  padding: 1rem 0;
+}
+
+.landing_about svg {
+  fill: rgba(8, 137, 201, .75);
+}
+
+.landing_about .Profile_round {
+  display: block;
+  padding: 2rem 1rem;
+  margin: auto;
+  width: 12rem;
+}
+
+.landing_about .text_container {
+  width: 80%;
+}
+
+.landing_about ul {
+  margin: auto;
+  padding-bottom: 1rem;
+  width: 22rem;
+}
+
+.landing_about .tools_list {
+  display: inline-block;
+  height: 2rem;
+  padding: .5rem;
+  width: 3rem;
+}
+
+.landing_about .tools_icon {
+  display: inline-block;
+  margin: 0 .5rem;
+  position: relative;
+  top: .7rem;
+  width: 3rem;
+}
+
+.landing_process {
+  margin: 0;
+  padding: 0 0 1rem 0;
+}
+
+.landing_process img {
+  display: block;
+  margin: auto;
+  padding: 2rem 1rem 1rem 1rem;
+  width: 75%;
+}
+
+@media screen and (max-width: 350px) {
+  .remkeep_project img{
+    width: 10rem;
+  }
+
+  .remkeep_project_text p{
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  #menu_desktop {
+    display: none;
+  }
+
+  .home_hero_mobile .intro_container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .home_hero_mobile{
+    background: var(--yellow-bg-color);
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    height: 46vw;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .home_hero_mobile svg{
+    padding: 0;
+    position: relative;
+    top: -.5rem;
+    width: auto;
+  }
+
+  #thinker svg{
+    fill: rgba(237, 169, 68, .5);
+    fill: var(--yellow-text);
+    height: 9vw;
+    margin-bottom: .5rem;
+    right: 10rem;
+    top: -.5rem;
+  }
+
+  #creator svg{
+    fill: rgba(237, 169, 68, .2);
+    height: 9vw;
+    margin-bottom: 2rem;
+    right: -24vw;
+  }
+
+  #dreamer svg{
+    fill: rgba(237, 169, 68, .2);
+    height: 10vw;
+    margin-bottom: 2rem;
+    right: 10rem;
+  }
+
+  #designer svg{
+    fill: rgba(237, 169, 68, .5);
+    fill: var(--yellow-text);
+    height: 10vw;
+    right: -18vw;
+  }
+
+  /** position personal intro in hero **/
+
+  .intro_container {
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 18vw;
+    right: 4vw;
+    width: auto;
+  }
+
+  .intro_container p{
+    font-family: "PT Serif", Times, serif;
+    font-size: 2.2vw;
+    line-height: 4.4vw;
+  }
+
+  .intro_container span{
+    font-size: 3.2vw;
+  }
+
+  /** Hides mobile personal intro **/
+  .landing_intro {
+    display: none;
+  }
+
+  /** Remkeep project **/
+  .remkeep_project {
+    position: relative;
+  }
+
+  .remkeep_roles_subtitle{
+    display: block;
+    height: auto;
+    margin: 0;
+    padding-bottom: 0;
+    position: absolute;
+    right: 2.5vw;
+    top: 7.5vw;
+    width: 40%;
+  }
+
+  .remkeep_container {
+    display: grid;
+    grid-template-columns: 1fr 38%;
+    grid-template-rows: auto;
+  }
+
+  .remkeep_project img{
+    margin: 1rem 1rem 2rem 1rem;
+    width: 60vw;
+  }
+
+  .remkeep_project_text {
+    max-width: 335px;
+  }
+
+  .remkeep_project_text p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0 0 4vw 0;
+  }
+
+  .remkeep_project .button{
+    margin: 0;
+    width: 100%;
+  }
+
+  /** Landing page "About" section **/
+  .landing_about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+  }
+
+  .landing_about .half_container {
+    background: var(--yellow-bg-color);
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .landing_about .half_container svg {
+    fill: var(--yellow-text);
+    padding: 1rem 0;
+    width: 100%;
+  }
+
+  .landing_about .text_container {
+    width: 16rem;
+  }
+
+  .landing_about ul {
+    padding-left: .5rem;
+  }
+
+  .landing_about .desktop_display img {
+    grid-column: 2;
+    grid-row: 1;
+    min-height: 654px;
+    object-fit: cover;
+    position: absolute;
+  }
+
+  .landing_process {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    padding: 0;
+  }
+
+  .landing_process .half_container {
+    background-color: var(--grey-bg-color);
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .landing_process img {
+    padding: 2rem 0;
+    max-width: 40vw;
+    width: auto;
+  }
+
+  .landing_process svg, .text_container, .button_container {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .landing_process svg {
+    height: auto;
+    width: 100%;
+  }
+
+  .landing_process .text_container{
+    max-width: 16rem;
+  }
+
+  .landing_process .button_container {
+    align-self: end;
+  }
+}

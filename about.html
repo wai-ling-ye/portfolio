@@ -4,17 +4,17 @@
     <title>Portfolio | Wai Ling Ye</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="about_style.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/about_style.css">
   </head>
   <body>
     <!--    Made by Erik Terwan    -->
     <!--   24th of November 2015   -->
     <!--        MIT License        -->
     <nav role="navigation">
-      <div id="menuToggle">
+      <div class="mobile_display" id="menuToggle">
         <!--
         A fake / hidden checkbox is used as click reciever,
         so you can use the :checked selector on it.
@@ -42,50 +42,75 @@
           <a href="#"><li>Thoughts</li></a>
         </ul>
       </div>
+
+      <ul class="desktop_display">
+        <a href="index.html"><li>Home</li></a>
+        <a href="about.html"><li>Bio</li></a>
+        <a href="remkeep_project.html"><li>Work</li></a>
+        <a href="#"><li>Thoughts</li></a>
+      </ul>
     </nav>
     <header class="yellow_bg about_header">
       <h3 id="hi_there">Hi there.</h3>
-      <h3 id="thanks_for">Thanks for dropping in.</h3>
+      <h3 id="thanks_for">Thanks for</h3>
+      <h3 id="dropping_in">dropping in.</h3>
     </header>
 
-    <article>
-      <div class="text_container">
-        <p><span class="intro_sentence">Design is at its best when we can use design to bridge a gap in the user’s ability to accomplish their goals.</span> On the individual level, I use design to help people work smarter, and do better for themselves and others by making everything from day to day tasks to complex processes more intuitive and accessible. On a high level, designs I create can lead to widespread adaptation of new technology and change the way people interact.</p>
-      </div>
-    </article>
+    <div class="about_top_grid">
+      <article class="about_col_1">
+        <div class="text_container">
+          <p><span class="intro_sentence">Design is at its best when we can use design to bridge a gap in the user’s ability to accomplish their goals.</span> On the individual level, I use design to help people work smarter, and do better for themselves and others by making everything from day to day tasks to complex processes more intuitive and accessible. On a high level, designs I create can lead to widespread adaptation of new technology and change the way people interact.</p>
+        </div>
 
-    <article class="blue_bg about_specs">
-      <h3>What I do</h3>
-      <div class="text_container">
-        <ul>
-          <li><h4>UX Research</h4></li>
-          <li><p>Competitive Analysis<p></li>
-          <li><p>User Surveys</p></li>
-          <li><p>Usability Testing</p></li>
-          <li><p>Card Sorting</p></li>
-          <li><p>Preference Testing</p></li>
-        </ul>
-      </div>
-      <h3>What I use</h3>
-      <div class="text_container" id="WIU_subheading"><h4>UX Design</h4>
-      <ul class="tools_wrapper">
-        <li class="tools_list"><img src="images/photoshop_icon.png" alt="Adobe Photoshop"></li>
-        <li class="tools_list"><img src="images/illustrator_icon.png" alt="Adobe Illustrator"></li>
-        <li class="tools_list"><img src="images/invision_icon.png" alt="Invision"></li>
-        <li class="tools_list"><img src="images/balsamiq_icon.png" alt="Balsamiq"></li>
-        <li class="tools_list"><img src="images/figma_icon.png" alt="Figma"></li>
-      </ul>
-      </div>
-    </article>
+        <div class="text_container desktop_display">
+          <h4>What introduced you to design?</h4>
+          <p>I discovered my interest in design as a gradual process starting with my introduction to photoshop at a young age. I taught myself how to use Photoshop, and at the time I used photoshop to create photo manipulation art. A few years later, I took a digital media class, which expanded my media toolkit to Illustrator and Flash, among other programs. When I entered the University of Rochester, I was majoring in biology, but I always gravitated back to digital media. During my four years, I was always on the executive board of various clubs as the publicity manager. My work with digital media transformed from art to advertising, and I discovered the exhilarating feeling of making art that does work. I loved the feeling of creating posters and ads that not only conveyed a message, but spoke to the emotions and desires of my audience.<br>When I found out about the field of UX Design, I felt like a fire was lit inside of me. This was a field that focused on function first, and whose goal was to create beautiful things that work beautifully.</p>
+        </div>
+      </article>
 
-    <article>
+      <article class="about_col_2 blue_bg">
+        <div class="about_specs">
+          <h3>What I do</h3>
+          <div class="text_container">
+            <ul>
+              <li><h4>UX Research</h4></li>
+              <li><p>Competitive Analysis<p></li>
+              <li><p>User Surveys</p></li>
+              <li><p>Usability Testing</p></li>
+              <li><p>Card Sorting</p></li>
+              <li><p>Preference Testing</p></li>
+            </ul>
+          </div>
+          <h3>What I use</h3>
+          <div class="text_container" id="WIU_subheading"><h4>UX Design</h4>
+            <ul class="tools_wrapper">
+              <li class="tools_list"><img src="images/photoshop_icon.png" alt="Adobe Photoshop"></li>
+              <li class="tools_list"><img src="images/illustrator_icon.png" alt="Adobe Illustrator"></li>
+              <li class="tools_list"><img src="images/invision_icon.png" alt="Invision"></li>
+              <li class="tools_list"><img src="images/balsamiq_icon.png" alt="Balsamiq"></li>
+              <li class="tools_list"><img src="images/figma_icon.png" alt="Figma"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="img_container"><img class="desktop_display" src="/images/profile.png" alt=""></div>
+      </article>
+    </div>
+
+    <article class="mobile_display">
       <div class="text_container">
         <h4>What introduced you to design?</h4>
         <p>I discovered my interest in design as a gradual process starting with my introduction to photoshop at a young age. I taught myself how to use Photoshop, and at the time I used photoshop to create photo manipulation art. A few years later, I took a digital media class, which expanded my media toolkit to Illustrator and Flash, among other programs. When I entered the University of Rochester, I was majoring in biology, but I always gravitated back to digital media. During my four years, I was always on the executive board of various clubs as the publicity manager. My work with digital media transformed from art to advertising, and I discovered the exhilarating feeling of making art that does work. I loved the feeling of creating posters and ads that not only conveyed a message, but spoke to the emotions and desires of my audience.<br>When I found out about the field of UX Design, I felt like a fire was lit inside of me. This was a field that focused on function first, and whose goal was to create beautiful things that work beautifully.</p>
+      </div>
+    </article>
+
+    <article>
+      <div class="text_container">
         <h4>Why is design important to you?</h4>
         <p>Design is like body language. Most of the time, you don’t notice it, but it is a constant and essential aspect of the interaction between a user and a product. Design has in the past created sweeping societal revolutions, most notably with the advent of personal computers, by facilitating communication between a creator and a user. Great design makes complicated ideas and technologies accessible to the wider public, which on the large scale moves us forward as a society, and on the small scale, makes our everyday interactions faster, easier, and more enjoyable.</p>
       </div>
     </article>
+
+
 
     <aside class="yellow_bg">
       <h3 id="check_out">Check out</h3>
@@ -97,10 +122,13 @@
         <path d="M48.958 70.357C49.2613 71.631 50.05 72.3287 51.324 72.45L54.691 72.814C56.147 72.9353 56.875 73.6633 56.875 74.998C56.875 76.3933 56.2077 77.2123 54.873 77.455C53.9023 77.5763 52.962 77.6673 52.052 77.728C51.142 77.8493 50.232 77.91 49.322 77.91C46.228 77.91 43.7407 77.4853 41.86 76.636C39.9793 75.7867 38.766 74.0577 38.22 71.449L35.399 58.618C34.671 55.4633 33.488 53.3703 31.85 52.339C30.2727 51.247 27.9067 50.701 24.752 50.701H21.476V61.53C21.476 62.986 21.476 64.442 21.476 65.898C21.5367 67.2933 21.567 68.6887 21.567 70.084C21.6277 71.4187 22.3557 72.177 23.751 72.359L27.209 72.723C28.6043 72.905 29.302 73.6633 29.302 74.998C29.302 76.3327 28.5437 77 27.027 77H5.551C4.03433 77 3.276 76.3327 3.276 74.998C3.276 73.6633 4.004 72.9353 5.46 72.814L8.736 72.45C10.1313 72.268 10.8593 71.4793 10.92 70.084C10.92 68.628 10.92 67.172 10.92 65.716C10.9807 64.1993 11.011 62.6827 11.011 61.166V35.14C11.011 33.6233 10.9807 32.137 10.92 30.681C10.92 29.1643 10.92 27.6477 10.92 26.131C10.7987 24.7357 10.0707 23.947 8.736 23.765L5.46 23.401C4.004 23.219 3.276 22.491 3.276 21.217C3.276 19.8823 4.03433 19.215 5.551 19.215H29.211C35.8843 19.215 41.041 20.5193 44.681 23.128C48.321 25.7367 50.141 29.316 50.141 33.866C50.141 38.052 48.8367 41.419 46.228 43.967C43.68 46.515 40.4647 48.1833 36.582 48.972C39.13 49.7607 41.1927 51.065 42.77 52.885C44.408 54.6443 45.6517 57.1013 46.501 60.256L48.958 70.357ZM21.476 46.242H26.754C30.6367 46.242 33.761 45.3017 36.127 43.421C38.5537 41.4797 39.767 38.4767 39.767 34.412C39.767 30.8933 38.766 28.224 36.764 26.404C34.762 24.584 31.577 23.674 27.209 23.674H21.658C21.5973 25.494 21.5367 27.314 21.476 29.134C21.476 30.954 21.476 32.8043 21.476 34.685V46.242ZM101.171 53.067C100.928 54.4017 100.079 55.069 98.6227 55.069H72.2327C72.354 60.5897 73.6887 64.7453 76.2367 67.536C78.7847 70.3267 82.091 71.722 86.1557 71.722C88.5217 71.722 90.5237 71.2973 92.1617 70.448C93.8603 69.538 95.4073 68.2943 96.8027 66.717C97.47 65.989 98.107 65.625 98.7137 65.625C99.017 65.625 99.29 65.716 99.5327 65.898C100.443 66.5047 100.564 67.4147 99.8967 68.628C98.3193 71.722 96.0443 74.088 93.0717 75.726C90.099 77.364 86.6107 78.183 82.6067 78.183C79.2093 78.183 76.176 77.6067 73.5067 76.454C70.898 75.3013 68.6837 73.724 66.8637 71.722C65.1043 69.6593 63.7697 67.2327 62.8597 64.442C61.9497 61.6513 61.4947 58.618 61.4947 55.342C61.4947 52.1873 62.0103 49.1843 63.0417 46.333C64.073 43.4817 65.529 40.9943 67.4097 38.871C69.351 36.687 71.6563 34.9883 74.3257 33.775C77.0557 32.501 80.0587 31.864 83.3347 31.864C86.0647 31.864 88.5217 32.319 90.7057 33.229C92.9503 34.139 94.8613 35.413 96.4387 37.051C98.016 38.6283 99.2293 40.5393 100.079 42.784C100.928 45.0287 101.353 47.516 101.353 50.246C101.353 50.7313 101.353 51.2167 101.353 51.702C101.353 52.1267 101.292 52.5817 101.171 53.067ZM72.4147 50.883H86.0647C88.2487 50.883 89.7047 50.428 90.4327 49.518C91.2213 48.608 91.6157 47.334 91.6157 45.696C91.6157 42.966 90.827 40.691 89.2497 38.871C87.733 37.051 85.822 36.141 83.5167 36.141C81.636 36.141 79.998 36.6263 78.6027 37.597C77.268 38.507 76.1457 39.69 75.2357 41.146C74.3863 42.602 73.719 44.2097 73.2337 45.969C72.809 47.6677 72.536 49.3057 72.4147 50.883ZM176.478 70.448C176.539 71.722 177.236 72.5107 178.571 72.814L180.209 73.178C181.544 73.4207 182.211 74.1183 182.211 75.271C182.211 76.4237 181.453 77 179.936 77H163.283C161.766 77 161.008 76.4237 161.008 75.271C161.008 74.179 161.706 73.4813 163.101 73.178L165.012 72.814C166.347 72.5107 167.044 71.722 167.105 70.448V50.61C167.105 46.9093 166.559 44.3007 165.467 42.784C164.436 41.2673 162.858 40.509 160.735 40.509C159.036 40.509 157.277 41.0247 155.457 42.056C153.698 43.0267 151.938 44.3007 150.179 45.878C150.24 46.424 150.27 47.0307 150.27 47.698C150.331 48.3047 150.361 48.9417 150.361 49.609V70.448C150.422 71.722 151.119 72.5107 152.454 72.814L154.092 73.178C155.427 73.4207 156.094 74.1183 156.094 75.271C156.094 76.4237 155.336 77 153.819 77H137.166C135.649 77 134.891 76.4237 134.891 75.271C134.891 74.179 135.589 73.4813 136.984 73.178L138.804 72.814C140.139 72.5107 140.836 71.722 140.897 70.448V50.61C140.897 46.97 140.381 44.3917 139.35 42.875C138.319 41.2977 136.741 40.509 134.618 40.509C132.859 40.509 131.099 40.9943 129.34 41.965C127.581 42.9357 125.821 44.2097 124.062 45.787V70.448C124.123 71.722 124.82 72.5107 126.155 72.814L127.702 73.087C129.037 73.3903 129.704 74.1183 129.704 75.271C129.704 76.4237 128.946 77 127.429 77H110.685C109.168 77 108.41 76.4237 108.41 75.271C108.41 74.179 109.108 73.4813 110.503 73.178L112.414 72.814C113.749 72.5107 114.446 71.722 114.507 70.448V53.977C114.507 52.7637 114.507 51.6717 114.507 50.701C114.507 49.7303 114.477 48.881 114.416 48.153C114.355 47.6677 114.325 47.2127 114.325 46.788C114.325 46.3633 114.325 45.9083 114.325 45.423C114.204 44.0277 113.476 43.239 112.141 43.057L109.866 42.784C108.471 42.602 107.773 41.965 107.773 40.873C107.773 39.8417 108.38 39.0833 109.593 38.598L120.149 34.503C120.695 34.2603 121.241 34.139 121.787 34.139C122.151 34.139 122.394 34.1997 122.515 34.321C123 34.6243 123.273 35.322 123.334 36.414L123.789 41.692C125.912 39.144 128.157 37.2027 130.523 35.868C132.889 34.5333 135.498 33.866 138.349 33.866C141.322 33.866 143.718 34.503 145.538 35.777C147.358 37.051 148.693 39.0833 149.542 41.874C151.847 39.0833 154.183 37.051 156.549 35.777C158.976 34.503 161.736 33.866 164.83 33.866C168.652 33.866 171.534 35.0793 173.475 37.506C175.477 39.872 176.478 43.7547 176.478 49.154V70.448ZM227.622 70.812C228.229 71.7827 229.048 72.3893 230.079 72.632L232.445 73.087C233.78 73.3903 234.447 74.1183 234.447 75.271C234.447 76.4237 233.689 77 232.172 77H222.071C220.919 77 220.009 76.4843 219.341 75.453L207.693 56.07L202.779 61.075C202.779 62.531 202.779 64.0477 202.779 65.625C202.84 67.2023 202.87 68.7797 202.87 70.357C202.992 71.7523 203.689 72.5713 204.963 72.814L206.965 73.178C208.361 73.4813 209.058 74.179 209.058 75.271C209.058 76.4237 208.3 77 206.783 77H189.311C187.795 77 187.036 76.4237 187.036 75.271C187.036 74.179 187.734 73.4813 189.129 73.178L191.131 72.814C192.466 72.5713 193.133 71.7523 193.133 70.357C193.194 68.4157 193.224 66.444 193.224 64.442C193.285 62.3793 193.315 60.4683 193.315 58.709V23.947C193.315 22.5517 192.618 21.763 191.222 21.581L188.492 21.217C187.097 21.035 186.399 20.398 186.399 19.306C186.399 18.214 187.036 17.486 188.31 17.122L200.231 14.028C200.535 13.9067 200.777 13.846 200.959 13.846C201.202 13.846 201.445 13.846 201.687 13.846C202.112 13.846 202.385 13.9067 202.506 14.028C202.87 14.2707 203.052 14.9987 203.052 16.212L202.779 26.768V55.706L215.883 42.511C216.551 41.8437 216.793 41.237 216.611 40.691C216.49 40.0843 216.005 39.7203 215.155 39.599L213.972 39.417C212.577 39.235 211.879 38.507 211.879 37.233C211.879 36.0197 212.638 35.413 214.154 35.413H229.624C231.141 35.413 231.899 36.0197 231.899 37.233C231.899 38.507 231.202 39.235 229.806 39.417L225.347 40.054C224.377 40.236 223.497 40.6607 222.708 41.328L214.518 49.336L227.622 70.812ZM277.572 53.067C277.329 54.4017 276.48 55.069 275.024 55.069H248.634C248.755 60.5897 250.09 64.7453 252.638 67.536C255.186 70.3267 258.492 71.722 262.557 71.722C264.923 71.722 266.925 71.2973 268.563 70.448C270.262 69.538 271.809 68.2943 273.204 66.717C273.871 65.989 274.508 65.625 275.115 65.625C275.418 65.625 275.691 65.716 275.934 65.898C276.844 66.5047 276.965 67.4147 276.298 68.628C274.721 71.722 272.446 74.088 269.473 75.726C266.5 77.364 263.012 78.183 259.008 78.183C255.611 78.183 252.577 77.6067 249.908 76.454C247.299 75.3013 245.085 73.724 243.265 71.722C241.506 69.6593 240.171 67.2327 239.261 64.442C238.351 61.6513 237.896 58.618 237.896 55.342C237.896 52.1873 238.412 49.1843 239.443 46.333C240.474 43.4817 241.93 40.9943 243.811 38.871C245.752 36.687 248.058 34.9883 250.727 33.775C253.457 32.501 256.46 31.864 259.736 31.864C262.466 31.864 264.923 32.319 267.107 33.229C269.352 34.139 271.263 35.413 272.84 37.051C274.417 38.6283 275.631 40.5393 276.48 42.784C277.329 45.0287 277.754 47.516 277.754 50.246C277.754 50.7313 277.754 51.2167 277.754 51.702C277.754 52.1267 277.693 52.5817 277.572 53.067ZM248.816 50.883H262.466C264.65 50.883 266.106 50.428 266.834 49.518C267.623 48.608 268.017 47.334 268.017 45.696C268.017 42.966 267.228 40.691 265.651 38.871C264.134 37.051 262.223 36.141 259.918 36.141C258.037 36.141 256.399 36.6263 255.004 37.597C253.669 38.507 252.547 39.69 251.637 41.146C250.788 42.602 250.12 44.2097 249.635 45.969C249.21 47.6677 248.937 49.3057 248.816 50.883ZM324.761 53.067C324.518 54.4017 323.669 55.069 322.213 55.069H295.823C295.944 60.5897 297.279 64.7453 299.827 67.536C302.375 70.3267 305.681 71.722 309.746 71.722C312.112 71.722 314.114 71.2973 315.752 70.448C317.45 69.538 318.997 68.2943 320.393 66.717C321.06 65.989 321.697 65.625 322.304 65.625C322.607 65.625 322.88 65.716 323.123 65.898C324.033 66.5047 324.154 67.4147 323.487 68.628C321.909 71.722 319.634 74.088 316.662 75.726C313.689 77.364 310.201 78.183 306.197 78.183C302.799 78.183 299.766 77.6067 297.097 76.454C294.488 75.3013 292.274 73.724 290.454 71.722C288.694 69.6593 287.36 67.2327 286.45 64.442C285.54 61.6513 285.085 58.618 285.085 55.342C285.085 52.1873 285.6 49.1843 286.632 46.333C287.663 43.4817 289.119 40.9943 291 38.871C292.941 36.687 295.246 34.9883 297.916 33.775C300.646 32.501 303.649 31.864 306.925 31.864C309.655 31.864 312.112 32.319 314.296 33.229C316.54 34.139 318.451 35.413 320.029 37.051C321.606 38.6283 322.819 40.5393 323.669 42.784C324.518 45.0287 324.943 47.516 324.943 50.246C324.943 50.7313 324.943 51.2167 324.943 51.702C324.943 52.1267 324.882 52.5817 324.761 53.067ZM296.005 50.883H309.655C311.839 50.883 313.295 50.428 314.023 49.518C314.811 48.608 315.206 47.334 315.206 45.696C315.206 42.966 314.417 40.691 312.84 38.871C311.323 37.051 309.412 36.141 307.107 36.141C305.226 36.141 303.588 36.6263 302.193 37.597C300.858 38.507 299.736 39.69 298.826 41.146C297.976 42.602 297.309 44.2097 296.824 45.969C296.399 47.6677 296.126 49.3057 296.005 50.883ZM346.014 34.321C346.499 34.6243 346.772 35.322 346.833 36.414L347.106 39.963C349.047 37.9003 351.049 36.3837 353.112 35.413C355.235 34.3817 357.601 33.866 360.21 33.866C363.243 33.866 365.822 34.5333 367.945 35.868C370.068 37.142 371.797 38.8407 373.132 40.964C374.527 43.0267 375.528 45.3623 376.135 47.971C376.802 50.5797 377.136 53.1883 377.136 55.797C377.136 58.5877 376.772 61.348 376.044 64.078C375.316 66.7473 374.194 69.1437 372.677 71.267C371.16 73.3903 369.249 75.1193 366.944 76.454C364.639 77.728 361.939 78.365 358.845 78.365C354.356 78.365 350.534 76.6967 347.379 73.36V78.274C347.379 80.0333 347.379 81.9443 347.379 84.007C347.44 86.1303 347.5 88.1627 347.561 90.104C347.561 91.4993 348.228 92.3183 349.563 92.561L352.748 93.198C354.083 93.4407 354.75 94.1383 354.75 95.291C354.75 96.4437 353.992 97.02 352.475 97.02H334.093C332.576 97.02 331.818 96.4437 331.818 95.291C331.818 94.1383 332.485 93.4103 333.82 93.107L335.913 92.652C337.248 92.3487 337.915 91.5297 337.915 90.195C337.976 88.2537 338.006 86.2213 338.006 84.098C338.067 82.0353 338.097 80.094 338.097 78.274V53.977C338.097 52.7637 338.097 51.6717 338.097 50.701C338.097 49.7303 338.067 48.881 338.006 48.153C337.945 47.6677 337.915 47.2127 337.915 46.788C337.915 46.3633 337.915 45.9083 337.915 45.423C337.794 44.0277 337.066 43.239 335.731 43.057L333.547 42.784C332.152 42.602 331.454 41.965 331.454 40.873C331.454 39.8417 332.061 39.0833 333.274 38.598L343.739 34.503C344.285 34.2603 344.801 34.139 345.286 34.139C345.529 34.139 345.771 34.1997 346.014 34.321ZM347.652 43.512V68.901C350.564 71.267 353.385 72.45 356.115 72.45C359.148 72.45 361.666 71.1457 363.668 68.537C365.731 65.9283 366.762 61.8637 366.762 56.343C366.762 50.7617 365.852 46.606 364.032 43.876C362.273 41.0853 359.907 39.69 356.934 39.69C354.204 39.69 351.11 40.964 347.652 43.512Z" transform="translate(-3 -13)" fill="#ADE4FF" fill-opacity="0.8"/>
       </svg>
       <div class="remkeep_container">
-        <img src="images/Remkeep/Mobile_Preview.png" alt="">
+        <div class="mobile_display"><img src="/images/Remkeep/Mobile_Preview.png" alt=""></div>
+        <div class="desktop_display"><img src="/images/Remkeep/Laptop_Preview.jpg" alt=""></div>
         <div class="remkeep_half_container">
-          <div class="remkeep_project_text"><p>Your personal hub to bring together your ideas and experiences.</p></div>
-          <div class="button"><a href="remkeep_project.html">Case Study</a></div>
+          <div class="remkeep_project_text">
+            <p>Remkeep is cloud storage service reimagined. More than just a safe place for files, Remkeep is your go-to for organizing, collaborating, and sharing digital content.</p>
+            <div class="button"><a href="remkeep_project.html">Case Study</a></div>
+          </div>
         </div>
       </div>
       <svg class="remkeep_roles_subtitle" xmlns="http://www.w3.org/2000/svg" width="309" height="20" viewBox="0 0 309 20" fill="none">
@@ -110,16 +138,19 @@
 
     <footer>
       <div class=logo_bar>
-        <div class="logo"><img src="images/logo.svg" alt=""></div>
+        <div class="logo"><img src="/images/logo.svg" alt=""></div>
       </div>
       <div class="footer_bottom">
-        <p>wai.ling.ye {at} gmail {dot} com</p>
-        <ul>
-          <li><i class="fab fa-linkedin"></i></a></li>
-          <li><i class="fab fa-twitter-square"></i></a></li>
-          <li><i class="fab fa-github-square"></i></li>
-          <li><i class="fab fa-slack"></i></li>
-        </ul>
+        <h3 class="desktop_display">Contact</h3>
+        <div class="footer_container">
+          <p>wai.ling.ye {at} gmail {dot} com</p>
+          <ul>
+            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href=""><i class="fab fa-github-square"></i></a></li>
+            <li><a href=""><i class="fab fa-slack"></i></a></li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
