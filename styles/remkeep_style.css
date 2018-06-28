@@ -257,6 +257,10 @@
   padding-bottom: 1rem;
 }
 
+.branding_update {
+  padding: 0;
+}
+
 .branding_update_text {
   background-color: rgba(242, 242, 242, 1);
   background-color: var(--grey-bg-color);
@@ -269,13 +273,14 @@
   width: 100%;
 }
 
-.conclusion h3, .what_I_learned h3 {
-  padding: 2rem 0 1rem 0;
+.what_I_learned h3 {
+  font-size: 5rem;
+  padding-bottom: 1rem;
 }
 
 @media screen and (min-width: 900px) {
   nav a {
-    color: #ffffff;
+    color: rgba(255, 255, 255, .8);
   }
 
   .button_container {
@@ -347,6 +352,10 @@
     grid-row: 1;
   }
 
+  .specs .text_container {
+    padding-bottom: 2rem;
+  }
+
   .objective {
     background: #ffffff;
     color: #000000;
@@ -367,6 +376,7 @@
 
   .solution {
     grid-column: 7 / span 6;
+    padding-bottom: 1rem;
   }
 
   /* Process Title Section */
@@ -384,7 +394,7 @@
 
   /* Competitive Analysis */
   .competitive_analysis {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 
   .competitive_analysis h4 {
@@ -421,16 +431,11 @@
 
   .persona_table {
     grid-column: span 6;
-    grid-template-rows: minmax(auto, 213.325px) auto auto;
+    grid-template-rows: minmax(auto, 10rem) auto auto;
   }
 
   .persona_quote {
     padding: 1.2vw;
-  }
-
-  .persona_quote p {
-    font-size: calc(16px + .5vw);
-    line-height: 3vw;
   }
 
   /* User Stories and User Flows */
@@ -518,6 +523,11 @@
     grid-row: 2;
   }
 
+  /* High Fidelity Prototypes */
+  .HF_prototypes {
+    padding-bottom: 1rem;
+  }
+  
   #prototype_links {
     padding: 2rem 0;
   }
@@ -586,25 +596,15 @@
   .what_I_learned {
     grid-column: 7 / span 6;
     grid-row: 1;
+    padding-bottom: 1rem;
   }
 
   .conclusion h3, .what_I_learned h3 {
     font-size: 7vw;
+    padding: 2rem 0 1rem 0;
   }
 
   .conclusion h3 {
     color: rgba(53, 118, 149, .3);
-  }
-}
-
-@media screen and (min-width: 1281px) {
-  .persona_table {
-    grid-template-rows: minmax(auto, 240px) auto auto;
-  }
-}
-
-@media screen and (min-width: 1599.5px) {
-  .persona_table {
-    grid-template-rows: minmax(auto, 280px) auto auto;
   }
 }

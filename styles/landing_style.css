@@ -122,9 +122,17 @@
   width: 90%;
 }
 
+.landing_about {
+  padding: 0;
+}
+
+.landing_about .yellow_bg {
+  padding-bottom: 1rem;
+}
+
 .landing_about svg {
-  fill: rgba(8, 137, 201, .75);
-  overflow: hidden;
+  fill: rgba(237, 169, 68, .4);
+  fill: var(--yellow-text);
 }
 
 .landing_about .Profile_round {
@@ -325,7 +333,6 @@
   }
 
   .landing_about svg {
-    fill: var(--yellow-text);
     padding-top: 4vw;
   }
 
@@ -342,7 +349,9 @@
     padding: 0;
   }
 
-  .landing_process .grey_bg {
+  .landing_process .process_image {
+    background-color: rgba(242, 242, 242, 1);
+    background-color: var(--grey-bg-color);
     grid-column: 1 / span 6;
     grid-row: 1;
   }

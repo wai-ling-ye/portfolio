@@ -233,6 +233,10 @@ header {
     margin: 0;
   }
 
+  .about_content .button {
+    margin: 0 0 2rem 0;
+  }
+
   .about_sidebar {
     float: right;
     height: auto;
@@ -240,12 +244,8 @@ header {
     max-width: 22rem;
   }
 
-  /* .img_container {
-    margin-left: 3vw;
-    overflow: hidden;
-  } */
-
   .profile {
+    float: right;
     clear: right;
     height: auto;
     margin-left: 3vw;
