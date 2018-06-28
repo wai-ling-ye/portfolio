@@ -237,7 +237,7 @@ header {
     float: right;
     height: auto;
     margin-left: 3vw;
-    max-width: 500px;
+    max-width: 22rem;
   }
 
   /* .img_container {
@@ -249,7 +249,7 @@ header {
     clear: right;
     height: auto;
     margin-left: 3vw;
-    width: 500px;
+    width: 22rem;
   }
 
   .h4_span {

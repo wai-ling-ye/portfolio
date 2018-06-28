@@ -439,7 +439,6 @@ tr:nth-child(odd) {
     padding: 0;
   }
 
-  /* Grids */
   .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -502,6 +501,7 @@ tr:nth-child(odd) {
   }
 
   table {
+    margin: auto;
     max-width: 90%;
   }
 
@@ -550,6 +550,18 @@ tr:nth-child(odd) {
 
 @media screen and (min-width: 1599.5px) {
   html {
-    font-size: 28px;
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1919.5px) {
+  html {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 2501px) {
+  html {
+    font-size: 52px;
   }
 }
