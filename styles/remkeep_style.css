@@ -3,7 +3,7 @@
 }
 
 .remkeep_header {
-  background-image: url("../images/remkeep/Mobile_Preview.png");
+  background-image: url("../images/Remkeep/mobile_preview.png");
   background-repeat: no-repeat;
   background-size: auto 90%;
   background-position: 57% 80%;
@@ -31,13 +31,13 @@
 }
 
 .process_aside {
-  background-image: url("../images/remkeep/process_flow_mobile.png");
+  background-image: url("../images/Remkeep/process_flow_mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .survey_section{
-  background-image: url("../images/remkeep/survey_mobile_bg.png");
+  background-image: url("../images/Remkeep/survey_mobile_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 100rem rgba(254, 226, 191, .8);
@@ -124,7 +124,7 @@
 }
 
 .user_stories_flows {
-  background-image: url("../images/remkeep/user_sf_img.png");
+  background-image: url("../images/Remkeep/user_sf_img.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,11 +147,11 @@
 }
 
 .user_testing_img1 {
-  background-image: url("../images/remkeep/user_testing_img1.jpg");
+  background-image: url("../images/Remkeep/user_testing_img1.jpg");
 }
 
 .user_testing_img2{
-  background-image: url("../images/remkeep/user_testing_img2.jpg");
+  background-image: url("../images/Remkeep/user_testing_img2.jpg");
 }
 
 .user_testing_heading h3 {
@@ -162,7 +162,7 @@
 }
 
 .brand_strategy_heading {
-  background-image: url("../images/remkeep/brand_strategy_img_mobile.png");
+  background-image: url("../images/Remkeep/brand_strategy_img_mobile.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -381,7 +381,7 @@
 
   /* Process Title Section */
   .process_aside {
-    background-image: url("../images/remkeep/process_flow_desktop.png");
+    background-image: url("../images/Remkeep/process_flow_desktop.png");
   }
 
   .process_aside .full_width_text {
@@ -403,7 +403,7 @@
 
   /* Survey Section */
   .survey_section {
-    background-image: url("../images/remkeep/survey_desktop_bg.png");
+    background-image: url("../images/Remkeep/survey_desktop_bg.png");
   }
 
   .survey_section .text_container {
@@ -527,7 +527,7 @@
   .HF_prototypes {
     padding-bottom: 1rem;
   }
-  
+
   #prototype_links {
     padding: 2rem 0;
   }
