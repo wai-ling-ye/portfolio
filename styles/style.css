@@ -73,14 +73,20 @@ img {
 
 /* Containers */
 article {
+  overflow: hidden;
   padding: 0 0 1rem 0;
+}
+
+aside {
+  overflow: hidden;
 }
 
 .text_container {
   display: block;
-  padding: 1rem 0;
+  padding: 2rem 0;
   margin: 0 auto;
   width: 90%;
+    max-width: 16rem;
 }
 
 .yellow_bg {
@@ -513,16 +519,17 @@ tr:nth-child(odd) {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-row: auto;
+    overflow: hidden;
     text-align: left;
   }
   .footer_bottom h3 {
     color: rgba(53, 118, 149, .3);
     grid-column: 1;
     grid-row: 1;
-    font-size: 10vw;
+    font-size: 16vw;
     position: relative;
-    top: -.6vw;
-    left: -.3vw;
+    top: -3.5vw;
+    left: -4vw;
   }
 
   .footer_container {

@@ -19,26 +19,28 @@
   top: 3rem;
   margin-bottom: 3rem;
   animation-name: fade-in;
-  animation-duration: 2s;
-}
-
-#creator {
-  animation-name: fade-in;
   animation-delay: .5s;
   animation-duration: 2s;
   animation-fill-mode: backwards;
 }
 
-#dreamer {
+#creator {
   animation-name: fade-in;
   animation-delay: 1s;
   animation-duration: 2s;
   animation-fill-mode: backwards;
 }
 
-#designer {
+#dreamer {
   animation-name: fade-in;
   animation-delay: 1.5s;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+}
+
+#designer {
+  animation-name: fade-in;
+  animation-delay: 2s;
   animation-duration: 2s;
   animation-fill-mode: backwards;
 }
@@ -116,6 +118,7 @@
 
 .remkeep_roles_subtitle{
   display: block;
+  fill: rgba(173, 228, 255, .5);
   height: auto;
   margin: auto;
   padding-bottom: 1.5rem;
@@ -133,11 +136,13 @@
 .landing_about svg {
   fill: rgba(237, 169, 68, .4);
   fill: var(--yellow-text);
+  height: auto;
+  width: 100%;
 }
 
 .landing_about .Profile_round {
   display: block;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 0 1rem;
   margin: auto;
   width: 12rem;
 }
@@ -167,6 +172,11 @@
   width: 3rem;
 }
 
+.landing_about .button_container {
+  margin-bottom: 0;
+}
+
+/* About the process section */
 .landing_process {
   margin: 0;
   padding: 0 0 1rem 0;
@@ -250,6 +260,10 @@
   /** position personal intro in hero **/
 
   .intro_container {
+    animation-name: fade-in;
+    animation-delay: 2.5s;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
     display: block;
     margin: auto;
     position: absolute;
@@ -278,15 +292,22 @@
     position: relative;
   }
 
-  .remkeep_roles_subtitle{
+  .remkeep_title{
+    position: relative;
+      top: -3vw;
+      left: -4vw;
+    width: 70vw;
+  }
+
+  .remkeep_roles_subtitle {
     display: block;
     height: auto;
     margin: 0;
     padding-bottom: 0;
     position: absolute;
     right: 2.5vw;
-    top: 7.5vw;
-    width: 40%;
+    top: 10vw;
+    width: 35%;
   }
 
   .remkeep_container {
@@ -323,6 +344,22 @@
   .landing_about .yellow_bg{
     grid-column: 1;
     overflow: hidden;
+    position: relative;
+  }
+
+  #about {
+    color: rgba(237, 169, 68, .2);
+    font-size: 14vw;
+    position: relative;
+      left: -2vw;
+      top: -2vw;
+  }
+
+  #me {
+    font-size: 14vw;
+    position: absolute;
+      right: -2vw;
+      top: 5vw;
   }
 
   .profile {
@@ -330,10 +367,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     grid-column: 2;
-  }
-
-  .landing_about svg {
-    padding-top: 4vw;
   }
 
   .landing_about .text_container {
@@ -345,6 +378,7 @@
     padding-left: .5rem;
   }
 
+  /* About the process section */
   .landing_process {
     padding: 0;
   }

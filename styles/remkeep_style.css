@@ -30,6 +30,11 @@
   padding-bottom: 1rem;
 }
 
+.solution {
+  background: rgba(242, 242, 242, 1);
+  background: var(--grey-bg-color);
+}
+
 .process_aside {
   background-image: url("../images/Remkeep/process_flow_mobile.png");
   background-repeat: no-repeat;
@@ -375,6 +380,7 @@
   }
 
   .solution {
+    background: #ffffff;
     grid-column: 7 / span 6;
     padding-bottom: 1rem;
   }
@@ -439,12 +445,8 @@
   }
 
   /* User Stories and User Flows */
-  .user_stories_flows {
-    padding-bottom: 2rem;
-  }
-
-  .user_stories_flows .button {
-    margin: 0;
+  .user_stories_flows .text_container {
+    
   }
 
   /* Content Strategy */
