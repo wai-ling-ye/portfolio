@@ -155,6 +155,7 @@
   }
 
   .home_hero_mobile svg{
+    fill: rgba(237, 169, 68, .2);
     padding: 0;
     position: relative;
     top: -.5rem;
@@ -162,8 +163,6 @@
   }
 
   #thinker svg{
-    fill: rgba(237, 169, 68, .4);
-    fill: var(--yellow-text);
     height: 9vw;
     margin-bottom: .5rem;
     right: 10rem;
@@ -171,22 +170,18 @@
   }
 
   #creator svg{
-    fill: rgba(237, 169, 68, .2);
     height: 9vw;
     margin-bottom: 2rem;
     right: -24vw;
   }
 
   #dreamer svg{
-    fill: rgba(237, 169, 68, .2);
     height: 10vw;
     margin-bottom: 2rem;
     right: 10rem;
   }
 
   #designer svg{
-    fill: rgba(237, 169, 68, .4);
-    fill: var(--yellow-text);
     height: 10vw;
     right: -18vw;
   }
@@ -200,8 +195,8 @@
     display: block;
     margin: auto;
     position: absolute;
-    top: 18vw;
-    right: 4vw;
+    top: 15vw;
+    right: 8vw;
     width: auto;
   }
 
@@ -316,6 +311,7 @@
 
   .landing_process .button_container {
     align-self: end;
+    margin-bottom: 1rem;
   }
 
   .landing_process .button{

@@ -120,11 +120,11 @@ aside {
 .button{
   background: rgba(255, 0, 108, 1);
   background: var(--highlight-color);
-  display: block;
+  border-radius: calc(12px + .5vw);
   /**top highlight, bottom shadow**/
-  -moz-box-shadow:    inset 0 .4rem .4rem -.2rem #FF758E, inset 0 -.3rem .2rem -.2rem #900068;
-  -webkit-box-shadow: inset 0 .4rem .4rem -.2rem #FF758E, inset 0 -.3rem .2rem -.2rem #900068;
-  box-shadow:         inset 0 .4rem .4rem -.2rem #FF758E, inset 0 -.3rem .2rem -.2rem #900068;
+  -moz-box-shadow:    inset 0 .3rem .8rem .3rem rgba(255, 255, 255, .1), 0 .3rem .2rem .05rem rgba(0, 0, 0, .25);
+  -webkit-box-shadow: inset 0 .3rem .8rem .3rem rgba(255, 255, 255, .1), 0 .3rem .2rem .05rem rgba(0, 0, 0, .25);
+  box-shadow:         inset 0 .3rem .8rem .3rem rgba(255, 255, 255, .1), 0 .3rem .2rem .05rem rgba(0, 0, 0, .25);
   margin: 1rem auto;
   text-align: center;
   width: 90%;
@@ -140,9 +140,10 @@ aside {
 }
 
 .button:active {
-  -moz-box-shadow:    inset 0 .4rem .4rem -.2rem #900068, inset 0 -.3rem .2rem -.2rem #FF758E;
-  -webkit-box-shadow: inset 0 .4rem .4rem -.2rem #900068, inset 0 -.3rem .2rem -.2rem #FF758E;
-  box-shadow:         inset 0 .4rem .4rem -.2rem #900068, inset 0 -.3rem .2rem -.2rem #FF758E;
+  -moz-box-shadow:    inset 0 .3rem .8rem .3rem rgba(255, 255, 255, .1);
+  -webkit-box-shadow: inset 0 .3rem .8rem .3rem rgba(255, 255, 255, .1);
+  box-shadow:         inset 0 .3rem .8rem .3rem rgba(255, 255, 255, .1);
+  transform: translateY(.3rem);
 }
 
 /* List styles */
@@ -197,7 +198,7 @@ nav {
 
 #menuToggle a
 {
-  font-family: "PT Serif", Times, serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 1.5rem;
   text-decoration: none;
   color: #000000;
@@ -428,7 +429,7 @@ tr:nth-child(odd) {
   height: auto;
   margin: auto;
   padding: 1rem 0 2rem 0;
-  width: 70%;
+  width: 60%;
 }
 
 /** Footer **/
@@ -466,7 +467,7 @@ tr:nth-child(odd) {
 .footer_bottom p {
   color: rgba(53, 118, 149, 1);
   color: var(--dark-blue);
-  font-family: "PT Serif", Times, serif;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
 .footer_bottom ul {
@@ -490,7 +491,7 @@ tr:nth-child(odd) {
   }
 
   .text_container {
-    max-width: 19rem;
+    max-width: 20rem;
   }
 
   /** Nav X **/
@@ -554,15 +555,35 @@ tr:nth-child(odd) {
   }
 
   .button a {
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     padding: 0 2rem;
   }
 
   /** desktop navigation menu **/
   nav {
     position: absolute;
-    right: 4vw;
-    top: 5.2vw;
+  }
+
+  nav .desktop_display {
+    display: grid;
+    width: 100vw;
+  }
+
+  nav .logo_button {
+    grid-row: 1;
+    display: inline-block;
+    height: auto;
+    margin: 2vw 0 0 3vw;
+    width: 6vw;
+  }
+
+  nav ul {
+    grid-row: 1;
+    display: inline-block;
+    position: relative;
+      right: 5vw;
+      top: 6vw;
+    text-align: right;
   }
 
   nav li{
@@ -572,6 +593,7 @@ tr:nth-child(odd) {
 
   nav a {
     color: rgba(8, 137, 201, .8);
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 1rem;
     text-decoration: none;
   }
@@ -613,7 +635,7 @@ tr:nth-child(odd) {
     position: absolute;
       right: 2.5vw;
       top: 9vw;
-    width: 35%;
+    width: 30%;
   }
 
   .remkeep_container {
@@ -677,7 +699,12 @@ tr:nth-child(odd) {
   }
 }
 
-@media screen and (min-width: 1599.5px) {
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+
+@media screen and (min-width: 1600px) {
   html {
     font-size: 24px;
   }
