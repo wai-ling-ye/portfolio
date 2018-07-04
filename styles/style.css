@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:regular,bold,italic|PT+Serif:regular,bold|Song+Myung');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:light,regular,bold,italic|Song+Myung');
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -11,7 +11,7 @@
   --grey-bg-color: rgba(242, 242, 242, 1);
   --dark-blue: rgba(53, 118, 149, 1);
   --light-blue: rgba(173, 228, 255, .8); /**80% opacity on blue bg**/
-  --yellow-text: rgba(237, 169, 68, .4); /**50% and 20% opacity - use with large text on yellow bg only**/
+  --yellow-text: rgba(237, 169, 68, .4); /**40% and 20% opacity - use with large text on yellow bg only**/
 
 }
 
@@ -39,13 +39,17 @@ h3{ /**large headings**/
   font-family: "Song Myung", Georgia, serif;
   font-size: 5.625rem;
   line-height: 75%;
+  margin-bottom: 2rem;
   position: relative;
 }
 h4{ /**small headings**/
-  font-family: "PT Serif", Times, serif;
-  font-size: 1.125rem;
-  font-weight: bold;
+  display: inline-block;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
   line-height: 3rem;
+  padding: 2rem 0 2rem 2rem;
+  opacity: .6;
 }
 h5{ /**table headings**/
   font-family: "Open Sans", Arial, sans-serif;
@@ -59,11 +63,6 @@ p{ /**body text**/
   line-height: 1.5rem;
 }
 
-li p, td p {
-  font-size: .9rem;
-  line-height: 1.5rem;
-}
-
 /* End of text styles */
 
 img {
@@ -74,7 +73,7 @@ img {
 /* Containers */
 article {
   overflow: hidden;
-  padding: 0 0 1rem 0;
+  padding: 0 0 2rem 0;
 }
 
 aside {
@@ -84,7 +83,7 @@ aside {
 .text_container {
   display: block;
   padding: 2rem 0;
-  margin: 0 auto;
+  margin: auto;
   width: 90%;
     max-width: 16rem;
 }
@@ -116,6 +115,8 @@ aside {
 }
 /* End of containers */
 
+/* Button Style */
+
 .button{
   background: rgba(255, 0, 108, 1);
   background: var(--highlight-color);
@@ -134,7 +135,7 @@ aside {
   display: block;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 1rem;
-  padding: .7rem 2rem;
+  line-height: 2.5em;
   text-decoration: none;
 }
 
@@ -328,22 +329,28 @@ nav {
 /* End of nav */
 
 table {
-  border: 1px solid #000000;
+  background-color: #fff;
   border-collapse: collapse;
   margin: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-align: left;
   width: 90%;
-  max-width: 25rem;
+  max-width: 19rem;
 }
 
 th {
   background-color: rgba(53, 118, 149, 1);
   background-color: var(--dark-blue);
-  border: 1px solid #000000;
   color: #ffffff;
   padding: 0 1rem;
   width: 100%
+}
+
+th h4 {
+  font-size: 2rem;
+  line-height: normal;
+  opacity: 1;
+  padding: 1rem 0;
 }
 
 td {
@@ -352,8 +359,76 @@ td {
   width: 100%;
 }
 
+td h4 {
+  font-size: 2rem;
+  padding: 0;
+  white-space: nowrap;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(242, 242, 242, 1);
+}
+
 tr:nth-child(odd) {
   background-color: rgba(156, 207, 232, .25);
+}
+
+/* Projects */
+
+/* Remkeep */
+.remkeep_project{
+  padding: 0;
+  margin: 0;
+}
+
+.remkeep_container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+}
+
+.remkeep_project img{
+  display: block;
+  grid-column: 1;
+  grid-row: 1;
+  height: auto;
+  margin-left: 10%;
+  width: 43vw;
+    min-width: 170px;
+}
+
+.remkeep_half_container{
+  display: block;
+  grid-column: 2;
+  grid-row: 1;
+  margin: auto;
+  padding-right: 1rem;
+  z-index: 1;
+}
+
+.remkeep_project_text {
+  display: block;
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+.remkeep_project_text p {
+  font-size: calc(12px + 1vw);
+  line-height: calc(16px + 2vw);
+}
+
+.remkeep_project .button{
+  margin: calc(1rem + 2vw) 0 1rem 0;
+  white-space: nowrap;
+}
+
+.remkeep_roles_subtitle{
+  display: block;
+  fill: rgba(173, 228, 255, .5);
+  height: auto;
+  margin: auto;
+  padding: 1rem 0 2rem 0;
+  width: 70%;
 }
 
 /** Footer **/
@@ -411,18 +486,29 @@ tr:nth-child(odd) {
 
 @media screen and (min-width: 600px) {
   html {
-      font-size: 18pt;
+      font-size: 16pt;
+  }
+
+  .text_container {
+    max-width: 19rem;
   }
 
   /** Nav X **/
   #menuToggle input:checked ~ span {
    opacity: 1;
-   transform: rotate(45deg) translate(.19rem, -.1rem);
+   transform: rotate(45deg) translate(.19rem, -.05rem);
    background: #232323;
   }
 
   #menuToggle input:checked ~ span:nth-last-child(2) {
-   transform: rotate(-45deg) translate(.05rem, .25rem);
+   transform: rotate(-45deg) translate(.07rem, .25rem);
+  }
+
+  /* Projects */
+
+  /* Remkeep */
+  .remkeep_project_text {
+    max-width: 13em;
   }
 }
 
@@ -434,7 +520,7 @@ tr:nth-child(odd) {
 
 @media screen and (min-width: 900px) {
   html{
-    font-size: 16pt;
+    font-size: 16px;
   }
 
   .mobile_display {
@@ -442,7 +528,7 @@ tr:nth-child(odd) {
   }
 
   article {
-    padding: 0;
+    padding-bottom: 0;
   }
 
   .grid {
@@ -450,33 +536,26 @@ tr:nth-child(odd) {
     grid-template-columns: repeat(12, 1fr);
   }
 
-  h3 {
-    font-size: 8vw;
+  .grid .button {
+    margin: 2rem auto;
   }
 
-  h4 {
-    font-size: 1rem;
+  h3 {
+    font-size: 8vw;
   }
 
   .full_width_text {
     min-width: 55%;
   }
 
-  .button{
-    display: inline-block;
-    text-align: center;
-    width: auto;
+  .button {
+    margin-left: 4rem;
+    width: max-content;
   }
 
-  .button a{
+  .button a {
     font-size: 1.8vw;
-    padding: 1vw 5vw;;
-    text-decoration: none;
-  }
-
-  .button_container {
-    margin-bottom: 1rem;
-    text-align: center;
+    padding: 0 2rem;
   }
 
   /** desktop navigation menu **/
@@ -502,6 +581,7 @@ tr:nth-child(odd) {
     color: var(--highlight-color);
   }
 
+  /* Tables */
   table, th, td {
     width: auto;
   }
@@ -511,10 +591,58 @@ tr:nth-child(odd) {
     max-width: 90%;
   }
 
-  th {
-    border: none;
+  /* Projects */
+
+  /** Remkeep project **/
+  .remkeep_project {
+    position: relative;
   }
 
+  .remkeep_title{
+    position: relative;
+      top: -3vw;
+      left: -4vw;
+    width: 70vw;
+  }
+
+  .remkeep_roles_subtitle {
+    display: block;
+    height: auto;
+    margin: 0;
+    padding-bottom: 0;
+    position: absolute;
+      right: 2.5vw;
+      top: 9vw;
+    width: 35%;
+  }
+
+  .remkeep_container {
+    display: grid;
+    grid-template-columns: 1fr 38%;
+    grid-template-rows: auto;
+  }
+
+  .remkeep_project img{
+    margin: 1rem 1rem 2rem 1rem;
+    width: 60vw;
+  }
+
+  .remkeep_project_text {
+    max-width: 25vw;
+  }
+
+  .remkeep_project_text p{
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    padding: 0 0 4vw 0;
+  }
+
+  .remkeep_project .button{
+    margin: 0;
+    width: 90%;
+  }
+
+  /* Footer */
   .footer_bottom {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -549,26 +677,8 @@ tr:nth-child(odd) {
   }
 }
 
-@media screen and (min-width: 1279.5px) {
-  html {
-    font-size: 24px;
-  }
-}
-
 @media screen and (min-width: 1599.5px) {
   html {
-    font-size: 32px;
-  }
-}
-
-@media screen and (min-width: 1919.5px) {
-  html {
-    font-size: 40px;
-  }
-}
-
-@media screen and (min-width: 2501px) {
-  html {
-    font-size: 52px;
+    font-size: 24px;
   }
 }

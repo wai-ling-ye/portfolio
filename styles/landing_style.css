@@ -16,12 +16,12 @@
 }
 
 #thinker svg{
-  top: 3rem;
-  margin-bottom: 3rem;
   animation-name: fade-in;
   animation-delay: .5s;
   animation-duration: 2s;
   animation-fill-mode: backwards;
+  top: 3rem;
+  margin-bottom: 3rem;
 }
 
 #creator {
@@ -68,61 +68,6 @@
 .highlight_text{
   color: rgba(255, 0, 108, 1);
   color: var(--highlight-color);
-}
-
-.remkeep_project{
-  padding: 0;
-  margin: 0;
-}
-
-.remkeep_container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
-}
-
-.remkeep_project img{
-  display: block;
-  grid-column: 1;
-  grid-row: 1;
-  height: auto;
-  margin-left: 10%;
-  width: 43vw;
-}
-
-.remkeep_half_container{
-  display: block;
-  grid-column: 2;
-  grid-row: 1;
-  margin: auto;
-  z-index: 1;
-}
-
-.remkeep_project_text {
-  display: block;
-  margin-bottom: 1rem;
-  width: 90%;
-}
-
-.remkeep_project_text p{
-  font-family: "PT Serif", Times, serif;
-  font-size: 3.4vw;
-  line-height: 5.1vw;
-  padding-right: 1rem;
-}
-
-.remkeep_project .button{
-  margin: 1rem 0;
-  white-space: nowrap;
-}
-
-.remkeep_roles_subtitle{
-  display: block;
-  fill: rgba(173, 228, 255, .5);
-  height: auto;
-  margin: auto;
-  padding-bottom: 1.5rem;
-  width: 90%;
 }
 
 .landing_about {
@@ -189,17 +134,6 @@
   width: 75%;
 }
 
-@media screen and (max-width: 350px) {
-  .remkeep_project img{
-    width: 10rem;
-  }
-
-  .remkeep_project_text p{
-    font-size: 12px;
-    line-height: 18px;
-  }
-}
-
 @media screen and (max-width: 899px) {
   #menu_desktop {
     display: none;
@@ -228,7 +162,7 @@
   }
 
   #thinker svg{
-    fill: rgba(237, 169, 68, .5);
+    fill: rgba(237, 169, 68, .4);
     fill: var(--yellow-text);
     height: 9vw;
     margin-bottom: .5rem;
@@ -251,14 +185,13 @@
   }
 
   #designer svg{
-    fill: rgba(237, 169, 68, .5);
+    fill: rgba(237, 169, 68, .4);
     fill: var(--yellow-text);
     height: 10vw;
     right: -18vw;
   }
 
   /** position personal intro in hero **/
-
   .intro_container {
     animation-name: fade-in;
     animation-delay: 2.5s;
@@ -285,54 +218,6 @@
   /** Hides mobile personal intro **/
   .landing_intro {
     display: none;
-  }
-
-  /** Remkeep project **/
-  .remkeep_project {
-    position: relative;
-  }
-
-  .remkeep_title{
-    position: relative;
-      top: -3vw;
-      left: -4vw;
-    width: 70vw;
-  }
-
-  .remkeep_roles_subtitle {
-    display: block;
-    height: auto;
-    margin: 0;
-    padding-bottom: 0;
-    position: absolute;
-    right: 2.5vw;
-    top: 10vw;
-    width: 35%;
-  }
-
-  .remkeep_container {
-    display: grid;
-    grid-template-columns: 1fr 38%;
-    grid-template-rows: auto;
-  }
-
-  .remkeep_project img{
-    margin: 1rem 1rem 2rem 1rem;
-    width: 60vw;
-  }
-
-  .remkeep_project_text {
-    max-width: 25vw;
-  }
-
-  .remkeep_project_text p{
-    font-size: 2vw;
-    line-height: 3vw;
-    padding: 0 0 4vw 0;
-  }
-
-  .remkeep_project .button{
-    margin: 0;
   }
 
   /** Landing page "About" section **/
@@ -378,6 +263,10 @@
     padding-left: .5rem;
   }
 
+  .landing_about .button{
+    margin: 1rem auto;
+  }
+
   /* About the process section */
   .landing_process {
     padding: 0;
@@ -388,31 +277,49 @@
     background-color: var(--grey-bg-color);
     grid-column: 1 / span 6;
     grid-row: 1;
+    z-index: 1;
   }
 
   .landing_process img {
-    padding: 2rem 0;
+    padding: 4rem 0;
     max-width: 40vw;
     width: auto;
   }
 
-  .landing_process svg, .text_container, .button_container {
+  .landing_process_title, .text_container, .button_container {
     grid-column: 7 / span 6;
     grid-row: 1;
   }
 
-  .landing_process svg {
-    height: auto;
-    width: 100%;
+  #the {
+    color: rgba(173, 228, 255, .5);
+    font-size: 14vw;
+    position: relative;
+      left: -2vw;
+      top: -2vw;
+  }
+
+  #process {
+    color: rgba(173, 228, 255, .8);
+    font-size: 14vw;
+    position: relative;
+    right: -6vw;
+    top: -7.5vw;
   }
 
   .landing_process .text_container{
     align-self: center;
+    margin: auto;
     max-width: 16rem;
+    padding-top: 9rem;
   }
 
   .landing_process .button_container {
     align-self: end;
+  }
+
+  .landing_process .button{
+    margin: 1rem auto;
   }
 }
 
