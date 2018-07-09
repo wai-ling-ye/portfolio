@@ -45,10 +45,10 @@ h3{ /**large headings**/
 h4{ /**small headings**/
   display: inline-block;
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 300;
   line-height: 3rem;
-  padding: 2rem 0 2rem 2rem;
+  padding: 2rem 0 1rem 0;
   opacity: .6;
 }
 h5{ /**table headings**/
@@ -84,8 +84,8 @@ aside {
   display: block;
   padding: 2rem 0;
   margin: auto;
-  width: 90%;
-    max-width: 16rem;
+  width: 19rem;
+    max-width: 90%;
 }
 
 .yellow_bg {
@@ -128,6 +128,7 @@ aside {
   margin: 1rem auto;
   text-align: center;
   width: 90%;
+  max-width: 20rem;
 }
 
 .button a{
@@ -361,7 +362,6 @@ td {
 }
 
 td h4 {
-  font-size: 2rem;
   padding: 0;
   white-space: nowrap;
 }
@@ -611,6 +611,10 @@ tr:nth-child(odd) {
   table {
     margin: auto;
     max-width: 90%;
+  }
+
+  td {
+    vertical-align: top;
   }
 
   /* Projects */
