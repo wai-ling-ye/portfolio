@@ -18,7 +18,7 @@
 #thinker svg{
   animation-name: fade-in;
   animation-delay: .5s;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-fill-mode: backwards;
   top: 3rem;
   margin-bottom: 3rem;
@@ -189,8 +189,8 @@
   /** position personal intro in hero **/
   .intro_container {
     animation-name: fade-in;
-    animation-delay: 2.5s;
-    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-duration: 2.5s;
     animation-fill-mode: backwards;
     display: block;
     margin: auto;

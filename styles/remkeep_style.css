@@ -1,4 +1,8 @@
 .remkeep_title {
+  animation-name: fade-in;
+  animation-delay: .5s;
+  animation-duration: 1.5s;
+  animation-fill-mode: backwards;
   padding: 4rem 0 0 0;
 }
 
@@ -25,13 +29,18 @@
 }
 
 .specs {
-  padding-bottom: 4rem;
+  padding: 2rem 0 4rem 0;
 }
 
 .specs .text_container {
-  display: inline-block;
-  margin: 0 0 0 4rem;
+  align-items: baseline;
+  display: flex;
   padding: 0;
+}
+
+.specs p {
+  display: block;
+  margin: 0 2rem;
 }
 
 .objective .text_container{
@@ -97,26 +106,42 @@
   max-width: 21rem;
 }
 
+/* User Personas */
 .persona_table {
-  display: grid;
-  grid-template-columns: 10rem 1fr;
-  grid-template-rows: auto auto auto;
   margin: 0 auto 1rem auto;
-  width: 90%;
+  width: 20rem;
+  max-width: 90%;
+}
+
+.persona_table h5 {
+  padding-left: 1rem;
+}
+
+.persona_table_top {
+  display: flex;
 }
 
 .persona_img {
-  grid-column: 1;
-  grid-row: 1;
+  flex: 0 1 auto;
+  overflow: hidden;
+  height: 11.2rem;
+  width: 40%;
+}
+
+.persona_img img {
+  position: relative;
+    left: -.25rem;
+    top: -1rem;
+  width: calc(100% + .5rem);
 }
 
 .persona_quote {
   background-color: rgba(53, 118, 149, 1);
   background-color: var(--dark-blue);
   color: #ffffff;
-  grid-column: 2;
-  grid-row: 1;
+  flex: 1 1 auto;
   padding: .5rem;
+  width: 60%;
 }
 
 .persona_quote h4 {
@@ -125,19 +150,15 @@
 }
 
 .persona_quote p {
-  font-family: "PT Serif", Times, serif;
+  line-height: normal;
 }
 
 .persona_goals {
-  grid-column: 1 / span 2;
-  grid-row: 2;
   padding: 0 1rem 1rem 1rem;
 }
 
 .persona_frustrations {
   background-color: rgba(156, 207, 232, .25);
-  grid-column: 1 / span 2;
-  grid-row: 3;
   padding: 0 1rem 1rem 1rem;
 }
 
@@ -145,6 +166,7 @@
   padding: 0 0 0 2rem;
 }
 
+/* User Stories and User Flows */
 .user_stories_flows {
   background-image: url("../images/Remkeep/user_sf_img.png");
   background-position: center;
@@ -153,12 +175,29 @@
   box-shadow: inset 0 0 0 100rem rgba(40, 85, 107, .9);
   color: #ffffff;
   overflow: hidden;
+  padding-bottom: 4rem;
+}
+
+#user_stories_button,
+#user_flows_button {
+  margin: auto;
+}
+
+/* Content Strategy */
+.content_strategy {
+  padding-top: 2rem;
+}
+
+.content_strategy .text_container,
+.content_strategy .text_container h4 {
+  padding-top: 0rem;
 }
 
 .site_map {
   padding: 1rem;
 }
 
+/* User Testing */
 .user_testing_heading {
   background-position: center;
   background-repeat: no-repeat;
@@ -180,7 +219,12 @@
   color: rgba(173, 228, 255, .8);
   color: var(--light-blue);
   bottom: -3px;
+  margin-bottom: 0;
   position: absolute;
+}
+
+.user_testing {
+  padding-bottom: 3rem;
 }
 
 /* Brand Strategy */
@@ -216,7 +260,7 @@
 
 .logo_development {
   margin: auto;
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 90%;
 }
 
@@ -264,32 +308,50 @@
   width: auto;
 }
 
-.pt_overlay {
-  position: relative;
-  margin: 1rem 0;
+/* Preference Testing */
+
+.PT_overlay {
+  display: grid;
 }
 
-.num_overlay {
+.overlay_1,
+.overlay_1_num {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.overlay_2,
+.overlay_2_num {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.overlay_1_num,
+.overlay_2_num {
+  align-self: end;
   color: rgba(173, 228, 255, .8);
   color: var(--light-blue);
   display: block;
   font-family: "Song Myung", Georgia, serif;
   font-size: 3rem;
-  position: absolute;
-  bottom: -.2rem;
+}
+
+.PT_1 h4,
+.PT_2 h4 {
+  padding-top: 0;
 }
 
 .pt_mobile {
   background-color: rgba(53, 118, 149, 1);
   background-color: var(--dark-blue);
-  margin-top: 1rem;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .pt_mobile img {
   box-shadow: 6px 8px 4px 0px rgba(0, 0, 0, .25);
   margin: 1rem auto;
-  width: 75%;
+  width: 20rem;
+  max-width: 90%;
 }
 
 .center_text {
@@ -305,18 +367,27 @@
 }
 
 /* High Fidelity Changes */
+.HF_changes {
+  padding-bottom: 0
+}
+
 .visual_changes {
-  margin-right: 5vw;
+  margin: auto;
+  padding-bottom: 4rem;
+  width: 90%;
 }
 
 .branding_update {
+  padding-bottom: 4rem;
+}
+
+.branding_update .text_container,
+.branding_update .text_container h4 {
   padding: 0;
 }
 
-.branding_update_text {
-  background-color: rgba(242, 242, 242, 1);
-  background-color: var(--grey-bg-color);
-  padding-bottom: 1rem;
+.conclusion {
+  padding-bottom: 3rem;
 }
 
 .conclusion svg {
@@ -398,6 +469,10 @@
     margin-left: 0;
   }
 
+  .grid .button {
+    padding: 0;
+  }
+
   /* General text formatting */
   .heading_text {
     grid-column: 2 / span 6;
@@ -419,6 +494,7 @@
 
   .remkeep_header {
     background-image: none;
+    padding-bottom: 3rem;
   }
 
   .remkeep_title {
@@ -439,21 +515,14 @@
     margin: 0;
   }
 
-  .prototype_links {
-    grid-column: 1 / span 12;
-    display: flex;
-    flex-wrap: wrap;
+  .prototype_links img {
+    margin: auto;
+    padding: 4rem 0 2rem 0;
+    width: 90%;
   }
 
   .prototype_links .button {
-    display: inline-block;
     margin: auto;
-  }
-
-  .prototype_1, .prototype_2 {
-    flex: 1 0 auto;
-    padding: 4vw;
-    text-align: center;
   }
 
   .laptop_img, .mobile_img {
@@ -471,7 +540,7 @@
   /* Specs and Objective */
   .specs {
     background-color: rgba(156, 207, 232, .25);
-    padding-bottom: 1rem;;
+    padding-bottom: 1rem;
   }
 
   .roles {
@@ -485,8 +554,6 @@
   }
 
   .specs .text_container {
-    align-items: baseline;
-    display: flex;
     margin: 0;
     width: 100%;
     max-width: 100%;
@@ -549,6 +616,7 @@
 
   .survey_section {
     background-image: url("../images/Remkeep/survey_desktop_bg.png");
+    background-position: right;
   }
 
   .survey_section .grid {
@@ -576,13 +644,20 @@
     grid-row: 2;
   }
   .personas {
+    grid-column-gap: 2rem;
     padding-bottom: 4rem;
+  }
+
+  .persona_img img {
+    top: -3.5rem;
   }
 
   .persona_table {
     grid-column: span 6;
     grid-template-rows: minmax(auto, 10rem) auto auto;
     margin: 0;
+    width: 100%;
+    max-width: 100%;
   }
 
   .persona_quote {
@@ -619,8 +694,13 @@
   }
 
   /* Content Strategy */
+  .content_strategy {
+    padding-top: 0;
+  }
+
   .content_strategy .text_container {
     margin: 0;
+    padding-top: 3rem;
   }
 
   /* Wireframes */
@@ -636,8 +716,8 @@
 
   .wireframes img {
     height: 12rem;
+    margin-bottom: 1rem;
     position: relative;
-      right: 1rem;
     width: auto;
   }
 
@@ -657,8 +737,8 @@
   }
 
   /* User Testing Round 1 */
-  .user_testing_heading h3 {
-    margin-bottom: 0;
+  .user_testing {
+    padding-bottom: 0;
   }
 
   .user_testing table{
@@ -704,6 +784,10 @@
   .user_testing .cell_5 .button {
     margin-bottom: 4rem;
     margin-left: 0;
+  }
+
+  .user_testing .cell_full .button {
+    margin: 0 0 4rem 0;
   }
 
   /* Brand Strategy heading */
@@ -753,7 +837,15 @@
     padding-bottom: 2rem;
   }
 
+  .PT_overlay {
+    display: none;
+  }
+
   /* Changes to the High Fidelity Mockup */
+  .HF_changes {
+    padding-top: 2rem;
+  }
+
   .HF_changes_top,
   .HF_changes_middle {
     background-color: #ffffff;
@@ -770,16 +862,21 @@
     grid-row: 1;
   }
 
+  .visual_changes {
+    margin-right: 5vw;
+    padding-bottom: 0;
+  }
+
   /* Branding Update */
   .branding_update {
-    padding: 2rem 0;
+    padding: 4rem 0;
   }
 
   /* conclusion section */
   .screenshots {
     background-color: rgba(8, 137, 201, 1);
     background-color: var(--blue-bg-color);
-    padding: 5vw;
+    padding: 4rem 5vw;
   }
 
   .conclusion {
