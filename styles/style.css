@@ -474,6 +474,11 @@ tr:nth-child(odd) {
   font-family: "Open Sans", Arial, sans-serif;
 }
 
+.footer_bottom p a {
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
 .footer_bottom ul {
   margin-top: 1rem;
 }
