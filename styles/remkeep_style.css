@@ -574,7 +574,12 @@
   .survey_section .text_container {
     grid-column: span 4;
     margin-top: 0;
-    width: 90%;
+    width: max-content;
+    max-width: 90%;
+  }
+
+  .survey_heading_1 {
+    width: 15rem;
   }
 
   .survey_section span {

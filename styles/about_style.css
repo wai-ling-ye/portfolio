@@ -221,6 +221,7 @@ h4 {
   }
 
   #check_out {
+    color: rgba(237, 169, 68, .4);
     position: relative;
       left: -2vw;
       top: -1.2vw;

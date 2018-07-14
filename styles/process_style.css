@@ -7,6 +7,10 @@ header .blue_bg {
 }
 
 header h3 {
+  animation-name: fade-in;
+  animation-delay: .5s;
+  animation-duration: 1.5s;
+  animation-fill-mode: backwards;
   padding: 4rem 0;
 }
 
@@ -27,8 +31,41 @@ article h3 {
   background-color: rgba(156, 207, 232, .25);
 }
 
+.phase_3 {
+  background-color: rgba(156, 207, 232, .25);
+}
+
+.phase_3 img {
+  margin: auto;
+  width: 90%;
+}
+
+.phase_3 .style_guide_graphic {
+  box-shadow: .1rem .2rem .6rem 0 rgba(0, 0, 0, .25);
+  margin-top: 2rem;
+}
+
+.phase_4 img {
+  margin: auto;
+  width: 90%;
+}
+
+header h3 {
+  font-size: 6rem;
+}
+
+#see_the_process, #in_action {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+#see_the_process {
+  color: rgba(237, 169, 68, .4);
+  line-height: normal;
+}
+
 #in_action {
-  color: rgba(237, 169, 68, .8);
   padding-bottom: 1rem;
   text-align: right;
 }
@@ -38,8 +75,8 @@ article h3 {
     font-size: 4rem;
   }
 
-  header h3 {
-    font-size: 6rem;
+  #see_the_process, #in_action {
+    font-size: 3rem;
   }
 }
 
@@ -48,7 +85,7 @@ article h3 {
     color: rgba(255, 255, 255, .8);
   }
 
-  .row_2{
+  .row_2 {
     grid-row: 2;
   }
 
@@ -92,7 +129,7 @@ article h3 {
     width: 10rem;
   }
 
-  .phase_2 .text_container{
+  .phase_2 .text_container {
     padding-top: 2rem;
     z-index: 1;
   }
@@ -105,7 +142,6 @@ article h3 {
   }
 
   .phase_3 {
-    background-color: rgba(156, 207, 232, .25);
     overflow: initial;
     padding: 0 2rem 4rem 0;
   }
@@ -129,7 +165,6 @@ article h3 {
   }
 
   .phase_3 .style_guide_graphic {
-    box-shadow: .1rem .2rem .6rem 0 rgba(0, 0, 0, .25);
     margin-top: 4rem;
   }
 
@@ -138,26 +173,31 @@ article h3 {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 120px 50%;
-    box-shadow: inset 35vw 0 5rem .5rem rgba(255, 255, 255, 1);
-    height: 20rem;
+    box-shadow: inset 35vw 0 5rem .5rem rgba(255, 255, 255, .9);
     z-index: -1;
+  }
+
+  .phase_4 .cell_2 {
+    align-self: baseline;
+    margin: auto;
+    padding-top: 3rem;
   }
 
   /** Separation bar "Check out my work" **/
   #see_the_process, #in_action {
     font-size: 12vw;
-    margin: 0;
-    padding: 0;
   }
 
   #see_the_process {
+    line-height: 75%;
+    padding-bottom: 2vw;
     position: relative;
       left: -1vw;
       top: -1vw;
   }
 
   #in_action {
-    line-height: 8vw;
+    line-height: 5vw;
     position: relative;
       right: -1vw;
   }
