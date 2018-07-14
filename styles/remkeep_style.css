@@ -280,8 +280,8 @@
 
 .HF_prototypes svg,
 .HF_prototypes h3 {
-  color: rgba(53, 118, 149, .3);
-  fill: rgba(53, 118, 149, .3);
+  color: rgba(53, 118, 149, .75);
+  fill: rgba(53, 118, 149, .75);
 }
 
 .prototypes {
@@ -421,58 +421,6 @@
     grid-row: 1;
   }
 
-  /* Grid cells */
-
-  /* full width */
-  .cell_full {
-    grid-column: 1 / span 12;
-  }
-
-  /* 1st third */
-  .cell_1 {
-    grid-column: 2 / span 5;
-    margin: 0;
-    padding-right: 1rem;
-    padding-top: 0;
-  }
-
-  /* 2nd third */
-  .cell_2 {
-    grid-column: 6 / span 7;
-    margin: 0 0 0 1rem;
-    padding-top: 0;
-  }
-
-  /* 1st third vertical centered */
-  .cell_1v {
-    align-self: center;
-    grid-column: 2 / span 6;
-    grid-row: 1;
-    margin-left: 0;
-    padding-right: 2rem;
-  }
-
-  .cell_1v h4 {
-    padding-top: 0;
-  }
-
-  /* 2nd two-thirds */
-  .cell_4 {
-    align-self: center;
-    grid-column: 6 / span 7;
-    grid-row: 1;
-  }
-
-  /* 1st half */
-  .cell_5 {
-    grid-column: 2 / span 6;
-    margin-left: 0;
-  }
-
-  .grid .button {
-    padding: 0;
-  }
-
   /* General text formatting */
   .heading_text {
     grid-column: 2 / span 6;
@@ -576,7 +524,7 @@
   }
 
   .objective h3 {
-    color: rgba(53, 118, 149, .3);
+    color: rgba(53, 118, 149, .75);
     grid-column: 1 / span 12;
   }
 
@@ -902,6 +850,6 @@
   }
 
   .conclusion h3 {
-    color: rgba(53, 118, 149, .3);
+    color: rgba(53, 118, 149, .75);
   }
 }

@@ -7,11 +7,11 @@
 :root {
   --highlight-color: rgba(255, 0, 108, 1);
   --blue-bg-color: rgba(8, 137, 201, 1);
-  --yellow-bg-color: rgba(255, 233, 207, 1);
+  --yellow-bg-color: rgba(255, 233, 207, .5);
   --grey-bg-color: rgba(242, 242, 242, 1);
   --dark-blue: rgba(53, 118, 149, 1);
   --light-blue: rgba(173, 228, 255, .8); /**80% opacity on blue bg**/
-  --yellow-text: rgba(237, 169, 68, .4); /**40% and 20% opacity - use with large text on yellow bg only**/
+  --yellow-text: rgba(237, 169, 68, .7); /**40% and 20% opacity - use with large text on yellow bg only**/
 
 }
 
@@ -93,12 +93,12 @@ aside {
 }
 
 .yellow_bg {
-  background: rgba(255, 233, 207, 1);
+  background: rgba(255, 233, 207, .5);
   background: var(--yellow-bg-color);
 }
 
 .yellow_bg h3 {
-  color: rgba(237, 169, 68, .4);
+  color: rgba(237, 169, 68, .7);
   color: var(--yellow-text);
 }
 
@@ -440,7 +440,7 @@ tr:nth-child(odd) {
 .logo_bar {
   background: rgba(225, 234, 239, 1);
   height: 3rem;
-  margin: 4rem 0 2rem 0;
+  margin: 6rem 0 2rem 0;
   overflow: visible;
 }
 
@@ -550,8 +550,64 @@ tr:nth-child(odd) {
     grid-template-columns: repeat(12, 1fr);
   }
 
+  /* Grid cells */
+
+  /* full width */
+  .cell_full {
+    grid-column: 1 / span 12;
+  }
+
+  /* 1st third */
+  .cell_1 {
+    grid-column: 2 / span 4;
+    margin: 0;
+    padding-right: 1rem;
+    padding-top: 0;
+  }
+
+  /* 2nd third */
+  .cell_2 {
+    grid-column: 6 / span 4;
+    margin: 0 0 0 1rem;
+    padding-top: 0;
+  }
+
+  /* 3rd third */
+  .cell_3 {
+    grid-column: 9 / span 4;
+    margin: 0 0 0 1rem;
+    padding-top: 0;
+  }
+
+  /* 1st third vertical centered */
+  .cell_1v {
+    align-self: center;
+    grid-column: 2 / span 6;
+    grid-row: 1;
+    margin-left: 0;
+    padding-right: 2rem;
+  }
+
+  .cell_1v h4 {
+    padding-top: 0;
+  }
+
+  /* 2nd two-thirds */
+  .cell_4 {
+    align-self: center;
+    grid-column: 6 / span 7;
+    grid-row: 1;
+  }
+
+  /* 1st half */
+  .cell_5 {
+    grid-column: 2 / span 5;
+    margin-left: 0;
+  }
+
   .grid .button {
     margin: 2rem auto;
+    padding: 0;
   }
 
   h3 {
@@ -686,7 +742,7 @@ tr:nth-child(odd) {
     text-align: left;
   }
   .footer_bottom h3 {
-    color: rgba(53, 118, 149, .3);
+    color: rgba(53, 118, 149, .5);
     grid-column: 1;
     grid-row: 1;
     font-size: 12vw;
