@@ -3,7 +3,7 @@ header {
 }
 
 h4 {
-  padding: 2rem 2rem 0 2rem;
+  padding: 0 0 1rem 0;
 }
 
 #hi_there {
@@ -38,15 +38,10 @@ h4 {
   position: relative;
 }
 
-.intro_text {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+.text_container {
+  width: 20rem;
+  max-width: 90%;
 }
-
-/* .intro_sentence{
-  font-size: 1.2rem;
-  line-height: 2rem;
-} */
 
 .about_content {
   display: flex;
@@ -137,9 +132,6 @@ h4 {
 }
 
 @media screen and (min-width: 900px) {
-  /* header {
-    padding-top: 14vw;
-  } */
 
   #hi_there {
     font-size: 12vw;
@@ -148,6 +140,7 @@ h4 {
   }
 
   #thanks_for {
+    color: rgba(237, 169, 68, .4);
     font-size: 12vw;
     line-height: 4vw;
     padding: 0;
@@ -157,6 +150,7 @@ h4 {
   }
 
   #dropping_in {
+    color: rgba(237, 169, 68, .4);
     font-size: 12vw;
     line-height: 9vw;
     padding: 0 0 4rem 0;
@@ -168,6 +162,11 @@ h4 {
   /** About content section **/
   .text_container {
     margin: 0 0 0 10vw;
+  }
+
+  .intro_text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
   }
 
   .about_content {

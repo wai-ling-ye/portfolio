@@ -52,17 +52,18 @@
 .intro_container {
   display: block;
   margin: auto;
-  width: 21rem;
+  width: 90%;
+  max-width: 21rem;
 }
 
 .intro_container p{
   font-family: "PT Serif", Times, serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 4rem;
 }
 
 .intro_container span{
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .highlight_text{
@@ -291,15 +292,15 @@
     font-size: 14vw;
     position: relative;
       left: -2vw;
-      top: -2vw;
+      top: -1.5vw;
   }
 
   #process {
     color: rgba(173, 228, 255, .8);
     font-size: 14vw;
     position: relative;
-    right: -6vw;
-    top: -7.5vw;
+    right: -4vw;
+    top: -6.5vw;
   }
 
   .landing_process .text_container{

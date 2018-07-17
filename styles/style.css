@@ -7,7 +7,7 @@
 :root {
   --highlight-color: rgba(255, 0, 108, 1);
   --blue-bg-color: rgba(8, 137, 201, 1);
-  --yellow-bg-color: rgba(255, 233, 207, .5);
+  --yellow-bg-color: rgba(255, 233, 207, .3);
   --grey-bg-color: rgba(242, 242, 242, 1);
   --dark-blue: rgba(53, 118, 149, 1);
   --light-blue: rgba(173, 228, 255, .8); /**80% opacity on blue bg**/
@@ -93,7 +93,7 @@ aside {
 }
 
 .yellow_bg {
-  background: rgba(255, 233, 207, .5);
+  background: rgba(255, 233, 207, .3);
   background: var(--yellow-bg-color);
 }
 
