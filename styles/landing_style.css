@@ -53,13 +53,14 @@
   display: block;
   margin: auto;
   width: 90%;
-  max-width: 21rem;
+  max-width: 17rem;
 }
 
 .intro_container p{
   font-family: "PT Serif", Times, serif;
   font-size: 1.2rem;
   line-height: 4rem;
+  white-space: nowrap;
 }
 
 .intro_container span{
@@ -196,9 +197,10 @@
     display: block;
     margin: auto;
     position: absolute;
-    top: 15vw;
-    right: 8vw;
+      top: 15vw;
+      right: 8vw;
     width: auto;
+    max-width: 21rem;
   }
 
   .intro_container p{
