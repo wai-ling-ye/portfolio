@@ -135,8 +135,9 @@ h4 {
 
   #hi_there {
     font-size: 12vw;
+    padding-bottom: 2vw;
     left: 12vw;
-    top: 0;
+    top: -1.2vw;
   }
 
   #thanks_for {

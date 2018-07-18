@@ -28,4 +28,6 @@ $(document).ready(function(){
       });
     } // End if
   });
+
+  window.addEventListener('load', AOS.refresh);
 });

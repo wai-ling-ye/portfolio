@@ -254,7 +254,8 @@
 
   .landing_about .text_container {
     margin: 1.5vw auto;
-    width: 16rem;
+    padding: 3rem 0 1rem 0;
+    max-width: 21rem;
   }
 
   .landing_about ul {
