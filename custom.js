@@ -29,5 +29,6 @@ $(document).ready(function(){
     } // End if
   });
 
+  //Refresh AOS animations after window load
   window.addEventListener('load', AOS.refresh);
 });
