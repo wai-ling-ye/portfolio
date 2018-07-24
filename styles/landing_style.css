@@ -57,7 +57,6 @@
 }
 
 .intro_container p{
-  font-family: "PT Serif", Times, serif;
   font-size: 1.2rem;
   line-height: 4rem;
   white-space: nowrap;
@@ -148,16 +147,15 @@
 
 @media screen and (min-width: 900px) {
   .home_hero_mobile{
-    background: rgba(255, 233, 207, 1);
-    background: var(--yellow-bg-color);
-    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    background: linear-gradient(#1E343E, #1E343E, #1E343E, #1E343E, #2A566B, #357695, #0889CA);
+    box-shadow: none;
     height: 46vw;
     overflow: hidden;
     position: relative;
   }
 
   .home_hero_mobile svg{
-    fill: rgba(237, 169, 68, .2);
+    fill: rgba(173, 228, 255, .05);
     padding: 0;
     position: relative;
     top: -.5rem;
@@ -204,13 +202,17 @@
   }
 
   .intro_container p{
-    font-family: "PT Serif", Times, serif;
+    color: rgba(173, 228, 255, 1);
     font-size: 2.2vw;
     line-height: 4.4vw;
   }
 
   .intro_container span{
     font-size: 3.2vw;
+  }
+
+  .intro_container .highlight_text {
+    color: #ffffff;
   }
 
   /** Hides mobile personal intro **/

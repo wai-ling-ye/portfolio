@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:light,regular,bold,italic|Song+Myung');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:light,regular,semibold,italic|Song+Myung');
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -33,16 +33,10 @@ body{
   min-width: 100%;
 }
 
-h2{ /**subheading**/
-  font-family: "Song Myung", Georgia, serif;
-  font-size: 1.4rem;
-  font-weight: bold;
-  text-align: center;
-}
 h3{ /**large headings**/
-  font-family: "Song Myung", Georgia, serif;
-  font-size: 5.625rem;
-  line-height: 75%;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
   margin-bottom: 2rem;
   position: relative;
 }
@@ -50,7 +44,7 @@ h4{ /**small headings**/
   display: inline-block;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 600; /**semi-bold**/
   line-height: 3rem;
   padding: 2rem 0 1rem 0;
   opacity: .6;
@@ -97,20 +91,10 @@ aside {
   background: var(--yellow-bg-color);
 }
 
-.yellow_bg h3 {
-  color: rgba(237, 169, 68, .7);
-  color: var(--yellow-text);
-}
-
 .blue_bg {
   background: rgba(8, 137, 201, 1);
   background: var(--blue-bg-color);
   color: #ffffff;
-}
-
-.blue_bg h3 {
-  color: rgba(173, 228, 255, .8);
-  color: var(--light-blue);
 }
 
 .grey_bg {
@@ -392,7 +376,7 @@ tr:nth-child(odd) {
   grid-template-rows: auto;
 }
 
-.remkeep_project img{
+.remkeep_project .mobile_display img{
   display: block;
   grid-column: 1;
   grid-row: 1;
@@ -547,7 +531,7 @@ tr:nth-child(odd) {
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 4rem repeat(10, 1fr) 4rem;
   }
 
   /* Grid cells */
@@ -610,10 +594,6 @@ tr:nth-child(odd) {
     padding: 0;
   }
 
-  h3 {
-    font-size: 8vw;
-  }
-
   .full_width_text {
     min-width: 55%;
   }
@@ -662,7 +642,7 @@ tr:nth-child(odd) {
   }
 
   nav a {
-    color: rgba(8, 137, 201, .8);
+    color: rgba(173, 228, 255, .8);
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 1rem;
     text-decoration: none;
@@ -691,6 +671,7 @@ tr:nth-child(odd) {
 
   /** Remkeep project **/
   .remkeep_project {
+    padding: 4rem 0;
     position: relative;
   }
 
@@ -709,23 +690,29 @@ tr:nth-child(odd) {
 
   .remkeep_container {
     display: grid;
-    grid-template-columns: 1fr 38%;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 1fr;
   }
 
-  .remkeep_project img{
-    margin: 1rem 1rem 2rem 1rem;
-    width: 60vw;
+  .remkeep_container .desktop_display {
+    grid-column: 2 / span 10;
+    grid-row: 1 / span 2;
+    margin: 2rem;
+  }
+
+  .remkeep_half_container {
+    grid-column: 7 / span 5;
+    grid-row: 2;
   }
 
   .remkeep_project_text {
-    max-width: 25vw;
+    margin: 16% 0 0 8%;
+    max-width: 30em;
   }
 
   .remkeep_project_text p{
     font-size: 1.5vw;
     line-height: 2.5vw;
-    padding: 0 0 4vw 0;
+    padding: 0 0 1rem 0;
   }
 
   .remkeep_project .button{
