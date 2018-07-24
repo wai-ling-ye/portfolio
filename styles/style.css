@@ -33,17 +33,26 @@ body{
   min-width: 100%;
 }
 
-h3{ /**large headings**/
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 2rem;
-  font-weight: 300;
-  margin-bottom: 2rem;
+h2 {
+  font-family: "Song Myung", Georgia, serif;
+  font-size: 5rem;
   position: relative;
+}
+
+h3{ /**large headings**/
+  display: block;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin: 2rem auto;
+  position: relative;
+  width: 20rem;
+    max-width: 90%;
 }
 h4{ /**small headings**/
   display: inline-block;
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600; /**semi-bold**/
   line-height: 3rem;
   padding: 2rem 0 1rem 0;
@@ -71,7 +80,7 @@ img {
 /* Containers */
 article {
   overflow: hidden;
-  padding: 0 0 2rem 0;
+  padding: 2rem 0 4rem 0;
 }
 
 aside {
@@ -80,7 +89,7 @@ aside {
 
 .text_container {
   display: block;
-  padding: 2rem 0;
+  padding: 1rem 0;
   margin: auto;
   width: 20rem;
     max-width: 90%;
@@ -113,7 +122,7 @@ aside {
   -moz-box-shadow:    inset 0 .3rem .8rem .3rem rgba(255, 255, 255, .1), 0 .3rem .2rem .05rem rgba(0, 0, 0, .25);
   -webkit-box-shadow: inset 0 .3rem .8rem .3rem rgba(255, 255, 255, .1), 0 .3rem .2rem .05rem rgba(0, 0, 0, .25);
   box-shadow:         inset 0 .3rem .8rem .3rem rgba(255, 255, 255, .1), 0 .3rem .2rem .05rem rgba(0, 0, 0, .25);
-  margin: 1rem auto;
+  margin: 2rem auto;
   text-align: center;
   width: 90%;
   max-width: 20rem;
@@ -228,7 +237,11 @@ nav {
   position: relative;
   top: -2rem;
 
-  background: rgba(173, 228, 255, .8);
+  animation-name: fade-in;
+  animation-delay: 2.5s;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+  background: rgba(53, 118, 149, 1);
   border-radius: 3px;
 
   z-index: 1;
@@ -366,58 +379,23 @@ tr:nth-child(odd) {
 
 /* Remkeep */
 .remkeep_project{
-  padding: 0;
-  margin: 0;
-}
-
-.remkeep_container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
+  padding: 2rem 0;
 }
 
 .remkeep_project .mobile_display img{
   display: block;
-  grid-column: 1;
-  grid-row: 1;
   height: auto;
-  margin-left: 10%;
-  width: 43vw;
-    min-width: 170px;
-}
-
-.remkeep_half_container{
-  display: block;
-  grid-column: 2;
-  grid-row: 1;
-  margin: auto;
-  padding-right: 1rem;
-  z-index: 1;
-}
-
-.remkeep_project_text {
-  display: block;
-  margin-bottom: 1rem;
+  position: relative;
+    left: 5vw;
   width: 90%;
 }
 
-.remkeep_project_text p {
-  font-size: calc(12px + 1vw);
-  line-height: calc(16px + 2vw);
+.remkeep_half_container .text_container {
+  padding: 0;
 }
 
-.remkeep_project .button{
-  margin: calc(1rem + 2vw) 0 1rem 0;
-  white-space: nowrap;
-}
-
-.remkeep_roles_subtitle{
-  color: rgba(255, 255, 255, .8);
-  display: block;
-  font-size: 1.2rem;
-  margin: auto;
-  padding: 1rem 0 2rem 0;
-  width: max-content;
+.remkeep_half_container h3 {
+  margin: 2rem 0;
 }
 
 /** Footer **/
@@ -525,27 +503,32 @@ tr:nth-child(odd) {
     display: none;
   }
 
+  h3 {
+    font-size: 3rem;
+    margin-left: 0;
+  }
+
   article {
     padding-bottom: 0;
   }
 
   .grid {
     display: grid;
-    grid-template-columns: 4rem repeat(10, 1fr) 4rem;
+    grid-template-columns: 4vw repeat(10, 1fr) 4vw;
+    grid-column-gap: 2rem;
   }
 
   /* Grid cells */
 
   /* full width */
   .cell_full {
-    grid-column: 1 / span 12;
+    grid-column: 2 / span 10;
   }
 
   /* 1st third */
   .cell_1 {
     grid-column: 2 / span 4;
     margin: 0;
-    padding-right: 1rem;
     padding-top: 0;
   }
 
@@ -569,7 +552,6 @@ tr:nth-child(odd) {
     grid-column: 2 / span 6;
     grid-row: 1;
     margin-left: 0;
-    padding-right: 2rem;
   }
 
   .cell_1v h4 {
@@ -590,7 +572,7 @@ tr:nth-child(odd) {
   }
 
   .grid .button {
-    margin: 2rem auto;
+    margin: 2rem 0;
     padding: 0;
   }
 
@@ -599,7 +581,7 @@ tr:nth-child(odd) {
   }
 
   .button {
-    margin-left: 4rem;
+    margin: 0;
     width: max-content;
     max-width: max-content;
   }
@@ -642,7 +624,7 @@ tr:nth-child(odd) {
   }
 
   nav a {
-    color: rgba(173, 228, 255, .8);
+    color: rgba(30, 52, 62, .8);
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 1rem;
     text-decoration: none;
@@ -675,19 +657,6 @@ tr:nth-child(odd) {
     position: relative;
   }
 
-  .remkeep_title{
-    position: relative;
-      top: -1.2vw;
-      left: -2vw;
-    width: 65vw;
-  }
-
-  .remkeep_roles_subtitle {
-    position: absolute;
-      right: 2.5vw;
-      top: 4vw;
-  }
-
   .remkeep_container {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -696,7 +665,6 @@ tr:nth-child(odd) {
   .remkeep_container .desktop_display {
     grid-column: 2 / span 10;
     grid-row: 1 / span 2;
-    margin: 2rem;
   }
 
   .remkeep_half_container {
@@ -704,8 +672,8 @@ tr:nth-child(odd) {
     grid-row: 2;
   }
 
-  .remkeep_project_text {
-    margin: 16% 0 0 8%;
+  .remkeep_project .text_container {
+    margin: 17% 0 0 8%;
     max-width: 30em;
   }
 
@@ -716,8 +684,7 @@ tr:nth-child(odd) {
   }
 
   .remkeep_project .button{
-    margin: 0;
-    width: 90%;
+    margin: 2rem 0 0 8%;
   }
 
   /* Footer */
@@ -728,14 +695,13 @@ tr:nth-child(odd) {
     overflow: hidden;
     text-align: left;
   }
-  .footer_bottom h3 {
+  .footer_bottom h2 {
     color: rgba(53, 118, 149, .5);
     grid-column: 1;
     grid-row: 1;
     font-size: 12vw;
-    position: relative;
-    top: -1vw;
-    left: -1.2vw;
+    left: -1vw;
+    top: -2.5vw;
   }
 
   .footer_container {

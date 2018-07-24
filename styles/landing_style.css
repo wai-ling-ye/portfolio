@@ -15,7 +15,7 @@
   min-width: 100%;
 }
 
-#thinker svg{
+#thinker {
   animation-name: fade-in;
   animation-delay: .5s;
   animation-duration: 1.5s;
@@ -46,23 +46,24 @@
 }
 
 .landing_intro{
-  padding: 5rem 1rem;
+  padding: 5rem 0;
 }
 
 .intro_container {
   display: block;
   margin: auto;
-  width: 90%;
-  max-width: 17rem;
+  width: 19em;
+  max-width: 90%;
 }
 
 .intro_container p{
+  display: inline-block;
   font-size: 1.2rem;
-  line-height: 4rem;
-  white-space: nowrap;
+  line-height: 3rem;
 }
 
 .intro_container span{
+  display: inline-block;
   font-size: 2rem;
 }
 
@@ -72,11 +73,7 @@
 }
 
 .landing_about {
-  padding: 0;
-}
-
-.landing_about .yellow_bg {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .landing_about svg {
@@ -84,17 +81,6 @@
   fill: var(--yellow-text);
   height: auto;
   width: 100%;
-}
-
-.landing_about .Profile_round {
-  display: block;
-  padding: 2rem 1rem 0 1rem;
-  margin: auto;
-  width: 12rem;
-}
-
-.landing_about .text_container {
-  width: 80%;
 }
 
 .landing_about ul {
@@ -123,16 +109,19 @@
 }
 
 /* About the process section */
-.landing_process {
-  margin: 0;
-  padding: 0 0 1rem 0;
+.process_graphic_mobile {
+  display: grid;
+  height: 20rem;
+  overflow: hidden;
 }
 
 .landing_process img {
   display: block;
-  margin: auto;
-  padding: 2rem 1rem 1rem 1rem;
-  width: 75%;
+  height: auto;
+  position: relative;
+    top: -5rem;
+    left: -5rem;
+  width: 900px;
 }
 
 @media screen and (max-width: 899px) {
@@ -147,42 +136,43 @@
 
 @media screen and (min-width: 900px) {
   .home_hero_mobile{
-    background: linear-gradient(#1E343E, #1E343E, #1E343E, #1E343E, #2A566B, #357695, #0889CA);
-    box-shadow: none;
-    height: 46vw;
-    overflow: hidden;
-    position: relative;
+    background:
+      linear-gradient(
+        rgba(8, 137, 201, .05),
+        rgba(8, 137, 201, .05)),
+      url("../images/profile_transparent.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
   }
 
   .home_hero_mobile svg{
-    fill: rgba(173, 228, 255, .05);
+    display: inline-block;
+    fill: rgba(173, 228, 255, .5);
+    height: 10vw;
     padding: 0;
     position: relative;
     top: -.5rem;
-    width: auto;
+    width: min-content;
   }
 
-  #thinker svg{
-    height: 9vw;
+  #thinker {
     margin-bottom: .5rem;
-    right: 10rem;
-    top: -.5rem;
+    left: 10vw;
+    top: -1.2vw;
   }
 
-  #creator svg{
-    height: 9vw;
+  #creator {
     margin-bottom: 2rem;
-    right: -24vw;
+    left: 40vw;
   }
 
-  #dreamer svg{
-    height: 10vw;
+  #dreamer {
     margin-bottom: 2rem;
-    right: 10rem;
+    left: -2vw;
   }
 
-  #designer svg{
-    height: 10vw;
+  #designer {
     right: -18vw;
   }
 
@@ -196,23 +186,23 @@
     margin: auto;
     position: absolute;
       top: 15vw;
-      right: 8vw;
+      right: 4vw;
     width: auto;
-    max-width: 21rem;
+    max-width: 20em;
   }
 
   .intro_container p{
-    color: rgba(173, 228, 255, 1);
-    font-size: 2.2vw;
-    line-height: 4.4vw;
+    color: #000000;
+    font-size: 1.2rem;
+    line-height: 3rem;
   }
 
   .intro_container span{
-    font-size: 3.2vw;
+    font-size: 2rem;
   }
 
   .intro_container .highlight_text {
-    color: #ffffff;
+    color: rgba(255, 0, 108, 1);
   }
 
   /** Hides mobile personal intro **/
@@ -221,43 +211,16 @@
   }
 
   /** Landing page "About" section **/
-  .landing_about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .landing_about .yellow_bg{
-    grid-column: 1;
-    overflow: hidden;
-    position: relative;
-  }
-
-  #about {
-    color: rgba(237, 169, 68, .4);
-    font-size: 14vw;
-    position: relative;
-      left: -2vw;
-      top: -2vw;
-  }
-
-  #me {
-    font-size: 14vw;
-    position: absolute;
-      right: -2vw;
-      top: 5vw;
-  }
-
-  .profile {
-    background-image: url("../images/profile.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-column: 2;
-  }
-
-  .landing_about .text_container {
+  /* .landing_about .text_container {
     margin: 1.5vw auto;
-    padding: 3rem 0 1rem 0;
-    max-width: 21rem;
+    padding: 0 0 1rem 0;
+    width: 100%;
+    max-width: 100%;
+  } */
+
+  .landing_about .cell_1,
+  .landing_about .cell_2 {
+    grid-row: 2;
   }
 
   .landing_about ul {
@@ -265,7 +228,7 @@
   }
 
   .landing_about .button{
-    margin: 1rem auto;
+    margin: 2rem 0;
   }
 
   /* About the process section */
@@ -273,55 +236,26 @@
     padding: 0;
   }
 
-  .landing_process .process_image {
-    background-color: rgba(242, 242, 242, 1);
-    background-color: var(--grey-bg-color);
-    grid-column: 1 / span 6;
-    grid-row: 1;
-    z-index: 1;
-  }
-
-  .landing_process img {
-    padding: 4rem 0;
-    max-width: 40vw;
-    width: auto;
-  }
-
-  .landing_process_title, .text_container, .button_container {
-    grid-column: 7 / span 6;
+  .landing_process h3 {
     grid-row: 1;
   }
 
-  #the {
-    color: rgba(173, 228, 255, .5);
-    font-size: 14vw;
-    position: relative;
-      left: -2vw;
-      top: -1.5vw;
+  .landing_process .cell_1 {
+    grid-row: 2;
   }
 
-  #process {
-    color: rgba(173, 228, 255, .8);
-    font-size: 14vw;
-    position: relative;
-    right: -4vw;
-    top: -6.5vw;
+  .landing_process .user_flows_graphic {
+    background-image: url("../images/user_flows_graphic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 35vw 0 5rem .5rem rgba(255, 255, 255, .9);
+    grid-row: 1 / span 2;
+    z-index: -1;
   }
 
-  .landing_process .text_container{
-    align-self: center;
-    margin: auto;
-    max-width: 16rem;
-    padding-top: 9rem;
-  }
-
-  .landing_process .button_container {
-    align-self: end;
-    margin-bottom: 1rem;
-  }
-
-  .landing_process .button{
-    margin: 1rem auto;
+  .process_graphic_mobile {
+    height: 0;
   }
 }
 
