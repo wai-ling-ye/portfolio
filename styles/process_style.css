@@ -11,7 +11,9 @@ header h3 {
   animation-delay: .5s;
   animation-duration: 1.5s;
   animation-fill-mode: backwards;
+  font-size: 5rem;
   padding: 4rem 0;
+  margin: 0 auto;
 }
 
 article {
@@ -50,18 +52,15 @@ article h3 {
   width: 90%;
 }
 
-header h3 {
-  font-size: 6rem;
-}
-
 #see_the_process, #in_action {
+  color: rgba(173, 228, 255, .8);
+  color: var(--light-blue);
   font-size: 4rem;
   margin: 0;
   padding: 0;
 }
 
 #see_the_process {
-  color: rgba(237, 169, 68, .4);
   line-height: normal;
 }
 
@@ -70,9 +69,14 @@ header h3 {
   text-align: right;
 }
 
+.remkeep_project h3 {
+  color: #ffffff;
+  padding-bottom: 0;
+}
+
 @media screen and (max-width: 500px) {
   h3 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   #see_the_process, #in_action {
@@ -83,6 +87,12 @@ header h3 {
 @media screen and (min-width: 900px) {
   nav a {
     color: rgba(255, 255, 255, .8);
+  }
+
+  h3 {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
   }
 
   .row_2 {
@@ -117,6 +127,7 @@ header h3 {
 
   .text_container {
     padding: 0 0 2rem 0;
+    margin: 0;
   }
 
   .phase_1 .text_container h4 {
@@ -185,7 +196,7 @@ header h3 {
 
   /** Separation bar "Check out my work" **/
   #see_the_process, #in_action {
-    font-size: 12vw;
+    font-size: 10vw;
   }
 
   #see_the_process {
@@ -199,6 +210,5 @@ header h3 {
   #in_action {
     line-height: 5vw;
     position: relative;
-      right: -1vw;
   }
 }
