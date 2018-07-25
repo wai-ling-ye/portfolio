@@ -6,11 +6,14 @@ h4 {
   padding: 0 0 1rem 0;
 }
 
+.about_header {
+    color: rgba(173, 228, 255, .8);
+}
+
 #hi_there {
   animation-name: fade-in;
   animation-duration: 2s;
   animation-fill-mode: backwards;
-  color: rgba(237, 169, 68, .7);
   font-size: 7.5rem;
   position: relative;
   top: 3.5rem;
@@ -21,7 +24,6 @@ h4 {
   animation-delay: .8s;
   animation-duration: 2s;
   animation-fill-mode: backwards;
-  color: rgba(237, 169, 68, .4);
   font-size: 4.875rem;
   line-height: 5.5rem;
   padding: 1rem 0 2rem 0;
@@ -34,7 +36,6 @@ h4 {
   animation-delay: 1.4s;
   animation-duration: 2s;
   animation-fill-mode: backwards;
-  color: rgba(237, 169, 68, .4);
   font-size: 4.6rem;
   line-height: 5.5rem;
   padding: 1rem 0 5rem 0;
@@ -49,10 +50,11 @@ h4 {
 .about_content {
   display: flex;
   flex-direction: column;
-  padding-bottom: 0;
+  padding: 0;
 }
 
 .about_sidebar {
+  background: rgba(156, 207, 232, .25);
   order: 2;
 }
 
@@ -127,16 +129,17 @@ h4 {
 
 .mobile_display .button {
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 #check_out, #my_work {
+  color: rgba(173, 228, 255, .8);
   font-size: 16vw;
-  margin: 1rem 0;
+  line-height: 10vw;
+  margin: 1rem 0 2rem; 0;
 }
 
 #my_work {
-  color: rgba(237, 169, 68, .8);
-  padding-bottom: 1rem;
   text-align: right;
 }
 
@@ -147,6 +150,9 @@ h4 {
 }
 
 @media screen and (min-width: 900px) {
+  nav a {
+    color: rgba(255, 255, 255, .8);
+  }
 
   #hi_there {
     font-size: 12vw;
@@ -229,22 +235,27 @@ h4 {
   }
 
   /** Separation bar "Check out my work" **/
+  aside {
+    height: 20vw;
+  }
+
   #check_out, #my_work {
-    font-size: 16vw;
+    font-size: 12vw;
     margin: 0;
     padding: 0;
   }
 
   #check_out {
-    color: rgba(237, 169, 68, .4);
+    line-height: 12vw;
     position: relative;
-      left: -2vw;
-      top: -1.2vw;
+      left: -1vw;
+      top: -2vw;
   }
 
   #my_work {
     line-height: 6vw;
     position: relative;
-      top: -2.3vw;
-      right: -3vw;
+      top: -2.5vw;
+      left: 40vw;
+    text-align: left;
   }
