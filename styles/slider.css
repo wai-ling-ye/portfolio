@@ -3,7 +3,14 @@
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 100%;
+}
+
+.mobile_prototype {
+  width: 12.2rem;
+}
+
+.desktop_prototype {
+  width: 38.2rem;
 }
 
 /* Slides */
@@ -51,14 +58,9 @@
   cursor: pointer;
   display: block;
   height: .8rem;
-  opacity: 0;
   transition: .5s;
   width: .8rem;
   z-index: 10;
-}
-
-.slider:hover label {
-    opacity: 1;
 }
 
 .slider input:checked + label {
@@ -94,17 +96,9 @@ label:hover {
   display: inline;
 }
 
-.mobile_prototype .slides{
-  left: calc(50% - 6rem);
-}
-
 .mobile_prototype img {
   height: auto;
   width: 12rem;
-}
-
-.desktop_prototype .slides {
-  left: calc(50% - 19rem);
 }
 
 .desktop_prototype img {

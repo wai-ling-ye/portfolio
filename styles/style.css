@@ -537,6 +537,7 @@ tr:nth-child(odd) {
   .cell_2 {
     grid-column: 6 / span 4;
     padding-top: 0;
+    margin-left: 0;
   }
 
   /* 3rd third */
@@ -562,6 +563,7 @@ tr:nth-child(odd) {
     align-self: center;
     grid-column: 6 / span 6;
     grid-row: 1;
+    margin-left: 0;
   }
 
   /* 1st half */
@@ -731,11 +733,11 @@ tr:nth-child(odd) {
   }
 
 @media screen and (min-width: 1600px) {
-  -ms-@viewport {
-    max-width: 1600px;
+  html {
+    font-size: 24px;
   }
 
-  @viewport {
-    max-width: 1600px;
-  }
+  /* .grid {
+    grid-template-columns: 12vw repeat(10, 1fr) 12vw;
+  } */
 }
