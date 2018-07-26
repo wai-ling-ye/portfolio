@@ -16,7 +16,7 @@
   background-size: auto 90%;
   background-position: 50% 80%;
   box-shadow: inset 0 0 0 100rem rgba(8, 137, 201, .8);
-  padding-bottom: 1rem;
+  padding: 2rem 0;
   width: 100%;
 }
 
@@ -47,17 +47,16 @@
   padding: 0;
 }
 
+.specs h4,
 .specs p {
   display: block;
-  margin: 0 2rem;
+  margin: auto;
+  width: 20rem;
+  max-width: 90%;
 }
 
 .problem {
   padding-bottom: 1rem;
-}
-
-.solution {
-  background: rgba(156, 207, 232, .25);
 }
 
 .process_aside {
@@ -141,7 +140,6 @@
 }
 
 .persona_frustrations {
-  background-color: rgba(156, 207, 232, .25);
   padding: 0 1rem 1rem 1rem;
 }
 
@@ -263,10 +261,6 @@
   font-weight: 600; /**semi-bold**/
 }
 
-.HF_prototypes {
-  background-color: rgba(156, 207, 232, .25);
-}
-
 .HF_prototypes h3 {
   color: rgba(53, 118, 149, .75);
   fill: rgba(53, 118, 149, .75);
@@ -353,7 +347,7 @@
 
 /* High Fidelity Changes */
 .HF_changes {
-  padding-bottom: 0
+  padding: 0
 }
 
 .HF_changes_top {
@@ -435,13 +429,9 @@
   }
 
   /* Header */
-  header {
-    padding-top: 14vw;
-  }
-
   .remkeep_header {
     background-image: none;
-    padding-bottom: 3rem;
+    padding: 8rem 0 2rem 0;
   }
 
   .remkeep_title {
@@ -475,12 +465,15 @@
 
   /* Specs and Objective */
   .specs {
-    background-color: rgba(156, 207, 232, .25);
     padding-bottom: 2rem;
   }
 
-  .specs h4 {
+  .specs h4,
+  .specs p {
+    margin: 0;
     padding: 0;
+    width: initial;
+    max-width: initial;
   }
 
   .roles {
@@ -652,6 +645,7 @@
 
   .wireframes_content {
     background-color: rgba(156, 207, 232, .25);
+    background-color: var(--lb-bg-color);
     grid-column: 1 / span 12;
     grid-row: 2;
     padding: 2rem 0 4rem 0;
@@ -696,6 +690,7 @@
 
   .user_testing .cell_full {
     background-color: rgba(156, 207, 232, .25);
+    background-color: var(--lb-bg-color);
     grid-column: 1 / span 12;
     grid-row: 3;
   }
@@ -788,6 +783,7 @@
   /* Preference Testing */
   .PT_1 {
     background-color: rgba(156, 207, 232, .25);
+    background-color: var(--lb-bg-color);
   }
 
   .PT_2 {
@@ -838,6 +834,7 @@
 
   .conclusion_section {
     background-color: rgba(156, 207, 232, .25);
+    background-color: var(--lb-bg-color);
   }
 
   .conclusion {

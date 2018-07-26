@@ -336,7 +336,7 @@ nav {
 table {
   background-color: #fff;
   border-collapse: collapse;
-  margin: auto;
+  margin: 2rem auto;
   text-align: left;
   width: 20rem;
   max-width: 90%;
@@ -374,6 +374,7 @@ tr:nth-child(even) {
 
 tr:nth-child(odd) {
   background-color: rgba(156, 207, 232, .25);
+  background-color: var(--lb-bg-color);
 }
 
 /* Projects */
@@ -585,6 +586,7 @@ tr:nth-child(odd) {
   }
 
   .grid table {
+    margin: 0;
     width: 100%;
     max-width: 100%;
   }
