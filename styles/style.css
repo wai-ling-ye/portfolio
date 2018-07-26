@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:light,regular,semibold,italic|Song+Myung');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:light,lightitalic,regular,semibold,italic|Song+Myung');
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 :root {
   --highlight-color: rgba(255, 0, 108, 1);
   --blue-bg-color: rgba(8, 137, 201, 1);
-  --yellow-bg-color: rgba(255, 233, 207, .3);
+  --lb-bg-color: rgba(156, 207, 232, .25);
   --grey-bg-color: rgba(242, 242, 242, 1);
   --dark-blue: rgba(53, 118, 149, 1);
   --light-blue: rgba(173, 228, 255, .8); /**80% opacity on blue bg**/
@@ -36,6 +36,7 @@ body{
 h2 {
   font-family: "Song Myung", Georgia, serif;
   font-size: 5rem;
+  line-height: 3.5rem;
   position: relative;
 }
 
@@ -44,7 +45,8 @@ h3{ /**large headings**/
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 3.5rem;
   font-weight: 300;
-  margin: 2rem auto;
+  margin: 0 auto;
+  padding: 2rem 0;
   position: relative;
   width: 20rem;
     max-width: 90%;
@@ -95,9 +97,9 @@ aside {
     max-width: 90%;
 }
 
-.yellow_bg {
-  background: rgba(255, 233, 207, .3);
-  background: var(--yellow-bg-color);
+.lightblue_bg {
+  background: rgba(156, 207, 232, .25);
+  background: var(--lb-bg-color);
 }
 
 .blue_bg {
@@ -335,7 +337,6 @@ table {
   background-color: #fff;
   border-collapse: collapse;
   margin: auto;
-  margin-bottom: 2rem;
   text-align: left;
   width: 20rem;
   max-width: 90%;
@@ -559,7 +560,7 @@ tr:nth-child(odd) {
   /* 2nd two-thirds */
   .cell_4 {
     align-self: center;
-    grid-column: 6 / span 7;
+    grid-column: 6 / span 6;
     grid-row: 1;
   }
 
@@ -574,6 +575,11 @@ tr:nth-child(odd) {
     padding: 0;
   }
 
+  .grid table {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .full_width_text {
     min-width: 55%;
   }
@@ -585,7 +591,7 @@ tr:nth-child(odd) {
   }
 
   .button a {
-    font-size: 1.5vw;
+    font-size: 2.5vh;
     padding: 0 2rem;
   }
 

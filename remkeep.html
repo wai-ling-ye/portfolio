@@ -9,6 +9,7 @@
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/remkeep_style.css">
+    <link rel="stylesheet" type="text/css" href="styles/slider.css">
   </head>
   <body>
     <nav role="navigation">
@@ -56,38 +57,34 @@
     </nav>
 
     <!-- Hero -->
-    <header class="blue_bg remkeep_header">
-      <div class="grid">
-        <!-- <svg class="full_width_text remkeep_title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374 85" fill="none">
-          <path d="M48.958 70.357C49.2613 71.631 50.05 72.3287 51.324 72.45L54.691 72.814C56.147 72.9353 56.875 73.6633 56.875 74.998C56.875 76.3933 56.2077 77.2123 54.873 77.455C53.9023 77.5763 52.962 77.6673 52.052 77.728C51.142 77.8493 50.232 77.91 49.322 77.91C46.228 77.91 43.7407 77.4853 41.86 76.636C39.9793 75.7867 38.766 74.0577 38.22 71.449L35.399 58.618C34.671 55.4633 33.488 53.3703 31.85 52.339C30.2727 51.247 27.9067 50.701 24.752 50.701H21.476V61.53C21.476 62.986 21.476 64.442 21.476 65.898C21.5367 67.2933 21.567 68.6887 21.567 70.084C21.6277 71.4187 22.3557 72.177 23.751 72.359L27.209 72.723C28.6043 72.905 29.302 73.6633 29.302 74.998C29.302 76.3327 28.5437 77 27.027 77H5.551C4.03433 77 3.276 76.3327 3.276 74.998C3.276 73.6633 4.004 72.9353 5.46 72.814L8.736 72.45C10.1313 72.268 10.8593 71.4793 10.92 70.084C10.92 68.628 10.92 67.172 10.92 65.716C10.9807 64.1993 11.011 62.6827 11.011 61.166V35.14C11.011 33.6233 10.9807 32.137 10.92 30.681C10.92 29.1643 10.92 27.6477 10.92 26.131C10.7987 24.7357 10.0707 23.947 8.736 23.765L5.46 23.401C4.004 23.219 3.276 22.491 3.276 21.217C3.276 19.8823 4.03433 19.215 5.551 19.215H29.211C35.8843 19.215 41.041 20.5193 44.681 23.128C48.321 25.7367 50.141 29.316 50.141 33.866C50.141 38.052 48.8367 41.419 46.228 43.967C43.68 46.515 40.4647 48.1833 36.582 48.972C39.13 49.7607 41.1927 51.065 42.77 52.885C44.408 54.6443 45.6517 57.1013 46.501 60.256L48.958 70.357ZM21.476 46.242H26.754C30.6367 46.242 33.761 45.3017 36.127 43.421C38.5537 41.4797 39.767 38.4767 39.767 34.412C39.767 30.8933 38.766 28.224 36.764 26.404C34.762 24.584 31.577 23.674 27.209 23.674H21.658C21.5973 25.494 21.5367 27.314 21.476 29.134C21.476 30.954 21.476 32.8043 21.476 34.685V46.242ZM101.171 53.067C100.928 54.4017 100.079 55.069 98.6227 55.069H72.2327C72.354 60.5897 73.6887 64.7453 76.2367 67.536C78.7847 70.3267 82.091 71.722 86.1557 71.722C88.5217 71.722 90.5237 71.2973 92.1617 70.448C93.8603 69.538 95.4073 68.2943 96.8027 66.717C97.47 65.989 98.107 65.625 98.7137 65.625C99.017 65.625 99.29 65.716 99.5327 65.898C100.443 66.5047 100.564 67.4147 99.8967 68.628C98.3193 71.722 96.0443 74.088 93.0717 75.726C90.099 77.364 86.6107 78.183 82.6067 78.183C79.2093 78.183 76.176 77.6067 73.5067 76.454C70.898 75.3013 68.6837 73.724 66.8637 71.722C65.1043 69.6593 63.7697 67.2327 62.8597 64.442C61.9497 61.6513 61.4947 58.618 61.4947 55.342C61.4947 52.1873 62.0103 49.1843 63.0417 46.333C64.073 43.4817 65.529 40.9943 67.4097 38.871C69.351 36.687 71.6563 34.9883 74.3257 33.775C77.0557 32.501 80.0587 31.864 83.3347 31.864C86.0647 31.864 88.5217 32.319 90.7057 33.229C92.9503 34.139 94.8613 35.413 96.4387 37.051C98.016 38.6283 99.2293 40.5393 100.079 42.784C100.928 45.0287 101.353 47.516 101.353 50.246C101.353 50.7313 101.353 51.2167 101.353 51.702C101.353 52.1267 101.292 52.5817 101.171 53.067ZM72.4147 50.883H86.0647C88.2487 50.883 89.7047 50.428 90.4327 49.518C91.2213 48.608 91.6157 47.334 91.6157 45.696C91.6157 42.966 90.827 40.691 89.2497 38.871C87.733 37.051 85.822 36.141 83.5167 36.141C81.636 36.141 79.998 36.6263 78.6027 37.597C77.268 38.507 76.1457 39.69 75.2357 41.146C74.3863 42.602 73.719 44.2097 73.2337 45.969C72.809 47.6677 72.536 49.3057 72.4147 50.883ZM176.478 70.448C176.539 71.722 177.236 72.5107 178.571 72.814L180.209 73.178C181.544 73.4207 182.211 74.1183 182.211 75.271C182.211 76.4237 181.453 77 179.936 77H163.283C161.766 77 161.008 76.4237 161.008 75.271C161.008 74.179 161.706 73.4813 163.101 73.178L165.012 72.814C166.347 72.5107 167.044 71.722 167.105 70.448V50.61C167.105 46.9093 166.559 44.3007 165.467 42.784C164.436 41.2673 162.858 40.509 160.735 40.509C159.036 40.509 157.277 41.0247 155.457 42.056C153.698 43.0267 151.938 44.3007 150.179 45.878C150.24 46.424 150.27 47.0307 150.27 47.698C150.331 48.3047 150.361 48.9417 150.361 49.609V70.448C150.422 71.722 151.119 72.5107 152.454 72.814L154.092 73.178C155.427 73.4207 156.094 74.1183 156.094 75.271C156.094 76.4237 155.336 77 153.819 77H137.166C135.649 77 134.891 76.4237 134.891 75.271C134.891 74.179 135.589 73.4813 136.984 73.178L138.804 72.814C140.139 72.5107 140.836 71.722 140.897 70.448V50.61C140.897 46.97 140.381 44.3917 139.35 42.875C138.319 41.2977 136.741 40.509 134.618 40.509C132.859 40.509 131.099 40.9943 129.34 41.965C127.581 42.9357 125.821 44.2097 124.062 45.787V70.448C124.123 71.722 124.82 72.5107 126.155 72.814L127.702 73.087C129.037 73.3903 129.704 74.1183 129.704 75.271C129.704 76.4237 128.946 77 127.429 77H110.685C109.168 77 108.41 76.4237 108.41 75.271C108.41 74.179 109.108 73.4813 110.503 73.178L112.414 72.814C113.749 72.5107 114.446 71.722 114.507 70.448V53.977C114.507 52.7637 114.507 51.6717 114.507 50.701C114.507 49.7303 114.477 48.881 114.416 48.153C114.355 47.6677 114.325 47.2127 114.325 46.788C114.325 46.3633 114.325 45.9083 114.325 45.423C114.204 44.0277 113.476 43.239 112.141 43.057L109.866 42.784C108.471 42.602 107.773 41.965 107.773 40.873C107.773 39.8417 108.38 39.0833 109.593 38.598L120.149 34.503C120.695 34.2603 121.241 34.139 121.787 34.139C122.151 34.139 122.394 34.1997 122.515 34.321C123 34.6243 123.273 35.322 123.334 36.414L123.789 41.692C125.912 39.144 128.157 37.2027 130.523 35.868C132.889 34.5333 135.498 33.866 138.349 33.866C141.322 33.866 143.718 34.503 145.538 35.777C147.358 37.051 148.693 39.0833 149.542 41.874C151.847 39.0833 154.183 37.051 156.549 35.777C158.976 34.503 161.736 33.866 164.83 33.866C168.652 33.866 171.534 35.0793 173.475 37.506C175.477 39.872 176.478 43.7547 176.478 49.154V70.448ZM227.622 70.812C228.229 71.7827 229.048 72.3893 230.079 72.632L232.445 73.087C233.78 73.3903 234.447 74.1183 234.447 75.271C234.447 76.4237 233.689 77 232.172 77H222.071C220.919 77 220.009 76.4843 219.341 75.453L207.693 56.07L202.779 61.075C202.779 62.531 202.779 64.0477 202.779 65.625C202.84 67.2023 202.87 68.7797 202.87 70.357C202.992 71.7523 203.689 72.5713 204.963 72.814L206.965 73.178C208.361 73.4813 209.058 74.179 209.058 75.271C209.058 76.4237 208.3 77 206.783 77H189.311C187.795 77 187.036 76.4237 187.036 75.271C187.036 74.179 187.734 73.4813 189.129 73.178L191.131 72.814C192.466 72.5713 193.133 71.7523 193.133 70.357C193.194 68.4157 193.224 66.444 193.224 64.442C193.285 62.3793 193.315 60.4683 193.315 58.709V23.947C193.315 22.5517 192.618 21.763 191.222 21.581L188.492 21.217C187.097 21.035 186.399 20.398 186.399 19.306C186.399 18.214 187.036 17.486 188.31 17.122L200.231 14.028C200.535 13.9067 200.777 13.846 200.959 13.846C201.202 13.846 201.445 13.846 201.687 13.846C202.112 13.846 202.385 13.9067 202.506 14.028C202.87 14.2707 203.052 14.9987 203.052 16.212L202.779 26.768V55.706L215.883 42.511C216.551 41.8437 216.793 41.237 216.611 40.691C216.49 40.0843 216.005 39.7203 215.155 39.599L213.972 39.417C212.577 39.235 211.879 38.507 211.879 37.233C211.879 36.0197 212.638 35.413 214.154 35.413H229.624C231.141 35.413 231.899 36.0197 231.899 37.233C231.899 38.507 231.202 39.235 229.806 39.417L225.347 40.054C224.377 40.236 223.497 40.6607 222.708 41.328L214.518 49.336L227.622 70.812ZM277.572 53.067C277.329 54.4017 276.48 55.069 275.024 55.069H248.634C248.755 60.5897 250.09 64.7453 252.638 67.536C255.186 70.3267 258.492 71.722 262.557 71.722C264.923 71.722 266.925 71.2973 268.563 70.448C270.262 69.538 271.809 68.2943 273.204 66.717C273.871 65.989 274.508 65.625 275.115 65.625C275.418 65.625 275.691 65.716 275.934 65.898C276.844 66.5047 276.965 67.4147 276.298 68.628C274.721 71.722 272.446 74.088 269.473 75.726C266.5 77.364 263.012 78.183 259.008 78.183C255.611 78.183 252.577 77.6067 249.908 76.454C247.299 75.3013 245.085 73.724 243.265 71.722C241.506 69.6593 240.171 67.2327 239.261 64.442C238.351 61.6513 237.896 58.618 237.896 55.342C237.896 52.1873 238.412 49.1843 239.443 46.333C240.474 43.4817 241.93 40.9943 243.811 38.871C245.752 36.687 248.058 34.9883 250.727 33.775C253.457 32.501 256.46 31.864 259.736 31.864C262.466 31.864 264.923 32.319 267.107 33.229C269.352 34.139 271.263 35.413 272.84 37.051C274.417 38.6283 275.631 40.5393 276.48 42.784C277.329 45.0287 277.754 47.516 277.754 50.246C277.754 50.7313 277.754 51.2167 277.754 51.702C277.754 52.1267 277.693 52.5817 277.572 53.067ZM248.816 50.883H262.466C264.65 50.883 266.106 50.428 266.834 49.518C267.623 48.608 268.017 47.334 268.017 45.696C268.017 42.966 267.228 40.691 265.651 38.871C264.134 37.051 262.223 36.141 259.918 36.141C258.037 36.141 256.399 36.6263 255.004 37.597C253.669 38.507 252.547 39.69 251.637 41.146C250.788 42.602 250.12 44.2097 249.635 45.969C249.21 47.6677 248.937 49.3057 248.816 50.883ZM324.761 53.067C324.518 54.4017 323.669 55.069 322.213 55.069H295.823C295.944 60.5897 297.279 64.7453 299.827 67.536C302.375 70.3267 305.681 71.722 309.746 71.722C312.112 71.722 314.114 71.2973 315.752 70.448C317.45 69.538 318.997 68.2943 320.393 66.717C321.06 65.989 321.697 65.625 322.304 65.625C322.607 65.625 322.88 65.716 323.123 65.898C324.033 66.5047 324.154 67.4147 323.487 68.628C321.909 71.722 319.634 74.088 316.662 75.726C313.689 77.364 310.201 78.183 306.197 78.183C302.799 78.183 299.766 77.6067 297.097 76.454C294.488 75.3013 292.274 73.724 290.454 71.722C288.694 69.6593 287.36 67.2327 286.45 64.442C285.54 61.6513 285.085 58.618 285.085 55.342C285.085 52.1873 285.6 49.1843 286.632 46.333C287.663 43.4817 289.119 40.9943 291 38.871C292.941 36.687 295.246 34.9883 297.916 33.775C300.646 32.501 303.649 31.864 306.925 31.864C309.655 31.864 312.112 32.319 314.296 33.229C316.54 34.139 318.451 35.413 320.029 37.051C321.606 38.6283 322.819 40.5393 323.669 42.784C324.518 45.0287 324.943 47.516 324.943 50.246C324.943 50.7313 324.943 51.2167 324.943 51.702C324.943 52.1267 324.882 52.5817 324.761 53.067ZM296.005 50.883H309.655C311.839 50.883 313.295 50.428 314.023 49.518C314.811 48.608 315.206 47.334 315.206 45.696C315.206 42.966 314.417 40.691 312.84 38.871C311.323 37.051 309.412 36.141 307.107 36.141C305.226 36.141 303.588 36.6263 302.193 37.597C300.858 38.507 299.736 39.69 298.826 41.146C297.976 42.602 297.309 44.2097 296.824 45.969C296.399 47.6677 296.126 49.3057 296.005 50.883ZM346.014 34.321C346.499 34.6243 346.772 35.322 346.833 36.414L347.106 39.963C349.047 37.9003 351.049 36.3837 353.112 35.413C355.235 34.3817 357.601 33.866 360.21 33.866C363.243 33.866 365.822 34.5333 367.945 35.868C370.068 37.142 371.797 38.8407 373.132 40.964C374.527 43.0267 375.528 45.3623 376.135 47.971C376.802 50.5797 377.136 53.1883 377.136 55.797C377.136 58.5877 376.772 61.348 376.044 64.078C375.316 66.7473 374.194 69.1437 372.677 71.267C371.16 73.3903 369.249 75.1193 366.944 76.454C364.639 77.728 361.939 78.365 358.845 78.365C354.356 78.365 350.534 76.6967 347.379 73.36V78.274C347.379 80.0333 347.379 81.9443 347.379 84.007C347.44 86.1303 347.5 88.1627 347.561 90.104C347.561 91.4993 348.228 92.3183 349.563 92.561L352.748 93.198C354.083 93.4407 354.75 94.1383 354.75 95.291C354.75 96.4437 353.992 97.02 352.475 97.02H334.093C332.576 97.02 331.818 96.4437 331.818 95.291C331.818 94.1383 332.485 93.4103 333.82 93.107L335.913 92.652C337.248 92.3487 337.915 91.5297 337.915 90.195C337.976 88.2537 338.006 86.2213 338.006 84.098C338.067 82.0353 338.097 80.094 338.097 78.274V53.977C338.097 52.7637 338.097 51.6717 338.097 50.701C338.097 49.7303 338.067 48.881 338.006 48.153C337.945 47.6677 337.915 47.2127 337.915 46.788C337.915 46.3633 337.915 45.9083 337.915 45.423C337.794 44.0277 337.066 43.239 335.731 43.057L333.547 42.784C332.152 42.602 331.454 41.965 331.454 40.873C331.454 39.8417 332.061 39.0833 333.274 38.598L343.739 34.503C344.285 34.2603 344.801 34.139 345.286 34.139C345.529 34.139 345.771 34.1997 346.014 34.321ZM347.652 43.512V68.901C350.564 71.267 353.385 72.45 356.115 72.45C359.148 72.45 361.666 71.1457 363.668 68.537C365.731 65.9283 366.762 61.8637 366.762 56.343C366.762 50.7617 365.852 46.606 364.032 43.876C362.273 41.0853 359.907 39.69 356.934 39.69C354.204 39.69 351.11 40.964 347.652 43.512Z" transform="translate(-3 -13)" fill="#ADE4FF" fill-opacity="0.8"/>
-        </svg> -->
-        <img src="" alt="">
-        <div class="aside_text">Remkeep is cloud storage service reimagined. More than just a safe place for files, Remkeep is your go-to for organizing, collaborating, and sharing digital content.</div>
+    <header class="remkeep_header blue_bg grid">
+
+      <img class="cell_full desktop_display" src="images/Remkeep/screens_2.png" alt="">
+      <div class="aside_text">
+        <h3 class="mobile_display">Remkeep</h3>
+        Remkeep is cloud storage service reimagined. More than just a safe place for files, Remkeep is your go-to for organizing, collaborating, and sharing digital content.
       </div>
-      <div class="prototype_links desktop_display">
-        <img src="images/Remkeep/desktop_screens.png" alt="" data-aos="fade" data-aos-anchor-placement="bottom-bottom">
-        <div class="button"><a href="https://invis.io/AUF7VIFY4" target="_blank">View the Desktop Prototype</a></div>
-        <img src="images/Remkeep/mobile_screens.png" alt="" data-aos="fade">
-        <div class="button"><a href="https://invis.io/EVF7VKR5T" target="_blank">View the Mobile Prototype</a></div>
-      </div>
+
       <div class="mobile_display"><div class="button"><a href="#prototype_links">View the prototype</a></div></div>
+
+      <article class="objective cell_5 desktop_display" data-aos="fade" data-aos-delay="200">
+        <h3>Objective</h3>
+        <div class="text_container"><p>Cloud storage can do more than keep your files safe. Remkeep makes it easy to save and organize files and web content in one place using a visual organization system. The ease and flexibility of Remkeep allow your cloud storage to become your go-to dashboard for work and play.</p></div>
+        <div class="button"><a href="#prototype_links">View the prototype</a></div>
+      </article>
     </header>
 
     <div class="mobile_display"><img src="images/Remkeep/laptop_image.jpg" alt=""></div>
 
     <!-- Specs and Objective -->
     <article class="specs grid">
-      <div class="text_container roles">
-        <h4>Roles</h4>
-        <p>UX Design | Branding | Visual Design</p>
-      </div>
-      <div class="text_container tools">
-        <h4>Tools</h4>
-        <p>Photoshop | Illustrator | InVision | Balsamiq | Pen & Paper</p>
-      </div>
+      <h4>Roles</h4>
+      <p class="roles">UX Design | Branding | Visual Design</p>
+      <div class="tools_title"><h4>Tools</h4></div>
+      <p class="tools">Photoshop | Illustrator | InVision | Balsamiq | Pen & Paper</p>
     </article>
 
-    <article class="blue_bg objective" data-aos="fade" data-aos-delay="200">
+    <article class="objective blue_bg mobile_display" data-aos="fade" data-aos-delay="200">
       <h3>Objective</h3>
       <div class="text_container"><p>Cloud storage can do more than keep your files safe. Remkeep makes it easy to save and organize files and web content in one place using a visual organization system. The ease and flexibility of Remkeep allow your cloud storage to become your go-to dashboard for work and play.</p></div>
     </article>
@@ -120,10 +117,11 @@
 
     <!-- Process Header -->
     <aside class="blue_bg process_aside grid">
-      <svg class="full_width_text" data-aos="fade" data-aos-anchor=".process_aside" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 74" fill="none">
-        <path d="M29.38 67.976H26.781V78.937C26.781 80.293 26.781 81.6867 26.781 83.118C26.8563 84.474 26.894 85.9053 26.894 87.412C26.9693 89.0693 27.8733 90.011 29.606 90.237L34.239 90.689C36.047 90.915 36.951 91.8567 36.951 93.514C36.951 95.1713 36.0093 96 34.126 96H6.893C5.00967 96 4.068 95.1713 4.068 93.514C4.068 91.8567 4.972 90.9527 6.78 90.802L10.848 90.35C12.5807 90.124 13.4847 89.1447 13.56 87.412C13.56 85.604 13.56 83.796 13.56 81.988C13.6353 80.1047 13.673 78.2213 13.673 76.338V44.02C13.673 42.1367 13.6353 40.291 13.56 38.483C13.56 36.5997 13.56 34.7163 13.56 32.833C13.4093 31.1003 12.5053 30.121 10.848 29.895L6.78 29.443C4.972 29.217 4.068 28.313 4.068 26.731C4.068 25.0737 5.00967 24.245 6.893 24.245H33.335C36.8757 24.245 40.3787 24.584 43.844 25.262C47.3093 25.8647 50.398 26.9947 53.11 28.652C55.8973 30.234 58.1197 32.4187 59.777 35.206C61.5097 37.918 62.376 41.3833 62.376 45.602C62.376 50.1973 61.359 53.964 59.325 56.902C57.291 59.7647 54.6543 62.0247 51.415 63.682C48.251 65.3393 44.7103 66.4693 40.793 67.072C36.951 67.6747 33.1467 67.976 29.38 67.976ZM31.866 29.782H27.007C26.9317 32.1173 26.8563 34.415 26.781 36.675C26.781 38.935 26.781 41.2703 26.781 43.681V62.439H31.075C37.5537 62.439 42.262 60.8947 45.2 57.806C48.138 54.7173 49.607 50.7247 49.607 45.828C49.607 40.63 48.1757 36.675 45.313 33.963C42.5257 31.1757 38.0433 29.782 31.866 29.782ZM86.5854 43.003C86.8867 43.229 87.1127 43.5303 87.2634 43.907C87.414 44.2837 87.527 44.8863 87.6024 45.715L88.3934 55.094C90.4274 51.1013 92.7627 48.0127 95.3994 45.828C98.1114 43.568 100.861 42.438 103.648 42.438C105.155 42.438 106.699 42.89 108.281 43.794C109.863 44.698 110.88 46.2423 111.332 48.427C111.332 50.5363 110.692 52.2313 109.411 53.512C108.131 54.7173 106.398 55.32 104.213 55.32C101.652 55.32 99.2414 54.1523 96.9814 51.817L96.4164 51.252C94.759 52.7587 93.2524 54.4537 91.8964 56.337C90.6157 58.145 89.4857 60.3297 88.5064 62.891V87.525C88.5817 89.2577 89.448 90.2747 91.1054 90.576L94.7214 91.254C96.454 91.6307 97.3204 92.497 97.3204 93.853C97.3204 95.2843 96.3787 96 94.4954 96H71.8954C70.012 96 69.0704 95.2843 69.0704 93.853C69.0704 92.497 69.9367 91.6307 71.6694 91.254L73.9294 90.802C75.5867 90.4253 76.453 89.446 76.5284 87.864V67.411C76.5284 65.9043 76.5284 64.5483 76.5284 63.343C76.5284 62.1377 76.4907 61.083 76.4154 60.179C76.34 59.5763 76.3024 59.0113 76.3024 58.484C76.3024 57.9567 76.3024 57.3917 76.3024 56.789C76.1517 55.0563 75.2477 54.077 73.5904 53.851L70.8784 53.512C69.1457 53.286 68.2794 52.495 68.2794 51.139C68.2794 49.8583 69.0327 48.9167 70.5394 48.314L83.6474 43.229C84.3254 42.9277 84.9657 42.777 85.5684 42.777C86.0204 42.777 86.3594 42.8523 86.5854 43.003ZM142.732 42.438C146.65 42.438 150.228 43.1913 153.467 44.698C156.707 46.1293 159.456 48.1257 161.716 50.687C164.052 53.173 165.822 56.111 167.027 59.501C168.308 62.8157 168.948 66.394 168.948 70.236C168.948 74.1533 168.308 77.807 167.027 81.197C165.822 84.5117 164.089 87.412 161.829 89.898C159.569 92.3087 156.82 94.2297 153.58 95.661C150.341 97.017 146.725 97.695 142.732 97.695C138.74 97.695 135.124 97.017 131.884 95.661C128.645 94.2297 125.895 92.3087 123.635 89.898C121.375 87.412 119.605 84.5117 118.324 81.197C117.119 77.807 116.516 74.1533 116.516 70.236C116.516 66.394 117.119 62.778 118.324 59.388C119.605 55.998 121.375 53.06 123.635 50.574C125.971 48.088 128.72 46.1293 131.884 44.698C135.124 43.1913 138.74 42.438 142.732 42.438ZM142.732 47.523C134.069 47.523 129.737 55.0563 129.737 70.123C129.737 85.039 134.069 92.497 142.732 92.497C151.396 92.497 155.727 85.039 155.727 70.123C155.727 55.0563 151.396 47.523 142.732 47.523ZM219.135 83.909C219.964 82.779 220.755 82.214 221.508 82.214C221.734 82.214 221.998 82.2893 222.299 82.44C223.429 83.118 223.655 84.248 222.977 85.83C221.245 89.672 218.608 92.61 215.067 94.644C211.602 96.678 207.496 97.695 202.75 97.695C198.682 97.695 195.066 97.017 191.902 95.661C188.738 94.2297 186.064 92.3087 183.879 89.898C181.77 87.412 180.15 84.5117 179.02 81.197C177.966 77.807 177.438 74.1533 177.438 70.236C177.438 66.394 178.079 62.778 179.359 59.388C180.64 55.998 182.448 53.06 184.783 50.574C187.119 48.0127 189.906 46.0163 193.145 44.585C196.385 43.1537 200.001 42.438 203.993 42.438C206.253 42.438 208.476 42.7393 210.66 43.342C212.92 43.9447 214.954 44.8863 216.762 46.167C218.646 47.3723 220.228 48.9167 221.508 50.8C222.789 52.608 223.542 54.7173 223.768 57.128C223.241 60.2167 221.32 61.761 218.005 61.761C214.163 61.761 211.941 59.4257 211.338 54.755L210.547 50.461C210.246 49.105 209.606 48.2763 208.626 47.975C207.722 47.6737 206.705 47.523 205.575 47.523C202.788 47.523 200.415 48.201 198.456 49.557C196.498 50.8377 194.916 52.5327 193.71 54.642C192.505 56.676 191.601 58.9737 190.998 61.535C190.471 64.021 190.207 66.4317 190.207 68.767C190.207 75.8483 191.752 81.1593 194.84 84.7C197.929 88.2407 201.884 90.011 206.705 90.011C211.828 90.011 215.971 87.977 219.135 83.909ZM281.005 66.281C280.703 67.9383 279.649 68.767 277.841 68.767H245.071C245.221 75.6223 246.879 80.7827 250.043 84.248C253.207 87.7133 257.312 89.446 262.36 89.446C265.298 89.446 267.784 88.9187 269.818 87.864C271.927 86.734 273.848 85.1897 275.581 83.231C276.409 82.327 277.2 81.875 277.954 81.875C278.33 81.875 278.669 81.988 278.971 82.214C280.101 82.9673 280.251 84.0973 279.423 85.604C277.464 89.446 274.639 92.384 270.948 94.418C267.256 96.452 262.925 97.469 257.953 97.469C253.734 97.469 249.967 96.7533 246.653 95.322C243.413 93.8907 240.664 91.932 238.404 89.446C236.219 86.8847 234.562 83.8713 233.432 80.406C232.302 76.9407 231.737 73.174 231.737 69.106C231.737 65.1887 232.377 61.4597 233.658 57.919C234.938 54.3783 236.746 51.2897 239.082 48.653C241.492 45.941 244.355 43.8317 247.67 42.325C251.06 40.743 254.789 39.952 258.857 39.952C262.247 39.952 265.298 40.517 268.01 41.647C270.797 42.777 273.17 44.359 275.129 46.393C277.087 48.3517 278.594 50.7247 279.649 53.512C280.703 56.2993 281.231 59.388 281.231 62.778C281.231 63.3807 281.231 63.9833 281.231 64.586C281.231 65.1133 281.155 65.6783 281.005 66.281ZM245.297 63.569H262.247C264.959 63.569 266.767 63.004 267.671 61.874C268.65 60.744 269.14 59.162 269.14 57.128C269.14 53.738 268.16 50.913 266.202 48.653C264.318 46.393 261.945 45.263 259.083 45.263C256.747 45.263 254.713 45.8657 252.981 47.071C251.323 48.201 249.93 49.67 248.8 51.478C247.745 53.286 246.916 55.2823 246.314 57.467C245.786 59.5763 245.447 61.6103 245.297 63.569ZM312.368 63.682L315.984 64.925C318.772 65.9797 321.069 67.1097 322.877 68.315C324.761 69.445 326.305 70.6503 327.51 71.931C328.565 73.287 329.318 74.756 329.77 76.338C330.222 77.8447 330.448 79.4643 330.448 81.197C330.448 84.2103 329.77 86.7717 328.414 88.881C327.134 90.915 325.439 92.61 323.329 93.966C321.22 95.2467 318.847 96.1883 316.21 96.791C313.649 97.3937 311.088 97.695 308.526 97.695C305.362 97.695 302.575 97.356 300.164 96.678C297.754 96.0753 295.343 95.1713 292.932 93.966C291.576 93.3633 290.898 92.271 290.898 90.689L290.785 83.57C290.785 81.6867 291.689 80.745 293.497 80.745H295.305C296.963 80.745 297.98 81.6113 298.356 83.344L299.26 88.09C299.486 89.5967 300.277 90.576 301.633 91.028C303.893 91.932 306.229 92.384 308.639 92.384C312.481 92.384 315.269 91.706 317.001 90.35C318.734 88.994 319.6 87.1107 319.6 84.7C319.6 82.5153 318.847 80.8203 317.34 79.615C315.834 78.3343 313.159 76.9407 309.317 75.434L304.345 73.626C300.127 71.8933 296.887 69.8217 294.627 67.411C292.367 65.0003 291.237 61.9117 291.237 58.145C291.237 55.2823 291.84 52.8717 293.045 50.913C294.251 48.9543 295.833 47.3347 297.791 46.054C299.75 44.7733 301.935 43.8693 304.345 43.342C306.756 42.7393 309.204 42.438 311.69 42.438C314.327 42.438 316.738 42.7393 318.922 43.342C321.107 43.8693 323.292 44.6603 325.476 45.715C326.908 46.393 327.586 47.523 327.51 49.105L327.171 55.433C327.096 57.241 326.154 58.145 324.346 58.145H322.651C320.919 58.145 319.902 57.3163 319.6 55.659L318.809 51.478C318.508 49.896 317.679 48.9167 316.323 48.54C314.741 47.9373 313.084 47.636 311.351 47.636C308.338 47.636 306.003 48.2763 304.345 49.557C302.763 50.8377 301.972 52.6833 301.972 55.094C301.972 56.902 302.688 58.4463 304.119 59.727C304.873 60.3297 305.927 60.97 307.283 61.648C308.715 62.326 310.41 63.004 312.368 63.682ZM361.144 63.682L364.76 64.925C367.547 65.9797 369.845 67.1097 371.653 68.315C373.536 69.445 375.08 70.6503 376.286 71.931C377.34 73.287 378.094 74.756 378.546 76.338C378.998 77.8447 379.224 79.4643 379.224 81.197C379.224 84.2103 378.546 86.7717 377.19 88.881C375.909 90.915 374.214 92.61 372.105 93.966C369.995 95.2467 367.622 96.1883 364.986 96.791C362.424 97.3937 359.863 97.695 357.302 97.695C354.138 97.695 351.35 97.356 348.94 96.678C346.529 96.0753 344.118 95.1713 341.708 93.966C340.352 93.3633 339.674 92.271 339.674 90.689L339.561 83.57C339.561 81.6867 340.465 80.745 342.273 80.745H344.081C345.738 80.745 346.755 81.6113 347.132 83.344L348.036 88.09C348.262 89.5967 349.053 90.576 350.409 91.028C352.669 91.932 355.004 92.384 357.415 92.384C361.257 92.384 364.044 91.706 365.777 90.35C367.509 88.994 368.376 87.1107 368.376 84.7C368.376 82.5153 367.622 80.8203 366.116 79.615C364.609 78.3343 361.935 76.9407 358.093 75.434L353.121 73.626C348.902 71.8933 345.663 69.8217 343.403 67.411C341.143 65.0003 340.013 61.9117 340.013 58.145C340.013 55.2823 340.615 52.8717 341.821 50.913C343.026 48.9543 344.608 47.3347 346.567 46.054C348.525 44.7733 350.71 43.8693 353.121 43.342C355.531 42.7393 357.98 42.438 360.466 42.438C363.102 42.438 365.513 42.7393 367.698 43.342C369.882 43.8693 372.067 44.6603 374.252 45.715C375.683 46.393 376.361 47.523 376.286 49.105L375.947 55.433C375.871 57.241 374.93 58.145 373.122 58.145H371.427C369.694 58.145 368.677 57.3163 368.376 55.659L367.585 51.478C367.283 49.896 366.455 48.9167 365.099 48.54C363.517 47.9373 361.859 47.636 360.127 47.636C357.113 47.636 354.778 48.2763 353.121 49.557C351.539 50.8377 350.748 52.6833 350.748 55.094C350.748 56.902 351.463 58.4463 352.895 59.727C353.648 60.3297 354.703 60.97 356.059 61.648C357.49 62.326 359.185 63.004 361.144 63.682Z" transform="translate(-5 -24.0007)" fill="#ADE4FF" fill-opacity="0.8"/>
-      </svg>
-      <div class="aside_text cell_5">“We're really excited at the possibilities we see in the cloud storage and organization market. … [T]here's room for another player if we can find the right combination of features to meet the needs of a particular audience.”<p>- Client Brief</p></div>
+      <div class="aside_text cell_5">
+        <h3>The Process</h3>
+        “We're really excited at the possibilities we see in the cloud storage and organization market. … [T]here's room for another player if we can find the right combination of features to meet the needs of a particular audience.”
+        <br><span>- Client Brief</span>
+      </div>
     </aside>
 
     <!-- Competitive Analysis -->
@@ -212,37 +210,22 @@
     </article>
 
     <!-- User Surveys -->
-    <article class="survey_section yellow_bg">
-      <picture>
-        <source media="(min-width: 900px)" srcset="images/Remkeep/survey_desktop_bg.png">
-        <img src="images/Remkeep/survey_mobile_bg.png" alt="">
-      </picture>
-      <h3>User Surveys</h3>
-      <div class="grid">
-        <div class="text_container">
-          <h4 class="survey_heading_1">Who are our users?</h4>
-          <ul>
-            <li><div class="percent_highlight">25</div><p> participants</p></li>
-            <li><div class="percent_highlight">80<span>%</span></div><p> 18 to 34 years old</p></li>
-            <li><div class="percent_highlight">52<span>%</span></div><p> students</p></li>
-          </ul>
-        </div>
-        <div class="text_container">
-          <h4>What is cloud storage used for?</h4>
-          <ul>
-            <li><div class="percent_highlight">75<span>%</span></div><p> personal organization</p></li>
-            <li><div class="percent_highlight">80<span>%</span></div><p> mobile upload</p></li>
-            <li><div class="percent_highlight">86<span>%</span></div><p> text editing</p></li>
-          </ul>
-        </div>
-        <div class="text_container">
-          <h4>How is cloud storage used?</h4>
-          <ul>
-            <li><div class="percent_highlight">65<span>%</span></div><p> on PC (browser)</p></li>
-            <li><div class="percent_highlight">66<span>%</span></div><p> on smartphone</p></li>
-            <li><div class="percent_highlight">48<span>%</span></div><p> on tablet</p></li>
-          </ul>
-        </div>
+    <article class="survey_section grid lightblue_bg">
+      <div class="cell_4">
+        <img class="survey_graph_1" src="images/Remkeep/survey_graph_1.png" alt="Graph of cloud storage features">
+        <img src="images/Remkeep/survey_graph_2.png" alt="Graph of cloud storage device usage">
+      </div>
+      <div class="text_container cell_1v">
+        <h4>User Surveys</h4>
+        <p>The user surveys provide insight into what users are looking for in cloud storage and how they use it. Based on the survey results, I prioritized:</p>
+        <ul class="bulleted_list">
+          <li><p>Uploading files, photos, and videos</p></li>
+          <li><p>Saving web content</p></li>
+          <li><p>Easy and functional organization</p></li>
+          <li><p>Creating and editing text documents</p></li>
+        </ul>
+        <p>I decided to develop these features primarily for a PC browser, and secondarily for a mobile application, as the survey results indicated that these two methods were most frequently used to access cloud storage.
+        <div class="button"><a href="https://docs.google.com/document/d/1f9xPcsw1HOsfUvkfOaIGAJUWmFKUfpmefYJODo54XO8/edit?usp=sharing" target="_blank">View the Survey Analysis</a></div>
       </div>
     </article>
 
@@ -343,19 +326,20 @@
       </picture>
     </figure>
 
-    <article class="wireframes">
-      <div class="grid">
-        <div class="text_container heading_text">
-          <h4>Wireframes</h4>
-          <p>Wireframes provide a simple, visual outline of the layout and navigation of the website. I touch on visual design here, but the main focus is making sure that we deliver information to the user in a clear and intuitive fashion.</p>
-        </div>
+    <article class="wireframes grid">
+      <div class="wireframe_top text_container cell_1">
+        <h4>Wireframes</h4>
+        <p>Wireframes provide a simple, visual outline of the layout and navigation of the website. I touch on visual design here, but the main focus is making sure that we deliver information to the user in a clear and intuitive fashion.</p>
       </div>
+      <img class="cell_4 desktop_display" src="images/Remkeep/wireframe_screens.png" alt="Wireframe examples" data-aos="fade" data-aos-anchor=".wireframes_content">
       <div class="wireframes_content grid">
-        <div class="text_container cell_1">
-          <p>As this is the first visual that we will have of the website, I start with sketches, which allows me to generate a large number of layouts from which I can select the ideal layouts for the intended content.<br><br>I then selected the layouts which I believed to work best with the content strategy and created clean wireframes in Balsamiq. I used my user stories and user flows to prioritize which pages to create and what information to include on each page.</p>
+        <div class="p1 text_container cell_1">
+          <p>As this is the first visual that we will have of the website, I start with sketches, which allows me to generate a large number of layouts from which I can select the ideal layouts for the intended content.</p>
+        </div>
+        <div class="p2 text_container cell_1">
+          <p>I then selected the layouts which I believed to work best with the content strategy and created clean wireframes in Balsamiq. I used my user stories and user flows to prioritize which pages to create and what information to include on each page.</p>
         </div>
         <div class="text_container cell_2">
-          <img class="desktop_display" src="images/Remkeep/wireframes_layered.png" alt="">
           <p>The wireframe is also the first opportunity I have to include unique features including:</p>
           <ul class="bulleted_list">
             <li><p>A visual organization system</p></li>
@@ -369,7 +353,7 @@
 
     <!-- User Testing 1 -->
     <div class="user_testing_heading user_testing_img1">
-      <h3>User Testing</h3>
+      <h2>User Testing</h2>
     </div>
 
     <article class="user_testing grid">
@@ -457,8 +441,9 @@
     <!-- Brand Strategy -->
     <div class="brand_strategy_heading grid">
       <img class="desktop_display" data-aos="fade" data-aos-offset="200" src="images/Remkeep/Brand_Strategy_img_desktop.png" alt="">
-      <h3>Brand Strategy</h3>
-      <div class="aside_text cell_5">Before I can create the high fidelity prototype, I needed to first finalize the look and feel, and the brand strategy for the cloud storage service.</div>
+      <div class="aside_text cell_5">
+        <h3>Brand Strategy</h3>
+        Before I can create the high fidelity prototype, I needed to first finalize the look and feel, and the brand strategy for the cloud storage service.</div>
     </div>
 
     <article class="logo_text grey_bg grid">
@@ -493,7 +478,7 @@
 
     <!-- High Fidelity Prototype -->
     <article class="HF_prototypes grid">
-      <h3>High Fidelity Prototypes</h3>
+      <h3 class="cell_full">High Fidelity Prototypes</h3>
       <div class="text_container cell_1">
         <p>Although the primary focus for the minimum viable product for our cloud storage service is a web browser-based application, I decided to create the mobile mockup first to ensure scalability.</p>
       </div>
@@ -503,17 +488,55 @@
     </article>
 
     <figure class="blue_bg" id="prototype_links">
-      <div class="prototypes mobile_display">
-        <div class="laptop_img"><img src="images/Remkeep/laptop_preview.jpg" alt=""></div>
-        <div class="button"><a href="https://invis.io/AUF7VIFY4" target="_blank">View the Desktop Prototype</a></div>
-        <div class="mobile_img"><img src="images/Remkeep/mobile_preview.png" alt=""></div>
+      <div class="prototype_flex_wrap">
+        <div class="slider mobile_prototype">
+
+          <input type="radio" id="slide1" name="slide">
+          <label for="slide1"></label>
+          <input type="radio" id="slide2" name="slide" checked>
+          <label for="slide2"></label>
+          <input type="radio" id="slide3" name="slide">
+          <label for="slide3"></label>
+          <input type="radio" id="slide4" name="slide">
+          <label for="slide4"></label>
+          <input type="radio" id="slide5" name="slide">
+          <label for="slide5"></label>
+
+          <ul class="slides">
+            <li>
+              <img src="images/Remkeep/prototype_screens/landing_mobile.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/dashboard_mobile.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/nav_mobile.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/add_mobile.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/upload_mobile.png" alt=""></li>
+          </ul>
+        </div>
         <div class="button"><a href="https://invis.io/EVF7VKR5T" target="_blank">View the Mobile Prototype</a></div>
       </div>
 
-      <div class="prototype_links desktop_display">
-        <img src="images/Remkeep/desktop_screens.png" alt="" data-aos="fade">
-        <div class="button"><a href="https://invis.io/AUF7VIFY4" target="_blank">View the Desktop Prototype</a></div>
-        <img src="images/Remkeep/mobile_screens.png" alt="" data-aos="fade">
+      <div class="prototype_flex_wrap">
+        <div class="slider desktop_prototype">
+
+          <input type="radio" id="slide6" name="slide2">
+          <label for="slide6"></label>
+          <input type="radio" id="slide7" name="slide2" checked>
+          <label for="slide7"></label>
+          <input type="radio" id="slide8" name="slide2">
+          <label for="slide8"></label>
+          <input type="radio" id="slide9" name="slide2">
+          <label for="slide9"></label>
+          <input type="radio" id="slide10" name="slide2">
+          <label for="slide10"></label>
+
+          <ul class="slides">
+            <li>
+              <img src="images/Remkeep/prototype_screens/landing_desktop.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/signin_desktop.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/dashboard_desktop.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/folder_menu_desktop.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/save_desktop.png" alt=""></li>
+          </ul>
+        </div>
         <div class="button"><a href="https://invis.io/EVF7VKR5T" target="_blank">View the Mobile Prototype</a></div>
       </div>
     </figure>
@@ -556,7 +579,7 @@
 
     <!-- User Testing 2 -->
     <div class="user_testing_heading user_testing_img2">
-      <h3>User Testing</h3>
+      <h2>User Testing</h2>
     </div>
 
     <article class="user_testing grid">
