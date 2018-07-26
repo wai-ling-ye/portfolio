@@ -15,8 +15,9 @@ h4 {
   animation-duration: 2s;
   animation-fill-mode: backwards;
   font-size: 7.5rem;
+  line-height: 6rem;
   position: relative;
-  top: 3.5rem;
+  top: 4rem;
 }
 
 #thanks_for {
@@ -158,7 +159,6 @@ h4 {
     font-size: 12vw;
     padding-bottom: 2vw;
     left: 12vw;
-    top: -1.2vw;
   }
 
   #thanks_for {
@@ -167,7 +167,7 @@ h4 {
     padding: 0;
     text-align: center;
     right: -10vw;
-    top:0;
+    top: 7vw;
   }
 
   #dropping_in {
@@ -176,7 +176,7 @@ h4 {
     padding: 0 0 4rem 0;
     text-align: center;
     left: -2vw;
-    top:0;
+    top: 5vw;
   }
 
   /** About content section **/

@@ -138,6 +138,11 @@
   .home_hero_mobile{
     background:
       linear-gradient(
+        to left,
+        rgba(255, 255, 255, .6),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)),
+      linear-gradient(
         rgba(8, 137, 201, .05),
         rgba(8, 137, 201, .05)),
       url("../images/profile_transparent.png");
@@ -164,7 +169,7 @@
 
   #creator {
     margin-bottom: 2rem;
-    left: 40vw;
+    left: 20vw;
   }
 
   #dreamer {
@@ -173,7 +178,7 @@
   }
 
   #designer {
-    right: -18vw;
+    left: 10vw;
   }
 
   /** position personal intro in hero **/

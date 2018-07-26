@@ -431,6 +431,13 @@ tr:nth-child(odd) {
   padding: 2rem 0 2rem 1rem;
 }
 
+.footer_bottom h3 {
+  color: rgba(53, 118, 149, 1);
+  color: var(--dark-blue);
+  font-size: 2rem;
+  padding: 0 0 1rem 0;
+}
+
 .footer_bottom p {
   color: rgba(53, 118, 149, 1);
   color: var(--dark-blue);
@@ -549,7 +556,7 @@ tr:nth-child(odd) {
   /* 1st third vertical centered */
   .cell_1v {
     align-self: center;
-    grid-column: 2 / span 6;
+    grid-column: 2 / span 5;
     grid-row: 1;
     margin-left: 0;
   }
@@ -707,7 +714,7 @@ tr:nth-child(odd) {
     grid-row: 1;
     font-size: 12vw;
     left: -1vw;
-    top: -2.5vw;
+    top: 1vw;
   }
 
   .footer_container {

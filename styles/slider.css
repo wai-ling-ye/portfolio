@@ -170,3 +170,34 @@ label:hover {
 .slider input:nth-of-type(5):checked ~ .slides li:nth-of-type(5){
   opacity: 1;
 }
+
+@media screen and (max-width: 900px) {
+  .desktop_prototype {
+    width: calc(90vw + .2rem);
+  }
+
+  .desktop_prototype img {
+    height: auto;
+    width: 90vw;
+  }
+
+  .desktop_prototype input:nth-of-type(1):checked ~ .slides {
+    transform: translate(0);
+  }
+
+  .desktop_prototype input:nth-of-type(2):checked ~ .slides {
+    transform: translate(calc(-90vw - 1rem));
+  }
+
+  .desktop_prototype input:nth-of-type(3):checked ~ .slides {
+    transform: translate(calc(2 * (-90vw - 1rem)));
+  }
+
+  .desktop_prototype input:nth-of-type(4):checked ~ .slides {
+    transform: translate(calc(3 * (-90vw - 1rem)));
+  }
+
+  .desktop_prototype input:nth-of-type(5):checked ~ .slides {
+    transform: translate(calc(4 * (-90vw - 1rem)));
+  }
+}

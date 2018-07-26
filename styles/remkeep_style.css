@@ -267,40 +267,31 @@
   background-color: rgba(156, 207, 232, .25);
 }
 
-.HF_prototypes svg,
 .HF_prototypes h3 {
   color: rgba(53, 118, 149, .75);
   fill: rgba(53, 118, 149, .75);
 }
 
-.prototypes {
-  background-color: rgba(8, 137, 201, 1);
-  background-color: var(--blue-bg-color);
-  padding-bottom: 1rem;
+#prototype_links {
+  padding: 3rem 0 1rem; 0;
 }
 
-.laptop_img {
-  margin: auto;
-  padding-top: 2rem;
-  width: 90%;
-}
-
-.mobile_img {
-  padding-top: 1rem;
-}
-
-.mobile_img img{
-  height: 22.5rem;
-  margin: auto;
-  position: relative;
-  left: 10px;
-  width: auto;
+.prototype_flex_wrap{
+  padding: 1rem 0;
 }
 
 /* Preference Testing */
 
+.heading_text {
+  padding-bottom: 2rem;
+}
+
 .PT_overlay {
   display: grid;
+}
+
+.PT_1 .text_container {
+  padding-bottom: 2rem;
 }
 
 .overlay_1,
@@ -328,6 +319,11 @@
 .PT_1 h4,
 .PT_2 h4 {
   padding-top: 0;
+}
+
+.PT_1 .text_container,
+.PT_2 .text_container {
+  padding-top: 2rem;
 }
 
 .pt_mobile {
@@ -360,8 +356,17 @@
   padding-bottom: 0
 }
 
+.HF_changes_top {
+  padding-bottom: 1rem;
+}
+
+.HF_changes_middle {
+  padding-top: 2rem;
+}
+
 .visual_changes {
   margin: auto;
+  padding-top: 1rem;
   padding-bottom: 4rem;
   width: 90%;
 }
@@ -375,19 +380,16 @@
   padding: 0;
 }
 
+.conclusion_section h3 {
+  margin-left: 0;
+}
+
 .conclusion {
   padding-bottom: 3rem;
 }
 
-.conclusion svg {
-  height: auto;
-  margin-bottom: 1rem;
-  width: 100%;
-}
-
-.what_I_learned h3 {
-  font-size: 5rem;
-  padding-bottom: 1rem;
+.what_I_learned {
+  padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 600.5px) {
@@ -834,9 +836,13 @@
     padding: 4rem 5vw;
   }
 
-  .conclusion {
+  .conclusion_section {
     background-color: rgba(156, 207, 232, .25);
-    grid-column: 1 / span 6;
+  }
+
+  .conclusion {
+    background: none;
+    grid-column: 2 / span 5;
     grid-row: 1;
     padding-bottom: 2rem;
   }
@@ -846,17 +852,17 @@
   }
 
   .what_I_learned {
-    grid-column: 7 / span 6;
+    grid-column: 7 / span 5;
     grid-row: 1;
     padding-bottom: 1rem;
   }
 
   .conclusion h3, .what_I_learned h3 {
-    font-size: 7vw;
-    padding: 2rem 0 1rem 0;
+    color: rgba(53, 118, 149, .75);
+    white-space: nowrap;
   }
 
-  .conclusion h3 {
-    color: rgba(53, 118, 149, .75);
+  .conclusion_section .button {
+    margin: auto;
   }
 }
