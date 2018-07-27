@@ -204,6 +204,18 @@
   background-color: rgba(156, 207, 232, .25);
 }
 
+.user_testing_disclaimer {
+  align-self: end;
+  text-align: right;
+}
+
+.user_testing_disclaimer p {
+  color: rgba(0, 0, 0, .6);
+  font-size: .8rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
 /* Wireframes */
 .wireframes_slider_container {
   align-self: baseline;
