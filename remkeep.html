@@ -68,8 +68,10 @@
       <div class="mobile_display"><div class="button"><a href="#prototype_links">View the prototype</a></div></div>
 
       <article class="objective cell_5 desktop_display" data-aos="fade" data-aos-delay="200">
-        <h3>Objective</h3>
-        <div class="text_container"><p>Cloud storage can do more than keep your files safe. Remkeep makes it easy to save and organize files and web content in one place using a visual organization system. The ease and flexibility of Remkeep allow your cloud storage to become your go-to dashboard for work and play.</p></div>
+        <div class="text_container">
+          <h3>Objective</h3>
+          <p>Cloud storage can do more than keep your files safe. Remkeep makes it easy to save and organize files and web content in one place using a visual organization system. The ease and flexibility of Remkeep allow your cloud storage to become your go-to dashboard for work and play.</p>
+        </div>
         <div class="button"><a href="#prototype_links">View the prototype</a></div>
       </article>
     </header>
@@ -78,20 +80,26 @@
 
     <!-- Specs and Objective -->
     <article class="specs grid lightblue_bg">
-      <h4>Roles</h4>
-      <p class="roles">UX Design | Branding | Visual Design</p>
-      <div class="tools_title"><h4>Tools</h4></div>
-      <p class="tools">Photoshop | Illustrator | InVision | Balsamiq | Pen & Paper</p>
+      <div class="text_container cell_1">
+        <h4>Roles</h4>
+        <p>UX Design | Branding | Visual Design</p>
+      </div>
+      <div class="text_container cell_2">
+        <h4>Tools</h4>
+        <p>Photoshop | Illustrator | InVision | Balsamiq | Pen & Paper</p>
+      </div>
     </article>
 
     <article class="objective blue_bg mobile_display" data-aos="fade" data-aos-delay="200">
-      <h3>Objective</h3>
-      <div class="text_container"><p>Cloud storage can do more than keep your files safe. Remkeep makes it easy to save and organize files and web content in one place using a visual organization system. The ease and flexibility of Remkeep allow your cloud storage to become your go-to dashboard for work and play.</p></div>
+      <div class="text_container">
+        <h3>Objective</h3>
+        <p>Cloud storage can do more than keep your files safe. Remkeep makes it easy to save and organize files and web content in one place using a visual organization system. The ease and flexibility of Remkeep allow your cloud storage to become your go-to dashboard for work and play.</p>
+      </div>
     </article>
 
     <!-- Problem and Solution -->
     <div class="problem_solution grid">
-      <article class="problem">
+      <article class="problem cell_1">
         <div class="text_container">
           <h4>The Problem</h4>
           <p>Despite the existence of popular, big-name cloud storage services, there are two major problems:</p>
@@ -103,7 +111,7 @@
         </div>
       </article>
 
-      <article class="solution lightblue_bg">
+      <article class="solution lightblue_bg cell_2">
         <div class="text_container">
           <h4>The Solution</h4>
           <p>The cloud storage options that exist today act as a simple repository. You put your files into a safe deposit box, and you can view or  take those files out of the box later.</p>
@@ -117,7 +125,7 @@
 
     <!-- Process Header -->
     <aside class="blue_bg process_aside grid">
-      <div class="aside_text cell_5">
+      <div class="aside_text cell_4">
         <h3>The Process</h3>
         “We're really excited at the possibilities we see in the cloud storage and organization market. … [T]here's room for another player if we can find the right combination of features to meet the needs of a particular audience.”
         <br><span>- Client Brief</span>
@@ -254,7 +262,7 @@
                 <li><p>Keep web links for reference</p></li>
               </ol>
             </div>
-            <div class="persona_frustrations lightblue_bg">
+            <div class="persona_frustrations">
               <h5>Frustrations</h5>
               <ol class="numbered_list">
                 <li><p>Uploading to cloud storage is slow</p></li>
@@ -293,33 +301,55 @@
     </article>
 
     <!-- User Stories and User Flows -->
-    <article class="user_stories_flows cell_full grid">
+    <article class="user_stories_flows cell_full grid lightblue_bg">
 
-      <div class="text_container user_stories" data-aos="fade-right">
+      <div class="text_container cell_1v">
         <h4>User Stories</h4>
         <p>User stories are the first step in the information architecture phase. I use user stories to enter into the mind of the user in order to prioritize tasks that the user will want to accomplish. These priorities will guide us on which content to include in the minimum viable product.</p>
       </div>
-      <div class="button" id="user_stories_button" data-aos="fade-up" data-aos-anchor=".user_stories"><a href="https://docs.google.com/spreadsheets/d/1kXxCyNmDTwyahtXtdSYCrbKhKIhHzTHwNOzUD2OsDKc/edit?usp=sharing" target="_blank">View the User Stories</a></div>
 
-      <div class="text_container user_flows" data-aos="fade-left">
+      <table class="cell_4">
+        <tr>
+          <th><h5>User</h5></th>
+          <th><h5>Task</h5></th>
+          <th><h5>Priority</h5></th>
+        </tr>
+        <tr>
+          <td><h4 class="mobile_display">New</h4><h4 class="desktop_display">As a new user</h4></td>
+          <td><p>I want to create an account</p></td>
+          <td><p>High</p></td>
+        </tr>
+        <tr>
+          <td><h4 class="mobile_display">New</h4><h4 class="desktop_display">As a new user</h4></td>
+          <td><p>I want to upload a file</p></td>
+          <td><p>High</p></td>
+        </tr>
+        <tr>
+          <td><h4 class="mobile_display">New</h4><h4 class="desktop_display">As a new user</h4></td>
+          <td><p>I want to make a folder</p></td>
+          <td><p>Medium</p></td>
+        </tr>
+        <tr>
+          <td><h4 class="mobile_display">Return</h4><h4 class="desktop_display">As a returning user</h4></td>
+          <td><p>I want to save a bookmark</p></td>
+          <td><p>High</p></td>
+        </tr>
+        <tr>
+          <td><h4 class="mobile_display">Return</h4><h4 class="desktop_display">As returning user</h4></td>
+          <td><p>I want to share a folder</p></td>
+          <td><p>Low</p></td>
+        </tr>
+      </table>
+
+      <div class="text_container cell_1v" data-aos="fade-left">
         <h4>User Flows</h4>
         <p>The user stories inform our user flows. User flows illustrate step by step process by which the user will take to accomplish each task. These flows reflect the sequence of pages and options that will be available on the website.</p>
-      </div>
-      <div class="button" id="user_flows_button" data-aos="fade-up" data-aos-anchor=".user_flows"><a href="https://drive.google.com/open?id=1oWbH8Qk1wqagsZSgTVS3imcDAEsihTx8" target="_blank">View the User Flows</a></div>
-    </article>
-
-    <!-- Content Strategy -->
-    <article class="content_strategy grid">
-      <img class="site_map cell_4" src="images/Remkeep/site_map.png" alt="">
-      <div class="text_container cell_1v">
-        <h4>Content Strategy</h4>
-        <p>By first creating the content and information hierarchy, I can ensure that I can create a layout that complements the page content.</p>
-        <div class="button"><a href="https://drive.google.com/open?id=1bsGpEkt4-jnkN1pYanKYy2RcOPGa-qXQrDs10GSrz-8" target="_blank">View the Content Strategy</a></div>
+        <div class="button cell_1v" data-aos="fade-up" data-aos-anchor=".user_flows"><a href="https://drive.google.com/open?id=1oWbH8Qk1wqagsZSgTVS3imcDAEsihTx8" target="_blank">View the User Flows</a></div>
       </div>
     </article>
 
     <!-- Wireframes -->
-    <figure class="wireframes_heading">
+    <figure class="wireframes_heading blue_bg">
       <picture>
         <source media="(min-width: 900px)" srcset="images/Remkeep/wireframe_img_desktop.png">
         <img src="images/Remkeep/wireframe_img_mobile.png" alt="" data-aos="fade">
@@ -331,7 +361,32 @@
         <h4>Wireframes</h4>
         <p>Wireframes provide a simple, visual outline of the layout and navigation of the website. I touch on visual design here, but the main focus is making sure that we deliver information to the user in a clear and intuitive fashion.</p>
       </div>
-      <img class="cell_4 desktop_display" src="images/Remkeep/wireframe_screens.png" alt="Wireframe examples" data-aos="fade" data-aos-anchor=".wireframes_content">
+
+      <div class="wireframes_slider_container cell_4">
+        <div class="slider">
+
+          <input type="radio" id="slideA" name="wireframe_slide" checked>
+          <label for="slideA"></label>
+          <input type="radio" id="slideB" name="wireframe_slide">
+          <label for="slideB"></label>
+          <input type="radio" id="slideC" name="wireframe_slide">
+          <label for="slideC"></label>
+          <input type="radio" id="slideD" name="wireframe_slide">
+          <label for="slideD"></label>
+          <input type="radio" id="slideE" name="wireframe_slide">
+          <label for="slideE"></label>
+
+          <ul class="slides">
+            <li>
+              <img src="images/Remkeep/prototype_screens/wireframe_landing.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/wireframe_dashboard.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/wireframe_folder_dropdown.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/wireframe_add_link.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/wireframe_upload.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+
       <div class="wireframes_content grid">
         <div class="p1 text_container cell_1">
           <p>As this is the first visual that we will have of the website, I start with sketches, which allows me to generate a large number of layouts from which I can select the ideal layouts for the intended content.</p>
@@ -441,7 +496,7 @@
     <!-- Brand Strategy -->
     <div class="brand_strategy_heading grid">
       <img class="desktop_display" data-aos="fade" data-aos-offset="200" src="images/Remkeep/Brand_Strategy_img_desktop.png" alt="">
-      <div class="aside_text cell_5">
+      <div class="aside_text cell_4">
         <h3>Brand Strategy</h3>
         Before I can create the high fidelity prototype, I needed to first finalize the look and feel, and the brand strategy for the cloud storage service.</div>
     </div>
@@ -487,9 +542,9 @@
       </div>
     </article>
 
-    <figure class="blue_bg" id="prototype_links">
-      <div class="prototype_flex_wrap">
-        <div class="slider mobile_prototype">
+    <figure class="blue_bg grid" id="prototype_links">
+      <div class="mobile_prototype cell_1v">
+        <div class="slider">
 
           <input type="radio" id="slide1" name="slide">
           <label for="slide1"></label>
@@ -511,11 +566,12 @@
               <img src="images/Remkeep/prototype_screens/upload_mobile.png" alt=""></li>
           </ul>
         </div>
-        <div class="button"><a href="https://invis.io/EVF7VKR5T" target="_blank">View the Mobile Prototype</a></div>
       </div>
 
-      <div class="prototype_flex_wrap">
-        <div class="slider desktop_prototype">
+      <div class="button cell_1"><a href="https://invis.io/EVF7VKR5T" target="_blank">View the Mobile Prototype</a></div>
+
+      <div class="desktop_prototype cell_4">
+        <div class="slider">
 
           <input type="radio" id="slide6" name="slide2" checked>
           <label for="slide6"></label>
@@ -537,8 +593,9 @@
               <img src="images/Remkeep/prototype_screens/save_desktop.png" alt=""></li>
           </ul>
         </div>
-        <div class="button"><a href="https://invis.io/WGN75UEN3K2" target="_blank">View the Desktop Prototype</a></div>
       </div>
+
+      <div class="button cell_4"><a href="https://invis.io/WGN75UEN3K2" target="_blank">View the Desktop Prototype</a></div>
     </figure>
 
     <!-- Preference Testing -->
@@ -573,7 +630,7 @@
           <h4>Test Two: Mobile Dashboard</h4>
           <p>Out of 14 participants, there was an exactly 50/50 split between the two screens.  I decided to use the dashboard on the right because it’s more important for the user to understand the content at a glance. The dashboard on the left may have more visual appeal but may cause greater frustration in usage.</p>
         </div>
-        <img class="cell_4 desktop_display" data-aos="fade" data-aos-offset="200" src="images/Remkeep/mobile_dashboard_img_desktop.png" alt="Dashboard version 1: 50%, Dashboard version 2: 50%">
+        <img class="cell_4 desktop_display" data-aos="fade" src="images/Remkeep/mobile_dashboard_img_desktop.png" alt="Dashboard version 1: 50%, Dashboard version 2: 50%">
       </div>
     </article>
 
@@ -665,7 +722,7 @@
     <article class="HF_changes">
       <picture>
         <source media="(min-width: 900px)" srcset="images/Remkeep/mobile_upload_img_desktop.png">
-        <img data-aos="fade" src="images/Remkeep/mobile_upload_img_mobile.png" alt="Changes to the mobile upload page">
+        <img class="grey_bg" data-aos="fade" src="images/Remkeep/mobile_upload_img_mobile.png" alt="Changes to the mobile upload page">
       </picture>
       <div class="HF_changes_top grid grey_bg">
         <div class="text_container cell_1">
@@ -678,7 +735,7 @@
 
       <picture>
         <source media="(min-width: 900px)" srcset="images/Remkeep/desktop_dashboard_img_desktop.png">
-        <img data-aos="fade" src="images/Remkeep/desktop_dashboard_img_mobile.png" alt="Changes to the desktop dashboard page">
+        <img class="blue_bg" data-aos="fade" src="images/Remkeep/desktop_dashboard_img_mobile.png" alt="Changes to the desktop dashboard page">
       </picture>
       <div class="HF_changes_middle grey_bg grid">
         <div class="text_container cell_1">

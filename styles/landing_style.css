@@ -76,11 +76,10 @@
   padding-bottom: 2rem;
 }
 
-.landing_about svg {
-  fill: rgba(237, 169, 68, .4);
-  fill: var(--yellow-text);
-  height: auto;
-  width: 100%;
+.landing_about h3 {
+  margin: auto;
+  width: 20rem;
+    max-width: 90%;
 }
 
 .landing_about ul {
@@ -109,6 +108,16 @@
 }
 
 /* About the process section */
+.landing_process {
+  padding-bottom: 0;
+}
+
+.landing_process h3 {
+  margin: auto;
+  width: 20rem;
+    max-width: 90%;
+}
+
 .process_graphic_mobile {
   display: grid;
   height: 20rem;
@@ -149,6 +158,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
+    max-height: 48rem;
   }
 
   .home_hero_mobile svg{
@@ -216,13 +226,10 @@
   }
 
   /** Landing page "About" section **/
-  /* .landing_about .text_container {
-    margin: 1.5vw auto;
-    padding: 0 0 1rem 0;
-    width: 100%;
-    max-width: 100%;
-  } */
-
+  .landing_about h3{
+    margin: 0;
+  }
+  
   .landing_about .cell_1,
   .landing_about .cell_2 {
     grid-row: 2;
@@ -243,6 +250,7 @@
 
   .landing_process h3 {
     grid-row: 1;
+    margin: 0;
   }
 
   .landing_process .cell_1 {

@@ -45,8 +45,8 @@ h3{ /**large headings**/
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 3.5rem;
   font-weight: 300;
-  margin: 0 auto;
-  padding: 2rem 0;
+  line-height: 3rem;
+  padding-bottom: 2rem;
   position: relative;
   width: 20rem;
     max-width: 90%;
@@ -91,7 +91,6 @@ aside {
 
 .text_container {
   display: block;
-  padding: 1rem 0;
   margin: auto;
   width: 20rem;
     max-width: 90%;
@@ -334,6 +333,9 @@ nav {
 /* End of nav */
 
 table {
+  -moz-box-shadow:    0 .3rem .2rem .05rem rgba(0, 0, 0, .25);
+  -webkit-box-shadow: 0 .3rem .2rem .05rem rgba(0, 0, 0, .25);
+  box-shadow:         0 .3rem .2rem .05rem rgba(0, 0, 0, .25);
   background-color: #fff;
   border-collapse: collapse;
   margin: 2rem auto;
@@ -372,11 +374,6 @@ tr:nth-child(even) {
   background-color: rgba(242, 242, 242, 1);
 }
 
-tr:nth-child(odd) {
-  background-color: rgba(156, 207, 232, .25);
-  background-color: var(--lb-bg-color);
-}
-
 /* Projects */
 
 /* Remkeep */
@@ -397,7 +394,7 @@ tr:nth-child(odd) {
 }
 
 .remkeep_half_container h3 {
-  margin: 2rem 0;
+  margin: 0;
 }
 
 /** Footer **/
@@ -436,6 +433,7 @@ tr:nth-child(odd) {
   color: rgba(53, 118, 149, 1);
   color: var(--dark-blue);
   font-size: 2rem;
+  margin: auto;
   padding: 0 0 1rem 0;
 }
 
@@ -515,6 +513,7 @@ tr:nth-child(odd) {
   h3 {
     font-size: 3rem;
     margin-left: 0;
+    padding: 2rem 0;
   }
 
   article {
@@ -545,7 +544,7 @@ tr:nth-child(odd) {
   .cell_2 {
     grid-column: 6 / span 4;
     padding-top: 0;
-    margin-left: 0;
+    margin: 0;
   }
 
   /* 3rd third */
@@ -557,7 +556,7 @@ tr:nth-child(odd) {
   /* 1st third vertical centered */
   .cell_1v {
     align-self: center;
-    grid-column: 2 / span 5;
+    grid-column: 2 / span 4;
     grid-row: 1;
     margin-left: 0;
   }
@@ -581,7 +580,8 @@ tr:nth-child(odd) {
   }
 
   .grid .button {
-    margin: 2rem 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: 0;
   }
 
@@ -740,13 +740,14 @@ tr:nth-child(odd) {
   html {
     font-size: 20px;
   }
+}
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   html {
     font-size: 24px;
   }
 
-  /* .grid {
+  .grid {
     grid-template-columns: 12vw repeat(10, 1fr) 12vw;
-  } */
+  }
 }
