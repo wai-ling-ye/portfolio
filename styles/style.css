@@ -395,6 +395,7 @@ tr:nth-child(even) {
 
 .remkeep_half_container h3 {
   margin: 0;
+  padding-top: 1rem;
 }
 
 /** Footer **/

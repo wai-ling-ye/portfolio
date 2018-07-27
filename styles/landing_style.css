@@ -77,6 +77,7 @@
 }
 
 .landing_about h3 {
+  color: rgba(53, 118, 149, .8);
   margin: auto;
   width: 20rem;
     max-width: 90%;
@@ -113,6 +114,7 @@
 }
 
 .landing_process h3 {
+  color: rgba(53, 118, 149, .8);
   margin: auto;
   width: 20rem;
     max-width: 90%;
@@ -226,10 +228,10 @@
   }
 
   /** Landing page "About" section **/
-  .landing_about h3{
+  .landing_about h3 {
     margin: 0;
   }
-  
+
   .landing_about .cell_1,
   .landing_about .cell_2 {
     grid-row: 2;

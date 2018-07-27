@@ -549,7 +549,7 @@
 
   .survey_section img {
     height: 18rem;
-    margin: 2rem auto;
+    margin: 2rem 0;
     padding: 0;
     width: auto;
   }
@@ -602,14 +602,16 @@
   }
 
   .wireframes_heading img {
-    margin: auto;
     padding: 4rem 0;
-    width: 90%;
+  }
+
+  .wireframes {
+    padding-bottom: 0;
   }
 
   .wireframes_slider_container {
     grid-row: 1 / span 2;
-    margin-top: 0;
+    margin: 0;
     padding: 2rem 0;
     width: 30rem;
     z-index: 1;
@@ -649,7 +651,7 @@
 
   .user_testing table{
     table-layout: fixed;
-    margin: 0 0 2rem 0;
+    margin: 2rem 0;
   }
 
   .user_testing th {
@@ -728,6 +730,7 @@
 
   .HF_prototypes h3 {
     grid-row: 1;
+    margin: 0;
     padding-bottom: 4rem;
     width: 100%;
   }
@@ -784,9 +787,11 @@
   }
 
   .HF_changes img {
-    margin: auto;
     padding: 2rem 0;
-    width: 90%;
+  }
+
+  .HF_changes figure:nth-of-type(1) {
+    background: none;
   }
 
   .HF_changes .cell_1,
