@@ -116,6 +116,7 @@
 .landing_process h3 {
   color: rgba(53, 118, 149, .8);
   margin: auto;
+  padding-top: 2rem;
   width: 20rem;
     max-width: 90%;
 }
@@ -147,79 +148,91 @@
 
 @media screen and (min-width: 900px) {
   .home_hero_mobile{
-    background:
-      linear-gradient(
-        to left,
-        rgba(255, 255, 255, .6),
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0)),
-      linear-gradient(
-        rgba(8, 137, 201, .05),
-        rgba(8, 137, 201, .05)),
-      url("../images/profile_transparent.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
+    background-image: none;
+    box-shadow: none;
+    height: 75vh;
     max-height: 48rem;
   }
 
+  .home_hero_mobile .profile {
+    background-image: url("../images/profile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: inset 0 0 0 100rem rgba(8, 137, 201, .4);
+    grid-row: 1;
+    height: 80vh;
+    margin: 20vh 10vw 0 auto;
+    width: 60.2vh;
+    z-index: 1
+  }
+
+  .home_hero_mobile .cell_full {
+    grid-row: 1;
+  }
+
   .home_hero_mobile svg{
+    animation-duration: 1s;
     display: inline-block;
     fill: rgba(173, 228, 255, .5);
-    height: 10vw;
+    height: 10vh;
     padding: 0;
     position: relative;
     top: -.5rem;
-    width: min-content;
+    width: auto;
+    z-index: 2;
   }
 
   #thinker {
     margin-bottom: .5rem;
-    left: 10vw;
-    top: -1.2vw;
+    left: 25vh;
+    top: 25vh;
   }
 
   #creator {
     margin-bottom: 2rem;
-    left: 20vw;
+    top: 48vh;
+    left: 30vw;
   }
 
   #dreamer {
     margin-bottom: 2rem;
-    left: -2vw;
+    top: 68vh;
+    left: 10vw;
   }
 
   #designer {
-    left: 10vw;
+    top: 88vh;
+    left: 25vw;
   }
 
   /** position personal intro in hero **/
   .intro_container {
     animation-name: fade-in;
-    animation-delay: 1.5s;
     animation-duration: 2.5s;
     animation-fill-mode: backwards;
     display: block;
-    margin: auto;
-    position: absolute;
-      top: 15vw;
-      right: 4vw;
-    width: auto;
+    grid-row: 1;
+    margin-top: 25vh;
+    width: initial;
     max-width: 20em;
   }
 
   .intro_container p{
     color: #000000;
-    font-size: 1.2rem;
-    line-height: 3rem;
+    font-size: 1.1rem;
+    line-height: 2.6rem;
   }
 
   .intro_container span{
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .intro_container .highlight_text {
     color: rgba(255, 0, 108, 1);
+  }
+
+  .remkeep_project {
+    padding-top: 14rem;
   }
 
   /** Hides mobile personal intro **/
@@ -253,6 +266,7 @@
   .landing_process h3 {
     grid-row: 1;
     margin: 0;
+    padding-top: 2rem;
   }
 
   .landing_process .cell_1 {
@@ -271,12 +285,5 @@
 
   .process_graphic_mobile {
     height: 0;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .profile {
-    height: auto;
-    width: 100%;
   }
 }
