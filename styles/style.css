@@ -20,6 +20,7 @@ html {
 }
 
 body{
+  overflow-x: hidden;
   min-width: 360px;
   max-width: 100%;
 }

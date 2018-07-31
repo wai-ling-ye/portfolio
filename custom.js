@@ -1,7 +1,6 @@
-$(document).ready(function(){
-  // Smooth Scrolling; source: https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
-  // Add smooth scrolling to all links
-  void function() {
+// Smooth Scrolling courtesy of Niki Brown
+// Add smooth scrolling to all in-page links
+void function() {
   'use strict';
 
   var ANCHOR_SELECTOR = 'a[href*="#"]:not([href="#"]):not([href="#0"])';
@@ -77,5 +76,4 @@ $(document).ready(function(){
 
     currentTimeout = setTimeout(checkFocus.bind(target), CHECK_INTERVAL);
   }
-};
-});
+}();
