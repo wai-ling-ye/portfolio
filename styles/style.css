@@ -400,19 +400,21 @@ tr:nth-child(even) {
 }
 
 /** Footer **/
+footer .logo_button {
+  width: 6rem;
+}
+
 .logo_bar {
-  background: rgba(225, 234, 239, 1);
   height: 3rem;
   margin: 6rem 0 2rem 0;
   overflow: visible;
 }
 
-.logo_bar img {
+.logo_bar .logo_button {
   display: block;
   margin: auto;
   position: relative;
   top: -2rem;
-  width: 6rem;
 }
 
 .logo_bar .logo {
@@ -422,7 +424,6 @@ tr:nth-child(even) {
 }
 
 .footer_bottom {
-  background: rgba(225, 234, 239, 1);
   text-align: center;
   width: 100%;
 }
@@ -706,25 +707,19 @@ tr:nth-child(even) {
 
   /* Footer */
   .footer_bottom {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-row: auto;
+    margin-top: 4rem;
     overflow: hidden;
-    text-align: left;
   }
-  .footer_bottom h2 {
-    color: rgba(53, 118, 149, .5);
-    grid-column: 1;
-    grid-row: 1;
-    font-size: 12vw;
-    left: -1vw;
-    top: 1vw;
+
+  .footer_bottom .logo_button {
+    align-self: center;
+  }
+
+  .footer_bottom h3 {
+    margin-right: 0;
   }
 
   .footer_container {
-    grid-column: 2;
-    grid-row: 1;
-    padding-right: 5vw;
     text-align: right;
   }
 

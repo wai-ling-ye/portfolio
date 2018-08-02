@@ -171,6 +171,13 @@
     top: 25vh;
   }
 
+  .desktop_display #thinker,
+  .desktop_display #creator,
+  .desktop_display #dreamer {
+    fill: rgba(53, 118, 149, .2);
+    z-index: 0;
+  }
+
   #creator {
     margin-bottom: 2rem;
     top: 48vh;
