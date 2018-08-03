@@ -163,6 +163,7 @@ aside {
   margin: auto;
   width: 90%;
 }
+
 @keyframes fade-in {
   from {opacity: 0;}
   to {opacity: 100}
@@ -182,6 +183,12 @@ aside {
 nav {
   position: fixed;
   z-index: 2;
+}
+
+nav a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  text-decoration: none;
 }
 
 #menuToggle
@@ -301,9 +308,9 @@ nav {
 {
   box-shadow: .1rem .2rem .5rem .2rem rgba(0,0,0,.25);
   position: absolute;
-  width: 20rem;
+  width: 18rem;
   margin: -4rem 0 0 -2rem;
-  padding: 5rem;
+  padding: 4rem;
   top: -.5rem;
   padding-top: 7.8125rem;
 
@@ -322,6 +329,10 @@ nav {
 {
   padding: 1.5rem 0;
   font-size: 1.5rem;
+}
+
+#menu li p {
+  font-size: 1.2rem;
 }
 
 /*
@@ -643,7 +654,6 @@ footer .logo_button {
 
   nav a {
     color: rgba(30, 52, 62, .8);
-    font-family: "Open Sans", Arial, sans-serif;
     font-size: 1rem;
     text-decoration: none;
   }

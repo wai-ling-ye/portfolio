@@ -146,7 +146,7 @@
     height: 80vh;
     margin: 20vh 10vw 0 auto;
     width: 60.2vh;
-    z-index: 1
+    z-index: 1;
   }
 
   .home_hero_mobile .cell_full {
@@ -222,7 +222,7 @@
   }
 
   .remkeep_project {
-    padding-top: 14rem;
+    padding-top: 16rem;
   }
 
   /** Hides mobile personal intro **/
