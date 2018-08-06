@@ -810,11 +810,6 @@
     padding: 4rem 5vw;
   }
 
-  .conclusion_section {
-    background-color: rgba(156, 207, 232, .25);
-    background-color: var(--lb-bg-color);
-  }
-
   .conclusion {
     background: none;
     grid-column: 2 / span 5;
