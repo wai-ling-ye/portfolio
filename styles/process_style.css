@@ -12,6 +12,7 @@ header h3 {
   animation-duration: 1.5s;
   animation-fill-mode: backwards;
   font-size: 5rem;
+  line-height: 4rem;
   padding: 4rem 0;
   margin: 0 auto;
 }
@@ -22,7 +23,10 @@ article {
 
 article h3 {
   color: rgba(53, 118, 149, .75);
+  margin: auto;
   padding-bottom: 2rem;
+  width: 20rem;
+    max-width: 90%;
 }
 
 .text_container {
@@ -61,17 +65,21 @@ article h3 {
 }
 
 #see_the_process {
-  line-height: normal;
+  line-height: 80%;
 }
 
 #in_action {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+  line-height: 4.5rem;
   text-align: right;
+}
+
+.remkeep_project {
+  padding-top: 0;
 }
 
 .remkeep_project h3 {
   color: #ffffff;
-  padding-bottom: 0;
 }
 
 @media screen and (max-width: 500px) {

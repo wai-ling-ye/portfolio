@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:light,lightitalic,regular,semibold,italic|Song+Myung');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:light,lightitalic,regular,semibold,italic|Raleway:light,regular|');
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -35,17 +35,18 @@ body{
 }
 
 h2 {
-  font-family: "Song Myung", Georgia, serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 5rem;
+  font-weight: lighter;
   line-height: 3.5rem;
   position: relative;
 }
 
 h3{ /**large headings**/
   display: block;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 3.5rem;
-  font-weight: 300;
+  font-weight: lighter;
   line-height: 3rem;
   padding-bottom: 2rem;
   position: relative;
@@ -247,7 +248,7 @@ nav a {
   top: -2rem;
 
   animation-name: fade-in;
-  animation-delay: 2.5s;
+  animation-delay: 1.5s;
   animation-duration: 2s;
   animation-fill-mode: backwards;
   background: rgba(53, 118, 149, 1);
@@ -364,26 +365,20 @@ th {
   width: 100%
 }
 
-th h4 {
-  font-size: 1.2rem;
-  line-height: normal;
-  opacity: 1;
-  padding: 1rem 0;
-}
-
 td {
   padding: .5rem 1rem;
   vertical-align: middle;
   width: 100%;
 }
 
-td h4 {
-  padding: 0;
-  white-space: nowrap;
-}
-
 tr:nth-child(even) {
   background-color: rgba(242, 242, 242, 1);
+}
+
+table h4 {
+  margin: 0;
+  opacity: 1;
+  padding: .5rem 0;
 }
 
 /* Projects */
