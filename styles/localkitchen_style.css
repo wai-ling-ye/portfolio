@@ -1,0 +1,575 @@
+h4 {
+  display: block;
+  margin: auto;
+  width: 20rem;
+    max-width: 90%;
+}
+
+.grid h3 {
+  grid-column: 2 / span 8;
+  grid-row: 1;
+  width: auto;
+}
+
+.text_container h4 {
+  width: 100%;
+    max-width: 100%;
+}
+
+.aside_text {
+  display: block;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  width: 20rem;
+    max-width: 90%;
+}
+
+.remkeep_header {
+  background-image: url("../images/Remkeep/mobile_preview.png");
+  background-repeat: no-repeat;
+  background-size: auto 90%;
+  background-position: 50% 80%;
+  box-shadow: inset 0 0 0 100rem rgba(8, 137, 201, .8);
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.remkeep_header h3 {
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+.remkeep_header .aside_text {
+  grid-row: 1;
+  margin-top: 0;
+}
+
+.objective .text_container {
+  padding-top: 2rem;
+}
+
+.specs {
+  padding: 2rem 0 4rem 0;
+}
+
+.specs .text_container{
+  padding: 0;
+}
+
+.problem {
+  padding-bottom: 1rem;
+}
+
+.process_aside {
+  background-image: url("../images/Remkeep/process_flow_mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.process_aside span {
+  display: block;
+  font-style: italic;
+  text-align: right;
+  position: relative;
+  right: 2rem;
+}
+
+/* User Surveys */
+.survey_section .text_container {
+  padding: 0;
+}
+
+.survey_section img{
+  margin: auto;
+  width: 90%;
+}
+
+.survey_graph_1 {
+  padding: 2rem 0 4rem 0;
+}
+
+/* User Personas */
+.table_header {
+  background-color: rgba(53, 118, 149, 1);
+  background-color: var(--dark-blue);
+}
+
+.table_header p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.col_2,
+.col_3 {
+  padding: 1rem 0 0 1rem;
+}
+
+/* User Stories and User Flows */
+.user_stories_flows {
+  padding: 2rem 0 2rem 0;
+}
+
+.user_stories_flows table {
+  width: 90%;
+}
+
+.user_stories_flows table td,
+.user_stories_flows table th {
+  width: min-content;
+}
+
+/* Wireframes */
+.wireframes_heading img {
+  padding: 2rem 0;
+}
+
+.wireframes {
+  padding-bottom: 2rem;
+}
+
+.wireframe_top,
+.wireframes_content .p1  {
+  padding-bottom: 2rem;
+}
+
+.wireframes_slider_container {
+  margin: auto;
+}
+
+/* User Testing */
+.user_testing {
+  padding-bottom: 2rem;
+}
+
+/* Wireframes */
+.wireframes_slider_container {
+  align-self: baseline;
+  width: 90%;
+  z-index: 1;
+}
+
+.wireframes_slider_container .slider label {
+  background-color: rgba(53, 118, 149, .6);
+}
+
+.wireframes_slider_container .slider input:checked + label {
+  background-color: rgba(8, 137, 201, 1);
+}
+
+#prototype_links {
+  padding: 3rem 0 1rem;
+}
+
+.mobile_prototype,
+.desktop_prototype {
+  margin: auto;
+  padding: 1rem 0;
+}
+
+.mobile_prototype {
+  width: 12.2rem;
+}
+
+.desktop_prototype {
+  width: 90%;
+}
+
+.conclusion_section h3 {
+  margin-left: 0;
+}
+
+.conclusion {
+  padding-bottom: 3rem;
+}
+
+.what_I_learned {
+  padding-bottom: 0;
+}
+
+.what_I_learned h3 {
+  color: rgba(53, 118, 149, .8);
+}
+
+@media screen and (min-width: 900px) {
+  nav a {
+    color: rgba(255, 255, 255, .8);
+  }
+
+  nav {
+    grid-column: 1 / span 12;
+  }
+
+  h4 {
+    grid-column: 2 / span 6;
+    grid-row: 1;
+    margin-left: 0;
+  }
+
+  /* General text formatting */
+  .heading_text {
+    grid-column: 2 / span 6;
+    grid-row: 1;
+    margin: 0;
+  }
+
+  .aside_text {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .text_container {
+    padding: 0;
+  }
+
+  .grid .text_container {
+    padding-bottom: 2rem;
+  }
+
+  /* Header */
+  .remkeep_header {
+    background-image: none;
+    padding: 10rem 0 2rem 0;
+  }
+
+  .remkeep_title {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+    height: 12vw;
+    padding: 0;
+    position: relative;
+      left: 0;
+      top: -.8vw;
+    width: auto;
+    min-width: 53%;
+  }
+
+  .remkeep_header .aside_text {
+    grid-column: 8 / span 4;
+    grid-row: 1;
+    margin: 0;
+  }
+
+  .remkeep_header img {
+    grid-row: 1 / span 4;
+  }
+
+  .objective {
+    grid-row: 4;
+    padding-top: 0;
+  }
+
+  .objective .text_container {
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .objective h3 {
+    padding-top: 0;
+  }
+
+  /* Specs and Objective */
+  .specs {
+    padding: 0;
+  }
+
+  /* Problem and Solution */
+
+  .problem_solution {
+    background: #ffffff;
+    grid-column-gap: 2rem;
+    padding: 2rem 0;
+  }
+
+  .problem_solution .text_container {
+    margin-left: 0;
+  }
+
+  .problem {
+    margin: 0;
+  }
+
+  .solution {
+    background: none;
+  }
+
+  /* Process Title Section */
+  .process_aside {
+    background-image: url("../images/Remkeep/process_flow_desktop.png");
+  }
+
+  .process_aside .full_width_text {
+    grid-column: 1 / span 12;
+    width: 60%;
+  }
+
+  .process_aside .aside_text {
+    padding: 0 0 2rem 0;
+  }
+
+  /* Competitive Analysis */
+  .competitive_analysis table {
+    margin: 4rem 0;
+  }
+
+  .competitive_analysis table span {
+    color: rgba(53, 118, 149, 1);
+    color: var(--dark-blue);
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .competitive_analysis table td {
+    vertical-align: top;
+  }
+
+  .competitive_analysis .text_container h4 {
+    padding-top: 1rem;
+  }
+
+  /* User Surveys */
+  .survey_section {
+    padding-bottom: 2rem;
+  }
+
+  .survey_section img {
+    height: 18rem;
+    margin: 2rem 0;
+    padding: 0;
+    width: auto;
+  }
+
+  /* User Personas */
+  .persona_table {
+    grid-column: 1 / span 12;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    width: 100%;
+  }
+  .persona_table .col_1 {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+  }
+
+  .table_header {
+    grid-column: 4 / span 8;
+    grid-row: 1;
+  }
+
+  .persona_table .col_2 {
+    grid-column: 4 / span 4;
+    grid-row: 2;
+  }
+
+  .persona_table .col_3 {
+    grid-column: 8 / span 4;
+    grid-row: 2;
+  }
+
+  /* User Stories and User Flows */
+  .user_stories_flows {
+    grid-row-gap: 2rem;
+  }
+
+  .user_stories_flows h4 {
+    padding-top: 0;
+  }
+
+  .user_stories_flows .text_container:nth-of-type(2) {
+    grid-row: 2;
+  }
+
+  .user_stories_flows table {
+    margin: 2rem 0;
+    width: 100%;
+  }
+
+  .user_stories_flows .button {
+    margin: 2rem 0 0 0;
+  }
+
+  .user_flows {
+    grid-row: 2;
+  }
+
+  .user_flows_graphic {
+    background-image: url("../images/user_flows_graphic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 80vw 0 5rem .5rem rgba(255, 255, 255, .9);
+    grid-column: 1 / span 12;
+    grid-row: 2;
+    z-index: -1;
+  }
+
+  /* Wireframes */
+  .wireframes {
+    background: none;
+    padding-bottom: 0;
+  }
+
+  .wireframes_slider_container {
+    grid-row: 1 / span 2;
+    margin: 0;
+    padding: 2rem 0;
+    width: 50vw;
+    z-index: 1;
+  }
+
+  .wireframe_top {
+    padding-bottom: 2rem;
+  }
+
+  /* User Testing Round 1 */
+  .user_testing {
+    padding-bottom: 0;
+  }
+
+  .user_testing .cell_full .p1 {
+    padding-top: 0;
+  }
+
+  .user_testing .cell_1 {
+    padding-top: 2rem;
+  }
+
+  .user_testing .cell_full {
+    grid-column: 1 / span 12;
+  }
+
+  .user_testing .cell_full:nth-of-type(even) {
+    background-color: rgba(156, 207, 232, .25);
+    background-color: var(--lb-bg-color);
+  }
+
+  .user_testing .p2 p {
+    padding-bottom: 1rem;
+  }
+
+  .user_testing .p1 p {
+    padding-bottom: 2rem;
+  }
+
+  .user_testing .p3 p {
+    padding-top: 2rem;
+  }
+
+  .user_testing .r2 {
+    grid-row: 2;
+  }
+
+  .user_testing .cell_5 {
+    padding-top: 2rem;
+  }
+
+  .user_testing .cell_5 .text_container {
+    margin-left: 0;
+    padding-bottom: 0;
+    max-width: 26rem;
+  }
+
+  .user_testing .cell_5 .button {
+    margin-bottom: 4rem;
+    margin-left: 0;
+  }
+
+  .user_testing .cell_full .button {
+    margin: 0 0 4rem 0;
+  }
+
+  .user_testing_disclaimer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+      max-width: 100%;
+  }
+
+  /* Logo and Color palette */
+  .brand_identity .cell_full {
+    grid-column: 1 / span 12;
+  }
+
+  .brand_identity .cell_full:nth-of-type(even) {
+    background-color: rgba(156, 207, 232, .25);
+    background-color: var(--lb-bg-color);
+  }
+
+  .brand_identity .p2 p {
+    padding-bottom: 1rem;
+  }
+
+  .brand_identity .p1 p {
+    padding-bottom: 2rem;
+  }
+
+  .brand_identity .p3 p {
+    padding-top: 2rem;
+  }
+
+  /* High Fidelity Prototypes */
+  #prototype_links {
+    padding: 2rem 0;
+  }
+
+  .mobile_prototype {
+    align-self: end;
+    margin: auto;
+    padding-top: 2rem;
+    width: 12rem;
+  }
+
+  .desktop_prototype {
+    align-self: end;
+    padding-top: 2rem;
+    width: 100%;
+  }
+
+  #prototype_links .button {
+    grid-row: 2;
+    margin: 0 auto 2rem auto;
+  }
+
+  /* conclusion section */
+  .screenshots {
+    background-color: rgba(8, 137, 201, 1);
+    background-color: var(--blue-bg-color);
+    padding: 4rem 5vw;
+  }
+
+  .conclusion {
+    background: none;
+    grid-column: 2 / span 5;
+    grid-row: 1;
+    padding-bottom: 2rem;
+  }
+
+  .conclusion p {
+    color: #000000;
+  }
+
+  .what_I_learned {
+    grid-column: 7 / span 5;
+    grid-row: 1;
+    padding-bottom: 1rem;
+  }
+
+  .conclusion h3, .what_I_learned h3 {
+    color: rgba(53, 118, 149, .75);
+    white-space: nowrap;
+  }
+
+  .conclusion_section .button {
+    margin: auto;
+  }
+}

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Remkeep | Portfolio | Wai Ling Ye</title>
+    <meta charset="UTF-8">
+    <meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/logo_icon.ico"/>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/localkitchen_style.css">
+    <link rel="stylesheet" type="text/css" href="styles/slider.css">
+  </head>
+  <body>
+    <nav role="navigation">
+      <!--    Mobile Navigation by Erik Terwan    -->
+      <!--   24th of November 2015   -->
+      <!--        MIT License        -->
+      <div class="mobile_display" id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+
+        <!--
+        Some spans to act as a hamburger.
+
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="about.html"><li>Bio</li></a>
+          <a href="remkeep.html"><li>Featured Work</li></a>
+          <!-- <a href="#"><li>Thoughts</li></a> -->
+        </ul>
+      </div>
+
+      <div class="desktop_display">
+        <a class="logo_button" href="index.html"><img src="/images/logo.svg" alt=""></a>
+        <ul>
+          <a href="index.html"><li>Home</li></a>
+          <a href="about.html"><li>Bio</li></a>
+          <a href="remkeep.html"><li>Featured Work</li></a>
+          <!-- <a href="#"><li>Thoughts</li></a> -->
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="remkeep_header blue_bg grid">
+
+      <img class="cell_full desktop_display" src="images/Remkeep/screens_2.png" alt="">
+      <div class="aside_text">
+        <h3 class="mobile_display">Remkeep</h3>
+        Local Kitchen is your source for recipes featuring local, in season ingredients. Pick your recipes, order from local farmers, and ship to your door.
+      </div>
+
+      <div class="mobile_display"><div class="button"><a href="#prototype_links">View the prototype</a></div></div>
+
+      <article class="objective cell_5 desktop_display" data-aos="fade" data-aos-delay="200">
+        <div class="text_container">
+          <h3>Objective</h3>
+          <p>In this new generation of health, environmental, and social consciousness, users need an easier way to cook and eat responsibly. Eating in season produce from local farmers is one way to eat responsibly that consumers can adopt in their daily lives. Local Kitchen makes eating local, in season produce easier than ever by helping you find delicious seasonal recipes and purchase ingredients directly from local farmers.</p>
+        </div>
+        <div class="button"><a href="#prototype_links">View the prototype</a></div>
+      </article>
+    </header>
+
+    <div class="mobile_display"><img src="images/Remkeep/laptop_image.jpg" alt=""></div>
+
+    <!-- Specs and Objective -->
+    <article class="specs grid lightblue_bg">
+      <div class="text_container cell_1">
+        <h4>Roles</h4>
+        <p>UX Design | Branding | Visual Design</p>
+      </div>
+      <div class="text_container cell_2">
+        <h4>Tools</h4>
+        <p>Figma | Adobe Illustrator Draw | Maze | InVision | Pen & Paper</p>
+      </div>
+    </article>
+
+    <article class="objective blue_bg mobile_display">
+      <div class="text_container">
+        <h3>Objective</h3>
+        <p>In this new generation of health, environmental, and social consciousness, users need an easier way to cook and eat responsibly. Eating in season produce from local farmers is one way to eat responsibly that consumers can adopt in their daily lives. Local Kitchen makes eating local, in season produce easier than ever by helping you find delicious seasonal recipes and purchase ingredients directly from local farmers.</p>
+      </div>
+    </article>
+
+    <!-- Problem and Solution -->
+    <div class="problem_solution grid">
+      <article class="problem cell_1">
+        <div class="text_container">
+          <h4>The Problem</h4>
+          <p>In season produce is healthier, tastier, and better for the environment than produce that is not in season. However, many people do not purchase produce by season because they don’t know which produce is in season, and it’s arduous for most consumers to track what is available locally month to month.</p>
+        </div>
+      </article>
+
+      <article class="solution lightblue_bg cell_2">
+        <div class="text_container">
+          <h4>The Solution</h4>
+          <p>Local Kitchen makes it easy for users to eat in season produce by providing them with recipes that will encourage them to buy in season produce to make the recipe. The user never has to think about what produce is in season at all, but simply make recipes they like with the confidence that what they are making a great choice for their health and the environment.</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Process Header -->
+    <aside class="blue_bg process_aside grid">
+      <div class="aside_text cell_4">
+        <h3>The Process</h3>
+        “We're really excited at the possibilities we see in the cloud storage and organization market. … [T]here's room for another player if we can find the right combination of features to meet the needs of a particular audience.”
+        <br><span>- Client Brief</span>
+      </div>
+    </aside>
+
+    <!-- Competitive Analysis -->
+    <article class="competitive_analysis">
+      <div class="grid">
+        <div class="text_container cell_1v">
+          <h4>Competitive Analysis</h4>
+          <p>Now that we know what our users want, I want to know what other websites are already doing to address user needs. I decide to analyze 2 recipe websites, All Recipes which is the most popular recipe website, and Cooking Light which is a popular site for health conscious users. Lastly, I analyze Seasonal Food Guide, which is the best source of information on in season produce by region in the United States.</p>
+        </div>
+        <table class="desktop_display cell_4">
+          <tr>
+            <th><h5>Competitor</h5></th>
+            <th><h5>Strength</h5></th>
+            <th><h5>Weakness</h5></th>
+          </tr>
+          <tr>
+            <td><p><span>All Recipes</span></p></td>
+            <td><p>High-profit potential due to large number of sales channels</p></td>
+            <td><p>Consumers seek out specialized, unique products, which is counter to AllRecipes’ model</p></td>
+          </tr>
+          <tr>
+            <td><p><span>Cooking Light</span></p></td>
+            <td><p>Attractive to health conscious and weight loss oriented consumers</p></td>
+            <td><p>No options for users to customize the feed, save recipes, or otherwise interact with the recipe content</p></td>
+          </tr>
+          <tr>
+            <td><p><span>Seasonal Food Guide</span></p></td>
+            <td><p>Well sourced and accurate information about the seasonality of produce</p></td>
+            <td><p>Low visibility - users will only find the site if they are already interested in seasonal produce</p></td>
+          </tr>
+        </table>
+      </div>
+
+      <table class="mobile_display">
+        <tr>
+          <th><h4>All Recipes</h4></th>
+        </tr>
+        <tr>
+          <td>
+            <h5>Strength</h5>
+            <p>High-profit potential due to large number of sales channels</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h5>Weakness</h5>
+            <p>Consumers seek out specialized, unique products, which is counter to AllRecipes’ model</p>
+          </td>
+        </tr>
+      </table>
+
+      <table class="mobile_display">
+        <tr>
+          <th><h4>Cooking Light</h4></th>
+        </tr>
+        <tr>
+          <td>
+            <h5>Strength</h5>
+            <p>Attractive to health conscious and weight loss oriented consumers</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h5>Weakness</h5>
+            <p>No options for users to customize the feed, save recipes, or otherwise interact with the recipe content</p>
+          </td>
+        </tr>
+      </table>
+
+      <table class="mobile_display">
+        <tr>
+          <th><h4>Seasonal Food Guide</h4></th>
+        </tr>
+        <tr>
+          <td>
+            <h5>Strength</h5>
+            <p>Well sourced and accurate information about the seasonality of produce</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h5>Weakness</h5>
+            <p>Low visibility - users will only find the site if they are already interested in seasonal produce</p>
+          </td>
+        </tr>
+      </table>
+
+      <div class="grid">
+        <div class="text_container cell_1v">
+          <p>Based on the competitive analysis, I decided to focus on creating a recipe website that combines the data and location driven information from Seasonal Food Guide with the enjoyment and practicality of a recipe website. The website will target health and environmentally conscious users, provide “expert” information, and also allow users to create a personalized experience.</p>
+        </div>
+        <table class="desktop_display cell_4">
+          <tr>
+            <th><h5>Differentiators</h5></th>
+            <th><h5>Features</h5></th>
+          </tr>
+          <tr>
+            <td>
+              <ul class="bulleted_list">
+                <li><p>Provide recipes using seasonal ingredients local to the user</p></li>
+                <li><p>Direct purchase from local farmers</p></li>
+                <li><p>Data based information on seasonal produce by state</p></li>
+              </ul>
+            </td>
+            <td>
+              <ul class="bulleted_list">
+                <li><p>Simple, seasonal recipes</p></li>
+                <li><p>Information on seasonal produce by region</p></li>
+                <li><p>Save and organize recipes and ingredients in user accounts</p></li>
+                <li><p>Ability to create shopping lists</p></li>
+                <li><p>Ability to purchase ingredients directly on the website</p></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </article>
+
+    <!-- User Surveys -->
+    <article class="survey_section grid lightblue_bg">
+      <div class="cell_4">
+        insert table or graphic here
+      </div>
+      <div class="text_container cell_1v">
+        <h4>User Survey</h4>
+        <p>Before I move forward with creating the product, I want to see if this is a product that users will be interested in. The first step was to conduct a survey that asks users how important it is for them to eat food that is in season, and find out how likely it is that they will use a recipe website that provides recipes using in season produce. The survey also provides us with a baseline for what features users expect from a recipe website, and discover how we can create a better user experience.</p>
+        <div class="button"><a href="https://docs.google.com/document/d/1f9xPcsw1HOsfUvkfOaIGAJUWmFKUfpmefYJODo54XO8/edit?usp=sharing" target="_blank">View the Survey Analysis</a></div>
+      </div>
+    </article>
+
+    <!-- User Personas -->
+    <article class="grid">
+      <div class="text_container heading_text">
+        <h4>User Personas</h4>
+        <p>I created three personas to capture the kind of users who will be using our recipe website. These user personas help us understand what is important to our users and what they are looking for when they use our website.</p>
+      </div>
+
+      <div class="persona_table text_container">
+        <div class="col_1">
+          <img src="" alt="">
+          <p class="desktop_display">Tony</p>
+          <p class="desktop_display">Casual</p>
+        </div>
+        <div class="table_header">
+          <p class="mobile_display">Tony - Broke and Single</p>
+          <p class="desktop_display">Broke and Single</p>
+        </div>
+        <div class="col_2">
+          <p>Goals</p>
+          <ul class="bulleted_list">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="col_3">
+          <p>Frustrations</p>
+          <ul class="bulleted_list">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- User Stories and User Flows -->
+    <article class="user_stories_flows cell_full grid lightblue_bg">
+
+      <div class="text_container cell_1v">
+        <h4>User Stories</h4>
+        <p>Based on the survey results and user personas, I create two sets of user stories that give a guideline for the most important tasks our users will be performing on our website.</p>
+      </div>
+
+      <table class="cell_4">
+        <tr>
+          <th><h5>User</h5></th>
+          <th><h5>Task</h5></th>
+          <th><h5>Priority</h5></th>
+        </tr>
+        <tr>
+          <td><p class="mobile_display">Guest</p><p class="desktop_display">As a guest user</p></td>
+          <td><p>I want to read the recipe directions</p></td>
+          <td><p>High</p></td>
+        </tr>
+        <tr>
+          <td><p class="mobile_display">Guest</p><p class="desktop_display">As a guest user</p></td>
+          <td><p>I want to search for recipes</p></td>
+          <td><p>Medium</p></td>
+        </tr>
+        <tr>
+          <td><p class="mobile_display">Guest</p><p class="desktop_display">As a guest user</p></td>
+          <td><p>I want to sign up for an account</p></td>
+          <td><p>Low</p></td>
+        </tr>
+        <tr>
+          <td><p class="mobile_display">Account Holder</p><p class="desktop_display">As an account holder</p></td>
+          <td><p>I want to save favorite recipes</p></td>
+          <td><p>High</p></td>
+        </tr>
+        <tr>
+          <td><p class="mobile_display">Account Holder</p><p class="desktop_display">As an account holder</p></td>
+          <td><p>I want to create, edit, and save ingredient shopping lists</p></td>
+          <td><p>Medium</p></td>
+        </tr>
+        <tr>
+          <td><p class="mobile_display">Account Holder</p><p class="desktop_display">As an account holder</p></td>
+          <td><p>I want to order groceries online</p></td>
+          <td><p>Medium</p></td>
+        </tr>
+      </table>
+
+      <div class="user_flows text_container cell_1">
+        <h4>User Flows</h4>
+        <p>After creating the user stories, I took some of the highest priority tasks and created user flows, which gives me an idea of the necessary features and pages. These user flows help me to limit the scope of the project to key features. I then created a site map to outline the pages needed for a minimum viable product.</p>
+        <div class="button cell_1v desktop_display"><a href="https://drive.google.com/open?id=1oWbH8Qk1wqagsZSgTVS3imcDAEsihTx8" target="_blank">View the User Flows</a></div>
+      </div>
+
+      <div class="user_flows text_container cell_2">
+        <p>Most user stories led me to prioritize features that we know users want based on the user survey. However, there were two use cases which I wanted to implement features for:</p>
+        <ul class="bulleted_list">
+          <li><p>A zoomed in directions view that will be easier to use while prepping and cooking</p></li>
+          <li><p>A checklist view, especially for mobile, that will allow users to check off grocery list items while shopping in brick and mortar stores</p></li>
+        </ul>
+        <p>These features are not universally available on popular recipe websites, but I wanted to see if adding these features would create added value for users.</p>
+      </div>
+
+      <div class="button cell_1v mobile_display"><a href="https://drive.google.com/open?id=1oWbH8Qk1wqagsZSgTVS3imcDAEsihTx8" target="_blank">View the User Flows</a></div>
+
+      <div class="user_flows_graphic"></div>
+    </article>
+
+    <!-- Wireframes -->
+    <article class="wireframes grid lightblue_bg">
+      <div class="wireframe_top text_container cell_1">
+        <h4>Wireframes</h4>
+        <p>Now that I know what pages I need, I drafted potential content for each page and created some quick sketches for different ways that content could be organized. I chose the best elements from each of those sketches to refine into wireframes.</p>
+        <div class="button cell_1"><a href="https://drive.google.com/open?id=1_fZM8KyOVKvD-M7STb-Q46SYb8A3vQTI" target="_blank">View the wireframes</a></div>
+      </div>
+
+      <div class="wireframes_slider_container cell_4">
+        <div class="slider">
+
+          <input type="radio" id="slideA" name="wireframe_slide" checked>
+          <label for="slideA"></label>
+          <input type="radio" id="slideB" name="wireframe_slide">
+          <label for="slideB"></label>
+          <input type="radio" id="slideC" name="wireframe_slide">
+          <label for="slideC"></label>
+          <input type="radio" id="slideD" name="wireframe_slide">
+          <label for="slideD"></label>
+          <input type="radio" id="slideE" name="wireframe_slide">
+          <label for="slideE"></label>
+
+          <ul class="slides">
+            <li>
+              <img src="images/Remkeep/prototype_screens/wireframe_landing.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/wireframe_dashboard.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/wireframe_folder_dropdown.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/wireframe_add_link.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/wireframe_upload.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- User Testing -->
+    <article class="user_testing grid">
+      <div class="cell_full">
+        <h3 class="cell_1">Testing the User Experience</h3>
+      </div>
+      <div class="cell_full grid">
+        <h4 class="cell_1">User Testing: Round One</h4>
+        <div class="text_container cell_1 p1">
+          <p>With the initial wireframes completed, I now have enough to perform user testing to determine if the layout and organization of the site make sense to users. I used the Maze app to perform a quick, task-based test with 9 testers. This allows me to see how well users understand the information on the website and how well they are able to navigate through the site based on the layout and copy.</p>
+        </div>
+        <div class="text_container cell_4">
+          <img src="" alt="Maze click heatmap">
+        </div>
+      </div>
+
+      <div class="cell_full grid">
+        <div class="text_container cell_1">
+          <p>Based on the test results, I found that the majority of users had no problem creating an account, using the search function, viewing recipes, and using checkout. However, there were two unique features I was testing that both turned out to have high failure rates. The first feature is an option for users to view enlarged recipe directions, which would help users see the directions easily while cooking. The second feature is a checklist of ingredients that users will be able to use while grocery shopping. In both instances, users had a hard time identifying the button to use the feature. This is due to a combination of poor labeling, non-descriptive icons, and lack of instruction to the user. Since these are new features that users haven’t already learned to use from other recipe websites, extra steps need to be taken to educate the user on how to use those features.</p>
+        </div>
+        <div class="cell_4">
+          <img src="" alt="Expand directions and Checklist Maze results">
+        </div>
+      </div>
+
+      <div class="cell_full grid">
+        <div class="text_container cell_1">
+          <p>Because the test results from the wireframe prototype were mostly positive, aside from the two features mentioned above, I went ahead with creating high-fidelity mockups based on the wireframes. I implemented changes to the feature buttons in the high-fidelity mockups to address the issues found in the wireframes.</p>
+        </div>
+      </div>
+
+      <div class="cell_full grid">
+        <div class="text_container cell_1">
+          <p>On the shopping list page, I changed the checklist icon into an icon with accompanying text to clarify the meaning of the link. I also moved the link next to the checkout button and added a print button so that the user can see the link as an additional feature.</p>
+        </div>
+        <div class="cell_4">
+          <img src="" alt="Shopping list page changes">
+        </div>
+      </div>
+
+      <div class="cell_full grid">
+        <div class="text_container cell_1">
+          <p>On the recipe page, I also changed the “expand” icon into a different icon with accompanying text, again to clarify the meaning. I included a print button here as well to increase usability, and also to hint to the user as to the function of the “Focused View” link.</p>
+        </div>
+        <div class="cell_4">
+          <img src="" alt="Recipe page changes">
+        </div>
+      </div>
+
+      <div class="cell_full grid">
+        <div class="text_container cell_1">
+          <p>In addition to the changes to the feature labels, I also made a number of changes based on feedback from my mentor and peers and my own examination of common design patterns.</p>
+        </div>
+      </div>
+
+      <div class="cell_full grid">
+        <img src="" alt="Homepage wireframe to mockup">
+        <img src="" alt="Log in page wireframe to mockup">
+        <img src="" alt="Mobile Navigation Drawer wireframe to mockup">
+      </div>
+
+      <div class="cell_full grid">
+        <h4 class="cell_1">User Testing: Round Two</h4>
+        <div class="text_container cell_1 p1">
+          <p>After creating the high-fidelity mockups, I performed a second round of user tests. In this round of user testing, I interviewed 4 users as they performed tasks using the high fidelity desktop and mobile prototypes.</p>
+          <p>In these user tests, I am again testing how well users understand the information on the site and how well they are able to navigate. With the high-fidelity prototype, I am able to examine the effectiveness of the use of color, images, and icons in addition to the layout.</p>
+          <div class="button"><a href="https://drive.google.com/open?id=1_fZM8KyOVKvD-M7STb-Q46SYb8A3vQTI" target="_blank">View the testing script</a></div>
+        </div>
+        <div class="text_container cell_2 p2">
+          <p>Looking at the issues encountered in the wireframe prototype testing, I found that overall users were more successful in discovering the enlarged recipe directions feature and the grocery checklist feature, but still did not fully immediately grasp the purpose of these features, and likely would not have looked at those features without encouragement.</p>
+          <p>In order to encourage users to use the recipe directions feature, I implemented a tooltip which would appear automatically for new users or users who are not logged in.</p>
+          <img src="" alt="Expand directions tooltip added">
+        </div>
+      </div>
+
+      <div class="cell_full grid">
+        <div class="text_container cell_1">
+          <p>The user testing also revealed a number of other usability issues, most important of which were on the shopping cart page, the search results page, and the profile page.<br><br></p>
+          <p>The confusion on the shopping cart page largely stems from the combination of too many features and a lack of focus on the primary goal of the user. The shopping cart page combined both a shopping cart and the ability to create and save grocery lists.<br><br></p>
+          <p>While at first, I believed that it was logical to put these features together, users actually found that when they are on the checkout page, they expect to see only checkout options, and would expect to see saved grocery lists in the profile section.</p>
+        </div>
+        <div class="cell_4">
+          <img src="" alt="Shopping cart summary of issues">
+        </div>
+      </div>
+
+      <div class="cell_full grid">
+        <div class="text_container cell_1">
+          <p>I addressed these issues in the next iteration of the mockup by simplifying the shopping cart page and moving all the saved grocery list features to the profile section.</p>
+        </div>
+        <img src="" alt="Checkout and Grocery Lists are separated">
+      </div>
+
+      <div class="cell_full grid">
+        <div class="text_container cell_1">
+          <p>The confusion that users had on the search results page is that the page did not immediately stand out as search results. This is caused by a combination of several factors.</p>
+          <ul class="numbered_list">
+            <li><p>The search page is not immediately distinct from the homepage.</p></li>
+            <li><p>Users were initially confused to see their favorites at the top of the page, but later said that they would appreciate being able to see their favorite recipes on the search page.</p></li>
+            <li><p>The ingredients on the search results page were unexpected because users expect to see only recipes when searching on a recipe website.</p></li>
+          </ul>
+        </div>
+        <div class="text_container cell_2 p3">
+          <p>I was able to address all three issues on the search results page with a single fix. By moving the ingredients to the top of the page and repurposing it as a search suggestion section, users are able to immediately distinguish the page as a search page and will see only recipes as search results. The elimination of the ingredients from the search results also allows the user to see the general search results immediately below the favorite recipes, which would reconcile the user’s initial confusion of seeing favorite recipes on top.</p>
+        </div>
+        <div class="cell_full">
+          <img src="" alt="Search page fix">
+        </div>
+      </div>
+
+      <div class="cell_full grid">
+        <div class="text_container cell_1">
+          <p>On the profile page, I initially made the links at the top white to stand out on the dark brown background, but users did not look at or interact with these links at all, and did not recognize them as links. However, these links are in fact important to the user because here they would be able to log out, change their profile image, or access their account settings.</p>
+        </div>
+        <div class="cell_4">
+          <img src="" alt="Profile page unclear links issue">
+        </div>
+        <div class="text_container cell_1v r2">
+          <p>To address this issue, I decided to move all the profile related options into a dropdown menu that users can access by clicking on the profile icon on the toolbar. This also gives another opportunity to bring attention and link to the grocery list feature.</p>
+        </div>
+        <div class="cell_4 r2">
+          <img src="" alt="Profile links moved to dropdown menu">
+        </div>
+      </div>
+
+      <div class="cell_full grid">
+        <div class="text_container cell_5">
+          <p>The users who tested the mobile prototype encountered much fewer issues, which were mostly solved by applying the same solution as was used on the desktop mockups.</p>
+        </div>
+        <div class="cell_full">
+          <img src="" alt="Search page fix">
+        </div>
+      </div>
+
+    </article>
+
+    <!-- Brand Strategy -->
+    <article class="brand_identity grid">
+
+      <div class="cell_full grid">
+        <h3 class="cell_1">Creating the Brand Identity</h3>
+        <div class="text_container cell_1 p1">
+          <p>Local Kitchen’s brand identity grew organically through the design, testing, and iterations of the prototype. From the user surveys and competitive analysis performed at the beginning of this project, the website was designed to target health and environmentally conscious consumers.</p>
+        </div>
+        <div class="text_container cell_2">
+          <p>The site was initially intended to be a place to find recipes using in season ingredients, but I realized early on that seasonal has multiple meanings in relation to food, and this kind of language would need to be explained for users to understand the context.</p>
+        </div>
+      </div>
+
+      <div class="cell_full grid">
+        <div class="text_container cell_1 p3">
+          <p>After writing copy for the wireframes, I considered that using a different focus for the mission statement of the brand might attract more users. To test this, I created a preference test using two different brand names with different brand missions.</p>
+        </div>
+      </div>
+
+      <div class="cell_full grid">
+        <div class="text_container cell_1 p3">
+          <p>The preference test results show that Simple Bites was preferred by two-thirds of the respondents. The brand name “Simple Bites” resonated with users’ desire for simplicity and ease while still being healthy. However, the users who chose Seasonal Eats said they preferred this brand because the message was more specific and meaningful.</p>
+        </div>
+        <div class="text_container cell_4">
+          <img src="" alt="Branding preference test results">
+        </div>
+      </div>
+
+      <div class="cell_full grid">
+        <div class="text_container cell_1 p3">
+          <p>I tentatively used the name “Simple Bites” in the high fidelity mockup, but I found through the user testing that this brand name and brand messaging did not communicate the value proposition of the product because it was too vague. I also found through the user testing that, in practice, users liked knowing that they could purchase produce from local farmers through the site, but didn’t know this until they were already going through checkout.</p>
+        </div>
+        <div class="text_container cell_4">
+          <img src="" alt="Branding and copy changes on the homepage">
+        </div>
+      </div>
+
+      <div class="cell_full grid">
+        <div class="text_container cell_1 p3">
+          <p>Based on this information, I again shifted the brand differentiator to sourcing produce from local farmers. The beauty of focusing on local farms is that this still accomplishes the original goal of helping users eat in season produce, while at the same time hooking the user’s interest by speaking to their desire to support local farms.</p>
+          <p>I updated the copy on the homepage to reflect this new theme and changed the brand name to “Local Kitchen”. </p>
+          <img src="" alt="Logo sketches">
+          <p>After brainstorming using mind maps and sketching, I designed the logo as a combination of a leaf and a map pin, which communicates the brand’s location-driven service and the brand’s focus on fresh ingredients.</p>
+          <p>The primary colors are a “leafy green” and a “carrot orange”, which combined gives a bright, fresh, and organic feel to the site.</p>
+          <p>I chose Open Sans for the body text because it is an easy to read and friendly font. I paired this with PT Serif for the logo font and headings because PT Serif shares Open San's open and frienly nature, while also giving a more organic feel.</p>
+        </div>
+        <div class="text_container cell_4">
+          <img src="" alt="Local Kitchen Style Guide">
+        </div>
+      </div>
+
+      <div class="cell_full grid">
+        <div class="text_container cell_1 p3">
+          <p>Finally, I did a third user test with just one user to determine if the fixes I implemented based on the previous user test was effective and to see what impression the new branding will have. This user test revealed that the majority of the fixes I implemented eliminated the major issues encountered in the previous user test.</p>
+        </div>
+        <div class="text_container cell_2 p3">
+          <p>However, I was surprised to find that the tester did not know the website was a recipe website from looking at the front page. I discussed this with the tester, and they said that they didn’t read the text at the top of the page at all, and there weren’t enough indicators throughout the page to help the user understand that they were looking at recipes.</p>
+        </div>
+      </div>
+
+      <div class="cell_full grid">
+        <div class="text_container cell_1 p3">
+          <p>In my final iteration of Local Kitchen prototype, I updated the copy one last time to be as clear as possible on the purpose and value proposition of the website, and used the word “recipe” as often as possible on the homepage to drive home the message.</p>
+        </div>
+        <div class="text_container cell_4">
+          <img src="" alt="Final iteration of the homepage">
+        </div>
+      </div>
+
+    </article>
+
+
+    <!-- High Fidelity Prototype -->
+    <figure class="blue_bg grid" id="prototype_links">
+      <div class="mobile_prototype cell_1v">
+        <div class="slider">
+
+          <input type="radio" id="slide1" name="slide">
+          <label for="slide1"></label>
+          <input type="radio" id="slide2" name="slide" checked>
+          <label for="slide2"></label>
+          <input type="radio" id="slide3" name="slide">
+          <label for="slide3"></label>
+          <input type="radio" id="slide4" name="slide">
+          <label for="slide4"></label>
+          <input type="radio" id="slide5" name="slide">
+          <label for="slide5"></label>
+
+          <ul class="slides">
+            <li>
+              <img src="images/Remkeep/prototype_screens/landing_mobile.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/dashboard_mobile.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/nav_mobile.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/add_mobile.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/upload_mobile.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="button cell_1"><a href="https://invis.io/EVF7VKR5T" target="_blank">View the Mobile Prototype</a></div>
+
+      <div class="desktop_prototype cell_4">
+        <div class="slider">
+
+          <input type="radio" id="slide6" name="slide2" checked>
+          <label for="slide6"></label>
+          <input type="radio" id="slide7" name="slide2">
+          <label for="slide7"></label>
+          <input type="radio" id="slide8" name="slide2">
+          <label for="slide8"></label>
+          <input type="radio" id="slide9" name="slide2">
+          <label for="slide9"></label>
+          <input type="radio" id="slide10" name="slide2">
+          <label for="slide10"></label>
+
+          <ul class="slides">
+            <li>
+              <img src="images/Remkeep/prototype_screens/landing_desktop.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/signin_desktop.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/dashboard_desktop.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/folder_menu_desktop.png" alt=""></li><li>
+              <img src="images/Remkeep/prototype_screens/save_desktop.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="button cell_4"><a href="https://invis.io/WGN75UEN3K2" target="_blank">View the Desktop Prototype</a></div>
+    </figure>
+
+    <!-- Conclusion -->
+    <div class="conclusion_section grid">
+      <article class="blue_bg conclusion">
+        <div class="text_container">
+          <h3>Conclusion</h3>
+          <p>Local Kitchen transformed from a seasonal recipes website to an online farmers market that offers recipes using locally grown produce. The user-driven design process played a large part on shaping the brand proposition, as well as allowing us to create attractive, user friendly interfaces, from browsing through checkout.</p>
+        </div>
+      </article>
+
+      <article class="what_I_learned">
+
+        <div class="text_container">
+          <h3>What I Learned</h3>
+          <p>The biggest lesson I learned from designing Local Kitchen is that website copy is an incredibly important part of the user experience. Throughout the testing phases, many of the major usability issues stemmed from unclear button labelling, or unclear messaging. By improving the copy of a website, we are able to increase users’ trust, understanding, and interest in a brand, on top of improving usability.</p>
+          <p><br>The second major lesson I learned is that simplicity is king. It’s important to remember the users’ number one goal of each feature, and to help them achieve that goal as quickly and easily as possible. Extra functionality may seem great on paper, but ultimately may distract and delay users from their goals and lead to abandonment.</p>
+        </div>
+      </article>
+    </div>
+
+    <footer>
+      <div class="logo_bar lightblue_bg mobile_display">
+        <div class="logo">
+          <a class="logo_button" href="index.html"><img src="/images/logo.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="footer_bottom grid lightblue_bg">
+        <a class="logo_button cell_1 desktop_display" href="index.html"><img src="/images/logo.svg" alt=""></a>
+        <div class="footer_container cell_4">
+          <h3>Let's work together</h3>
+          <p>
+            <SCRIPT TYPE="text/javascript">
+              <!--
+              // protected email script by Joe Maller
+              // JavaScripts available at http://www.joemaller.com
+              // this script is free to use and distribute
+              // but please credit me and/or link to my site
+
+              emailE=('wai.ling.ye@' + 'wyedesign.me')
+              document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+
+               //-->
+            </script>
+
+            <NOSCRIPT>
+                <em>Email address protected by JavaScript.<BR>
+                wai.ling.ye [at] wyedesign [dot] me</em>
+            </NOSCRIPT>
+          </p>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/wailingye/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/Wai_Ling_Ye" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="https://github.com/wai-ling-ye" target="_blank"><i class="fab fa-github-square"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-slack"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- Animate on Scroll library; source: https://github.com/michalsnik/aos/tree/v2 -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        disable: function () {
+          var maxWidth = 900;
+          return window.innerWidth < maxWidth;
+        }
+      });
+    </script>
+
+    <!-- Custom Scripts -->
+    <script src="custom.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121630677-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-121630677-1');
+    </script>
+  </body>
+</html>
