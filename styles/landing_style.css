@@ -150,7 +150,8 @@
     z-index: 1;
   }
 
-  .home_hero_mobile .cell_full {
+  .home_hero_mobile .full_width_text {
+    grid-column: 1 / span 12;
     grid-row: 1;
   }
 
@@ -181,18 +182,18 @@
 
   #creator {
     margin-bottom: 2rem;
-    top: 48vh;
+    top: 30vh;
     left: 30vw;
   }
 
   #dreamer {
     margin-bottom: 2rem;
-    top: 68vh;
+    top: 35vh;
     left: 10vw;
   }
 
   #designer {
-    top: 88vh;
+    top: 40vh;
     left: 25vw;
   }
 

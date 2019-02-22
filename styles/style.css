@@ -22,7 +22,7 @@ html {
 body{
   overflow-x: hidden;
   min-width: 360px;
-  max-width: 100%;
+  max-width: 100vw;
 }
 
 /* Text styles */
@@ -387,33 +387,40 @@ table h4 {
 
 /* Projects */
 .project {
-  padding-bottom: 2rem;
+  padding-bottom: 0;
+}
+
+.project .grid {
+  grid-template-rows: 28rem auto;
 }
 
 .project .mobile_display img {
-  margin: auto;
-  padding: 2rem 0;
+  margin: 2rem auto;
   width: 20rem;
   max-width: 90%;
 }
 
-.lk_container {
+.lk_container,
+.remkeep_container {
   margin-bottom: 4rem;
 }
 
-.remkeep_project .mobile_display img{
-  display: block;
-  height: auto;
-  position: relative;
-    left: 5vw;
-  width: 90%;
+.lk_container .mobile_display img {
+  -moz-box-shadow: 0 0.3rem 0.2rem 0.05rem rgba(0, 0, 0, .25);
+  -webkit-box-shadow: 0 0.3rem 0.2rem 0.05rem rgba(0, 0, 0, .25);
+  box-shadow: 0 0.3rem 0.2rem 0.05rem rgba(0, 0, 0, .25);
 }
 
-.remkeep_half_container .text_container {
+.remkeep_container .mobile_display img {
+  width: 100%;
+  max-width: 22rem;
+}
+
+.project_half_container .text_container {
   padding: 0;
 }
 
-.remkeep_half_container h3 {
+.project_half_container h3 {
   margin: 0;
   padding-top: 1rem;
 }
@@ -507,11 +514,6 @@ footer .logo_button {
 
   #menuToggle input:checked ~ span:nth-last-child(2) {
    transform: rotate(-45deg) translate(.07rem, .25rem);
-  }
-
-  /* Projects */
-  .remkeep_project_text {
-    max-width: 13em;
   }
 }
 
@@ -688,45 +690,37 @@ footer .logo_button {
     padding-top: 16rem;
   }
 
-  .lk_container {
-    padding-bottom: 4rem;
-  }
-
-  .remkeep_project {
-    padding: 4rem 0;
-    position: relative;
-  }
-
   .top_container,
   .remkeep_container {
     display: grid;
     grid-template-rows: 1fr 1fr;
   }
 
-  .top_container .desktop_display,
+  .remkeep_container {
+    margin-top: 8rem;
+  }
+
+  .lk_container .desktop_display,
   .remkeep_container .desktop_display {
     grid-column: 2 / span 10;
     grid-row: 1 / span 2;
   }
 
-  .remkeep_half_container {
+  .project_half_container {
     grid-column: 7 / span 5;
     grid-row: 2;
+    align-self: center;
   }
 
-  .remkeep_project .text_container {
-    margin: 18% 0 0 8%;
-    max-width: 30em;
+  .project .text_container {
+    margin-left: 0;
+    padding-left: 2rem;
+    width: 30rem;
+    max-width: 100%;
   }
 
-  .remkeep_project_text p{
-    font-size: 1.5vw;
-    line-height: 2.5vw;
-    padding: 0 0 1rem 0;
-  }
-
-  .remkeep_project .button{
-    margin: 2rem 0 0 8%;
+  .project .button{
+    margin-left: 2rem;
   }
 
   /* Footer */

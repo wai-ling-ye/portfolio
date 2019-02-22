@@ -33,6 +33,8 @@ h4 {
   background-repeat: no-repeat;
   background-size: auto 90%;
   background-position: 50% 80%;
+  -moz-box-shadow: inset 0 0 0 100rem rgba(8, 137, 201, .8);
+  -webkit-box-shadow: inset 0 0 0 100rem rgba(8, 137, 201, .8);
   box-shadow: inset 0 0 0 100rem rgba(8, 137, 201, .8);
   padding: 2rem 0;
   width: 100%;
