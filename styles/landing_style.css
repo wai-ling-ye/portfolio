@@ -74,7 +74,7 @@
 }
 
 .landing_about {
-  padding-bottom: 2rem;
+  padding: 4rem 0 2rem 0;
 }
 
 .landing_about h3 {
@@ -220,10 +220,6 @@
 
   .intro_container .highlight_text {
     color: rgba(255, 0, 108, 1);
-  }
-
-  .remkeep_project {
-    padding-top: 16rem;
   }
 
   /** Hides mobile personal intro **/

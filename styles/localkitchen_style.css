@@ -78,14 +78,17 @@ h4 {
   right: 2rem;
 }
 
+.mobile_table th {
+  max-width: 15rem;
+}
+
 /* User Surveys */
 .survey_section .text_container {
   padding: 0;
 }
 
 .survey_section img{
-  margin: auto;
-  width: 90%;
+  margin-bottom: 2rem;
 }
 
 .survey_graph_1 {
@@ -93,6 +96,13 @@ h4 {
 }
 
 /* User Personas */
+.persona_table {
+  -moz-box-shadow: 0 0.3rem 0.2rem 0.05rem rgba(0, 0, 0, .25);
+  -webkit-box-shadow: 0 0.3rem 0.2rem 0.05rem rgba(0, 0, 0, .25);
+  box-shadow: 0 0.3rem 0.2rem 0.05rem rgba(0, 0, 0, .25);
+  margin: 2rem auto;
+}
+
 .table_header {
   background-color: rgba(53, 118, 149, 1);
   background-color: var(--dark-blue);
@@ -116,6 +126,7 @@ h4 {
 
 .user_stories_flows table {
   width: 90%;
+  max-width: 660px;
 }
 
 .user_stories_flows table td,
@@ -141,9 +152,15 @@ h4 {
   margin: auto;
 }
 
-/* User Testing */
-.user_testing {
-  padding-bottom: 2rem;
+.wireframes .mobile_display img {
+  margin: auto;
+  width: 90%;
+}
+
+.wireframes .mobile_display img:nth-of-type(2) {
+  margin-top: 4rem;
+  width: 90%;
+  max-width: 20rem;
 }
 
 /* Wireframes */
@@ -159,6 +176,48 @@ h4 {
 
 .wireframes_slider_container .slider input:checked + label {
   background-color: rgba(8, 137, 201, 1);
+}
+
+/* User Testing */
+.user_testing {
+  padding-bottom: 2rem;
+}
+
+.user_testing .title {
+  margin: auto;
+  max-width: 90%;
+}
+
+.user_testing img {
+  margin: 2rem auto;
+  max-width: 90%;
+}
+
+.user_testing p {
+  margin: 2rem auto;
+}
+
+.user_testing .p1 p {
+  margin-top: 0;
+}
+
+.user_testing .mobile_display img:nth-of-type(3) {
+  width: 320px;
+}
+
+/* Brand Strategy */
+.brand_identity .title {
+  margin: auto;
+  max-width: 90%;
+}
+
+.brand_identity img {
+  margin: 2rem auto;
+  max-width: 90%;
+}
+
+.brand_identity p {
+  margin: 2rem auto;
 }
 
 #prototype_links {
@@ -218,7 +277,7 @@ h4 {
   }
 
   .aside_text {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 2.2rem;
     margin-left: 0;
     padding: 0;
@@ -342,14 +401,14 @@ h4 {
   }
 
   .survey_section img {
-    height: 18rem;
-    margin: 2rem 0;
-    padding: 0;
-    width: auto;
+    width: 100%;
   }
 
   /* User Personas */
   .persona_table {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
     display: grid;
     grid-template-columns: repeat(8,1fr);
     margin: 0;
@@ -398,6 +457,10 @@ h4 {
     grid-row-gap: 2rem;
   }
 
+  .user_stories_flows .r2 {
+    grid-row: 2;
+  }
+
   .user_stories_flows h4 {
     padding-top: 0;
   }
@@ -409,6 +472,7 @@ h4 {
   .user_stories_flows table {
     margin: 2rem 0;
     width: 100%;
+    max-width: 100%;
   }
 
   .user_stories_flows .button {
@@ -417,17 +481,6 @@ h4 {
 
   .user_flows {
     grid-row: 2;
-  }
-
-  .user_flows_graphic {
-    background-image: url("../images/user_flows_graphic.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    box-shadow: inset 80vw 0 5rem .5rem rgba(255, 255, 255, .9);
-    grid-column: 1 / span 12;
-    grid-row: 2;
-    z-index: -1;
   }
 
   /* Wireframes */
@@ -464,6 +517,11 @@ h4 {
     padding-bottom: 0;
   }
 
+  .user_testing img {
+    margin: 0 0 2rem 0;
+    max-width: 100%;
+  }
+
   .user_testing .cell_full .p1 {
     padding-top: 0;
   }
@@ -488,6 +546,8 @@ h4 {
 
   .user_testing .title {
     grid-column: 1 / span 12;
+    margin-left: 0;
+    max-width: 100%;
   }
 
   .user_testing .title h3 {
@@ -597,6 +657,12 @@ h4 {
 
   .brand_identity .title {
     padding-top: 2rem;
+    max-width: 100%;
+  }
+
+  .brand_identity img {
+    margin-top: 0;
+    max-width: 100%;
   }
 
   .brand_identity .p2 p {

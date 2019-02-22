@@ -151,7 +151,7 @@ aside {
 .bulleted_list {
   display: block;
   list-style-type: disc;
-  padding: 1rem 0 1rem 2rem;
+  padding: 1rem 1rem 1rem 2rem;
 }
 
 .numbered_list {
@@ -386,10 +386,19 @@ table h4 {
 }
 
 /* Projects */
+.project {
+  padding-bottom: 2rem;
+}
 
-/* Remkeep */
-.remkeep_project{
+.project .mobile_display img {
+  margin: auto;
   padding: 2rem 0;
+  width: 20rem;
+  max-width: 90%;
+}
+
+.lk_container {
+  margin-bottom: 4rem;
 }
 
 .remkeep_project .mobile_display img{
@@ -501,8 +510,6 @@ footer .logo_button {
   }
 
   /* Projects */
-
-  /* Remkeep */
   .remkeep_project_text {
     max-width: 13em;
   }
@@ -677,18 +684,26 @@ footer .logo_button {
   }
 
   /* Projects */
+  .project {
+    padding-top: 16rem;
+  }
 
-  /** Remkeep project **/
+  .lk_container {
+    padding-bottom: 4rem;
+  }
+
   .remkeep_project {
     padding: 4rem 0;
     position: relative;
   }
 
+  .top_container,
   .remkeep_container {
     display: grid;
     grid-template-rows: 1fr 1fr;
   }
 
+  .top_container .desktop_display,
   .remkeep_container .desktop_display {
     grid-column: 2 / span 10;
     grid-row: 1 / span 2;
