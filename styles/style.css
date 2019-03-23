@@ -8,7 +8,6 @@
   --highlight-color: rgba(255, 0, 108, 1);
   --blue-bg-color: rgba(8, 137, 201, 1);
   --lb-bg-color: rgba(156, 207, 232, .25);
-  --grey-bg-color: rgba(242, 242, 242, 1);
   --dark-blue: rgba(53, 118, 149, 1);
   --light-blue: rgba(173, 228, 255, .8); /**80% opacity on blue bg**/
   --yellow-text: rgba(237, 169, 68, .7); /**40% and 20% opacity - use with large text on yellow bg only**/
@@ -187,7 +186,7 @@ table .bulleted_list{
 
 nav {
   position: fixed;
-  z-index: 2;
+  z-index: 10;
 }
 
 nav a {
@@ -213,7 +212,7 @@ nav a {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 1.5rem;
   text-decoration: none;
-  color: #000000;
+  color: rgba(53, 118, 149, 1);
 
   transition: color 0.3s ease;
 }
@@ -315,9 +314,8 @@ nav a {
   position: absolute;
   width: 18rem;
   margin: -4rem 0 0 -2rem;
-  padding: 4rem;
+  padding: 7rem 3rem 2rem 5rem;
   top: -.5rem;
-  padding-top: 7.8125rem;
 
   background: #f2f2f2;
   list-style-type: none;
@@ -332,7 +330,7 @@ nav a {
 
 #menu li
 {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   font-size: 1.5rem;
 }
 
@@ -346,6 +344,10 @@ nav a {
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+
+#menu #biobtn {
+  padding-bottom: 2rem;
 }
 /* End of nav */
 
@@ -669,6 +671,50 @@ footer .logo_button {
   nav a:hover {
     color: rgba(255, 0, 108, 1);
     color: var(--highlight-color);
+  }
+
+  .dropdown {
+    display: inline-block;
+  }
+
+  .dropdown .dropbtn {
+    background: none;
+    border: none;
+    color: rgba(30, 52, 62, .8);
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .dropdown .dropbtn i {
+    color: rgba(30, 52, 62, .8);
+    font-size: .6rem;
+    padding-left: .4rem;
+    position: relative;
+      bottom: .1rem;
+  }
+
+  .dropdown_content {
+    display: none;
+    padding: .5rem;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 3;
+  }
+
+  nav .desktop_display .dropdown:hover,
+  nav .desktop_display .dropbtn:hover {
+    background-color: #ffffff;
+  }
+
+  nav .desktop_display .dropdown:hover .dropdown_content {
+    display: block;
+  }
+
+  nav .dropdown_content a {
+    float: left;
+    margin: .5rem 1rem;
+    white-space: nowrap;
   }
 
   /* Tables */
