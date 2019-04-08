@@ -663,7 +663,7 @@ footer .logo_button {
   }
 
   nav a {
-    color: rgba(30, 52, 62, .8);
+    color: rgba(255, 255, 255, .8);
     font-size: 1rem;
     text-decoration: none;
   }
@@ -680,14 +680,14 @@ footer .logo_button {
   .dropdown .dropbtn {
     background: none;
     border: none;
-    color: rgba(30, 52, 62, .8);
+    color: rgba(255, 255, 255, .8);
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 1rem;
     font-weight: 300;
   }
 
   .dropdown .dropbtn i {
-    color: rgba(30, 52, 62, .8);
+    color: rgba(255, 255, 255, .8);
     font-size: .6rem;
     padding-left: .4rem;
     position: relative;
@@ -705,6 +705,11 @@ footer .logo_button {
   nav .desktop_display .dropdown:hover,
   nav .desktop_display .dropbtn:hover {
     background-color: #ffffff;
+    color: rgba(30, 52, 62, .8);
+  }
+
+  nav .desktop_display .dropdown:hover .dropdown_content a {
+    color: rgba(30, 52, 62, .8);
   }
 
   nav .desktop_display .dropdown:hover .dropdown_content {

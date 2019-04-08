@@ -40,9 +40,9 @@
         -->
         <ul id="menu">
           <a href="index.html"><li>Home</li></a>
-          <a href="about.html"><li>Bio</li></a>
-          <a href="remkeep.html"><li>Featured Work</li></a>
-          <!-- <a href="#"><li>Thoughts</li></a> -->
+          <a href="about.html"><li id="biobtn">Bio</li></a>
+          <a href="local_kitchen.html"><li>Local Kitchen</li></a>
+          <a href="remkeep.html"><li>Remkeep</li></a>
         </ul>
       </div>
 
@@ -51,8 +51,13 @@
         <ul>
           <a href="index.html"><li>Home</li></a>
           <a href="about.html"><li>Bio</li></a>
-          <a href="remkeep.html"><li>Featured Work</li></a>
-          <!-- <a href="#"><li>Thoughts</li></a> -->
+          <div class="dropdown">
+            <button class="dropbtn"><li>Projects<i class="fas fa-chevron-down"></i></li></button>
+            <div class="dropdown_content">
+              <a href="local_kitchen.html">Local Kitchen</a>
+              <a href="remkeep.html">Remkeep</a>
+            </div>
+          </div>
         </ul>
       </div>
     </nav>
